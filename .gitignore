@@ -24,6 +24,7 @@
 .dist
 .yarn.lock
 .package.json
+.package-json.lock
 
 # Logs and databases #
 ######################
