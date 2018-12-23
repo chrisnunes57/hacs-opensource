@@ -8,15 +8,13 @@ import MyNavbar from "./components/Layouts/Header";
 export default class App extends Component {
   render() {
     return (
-
       <BrowserRouter basename={""}>
         <React.Fragment>
-          <MyNavbar className="App"/>
-          <Routes/>
-          <Footer/>
+          <MyNavbar className="App" />
+          <Routes />
+          <Footer />
         </React.Fragment>
       </BrowserRouter>
-
     );
   }
 }

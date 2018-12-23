@@ -3,7 +3,6 @@ import { Collapse, Nav, Navbar, NavbarBrand, NavbarToggler, NavItem, NavLink } f
 import { NavLink as RRNavLink } from "react-router-dom";
 import "./styles.css";
 
-
 class MyNavbar extends React.Component {
   constructor(props) {
     super(props);
@@ -19,35 +18,39 @@ class MyNavbar extends React.Component {
     });
   }
 
-  // handleChange(e) {
-  //     this.setState({
-  //         userInput: e.target.value,
-  //     });
-  //     this.props.changeTerms(e.target.value);
-  //
-  // }
-  //
-  // handleSubmit(e) {
-  //     e.preventDefault();
-  // }
-
   render() {
-
-
     return (
       <div>
-        <Navbar style={{ backgroundColor: "#07969b" }} dark expand="md" fixed={"top"}>
+        <Navbar
+          style={{ backgroundColor: "#07969b" }}
+          dark
+          expand="md"
+          fixed={"top"}
+        >
           <NavbarBrand tag={RRNavLink} to={"/"}>
-            <span className="text-white">Equal Education</span>
+            <span className="text-white">HACS</span>
           </NavbarBrand>
-          <NavbarToggler onClick={this.toggle}/>
+          <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem className="nav-item">
-                <NavLink exact to={"/"} activeClassName={"active"} tag={RRNavLink}>Home</NavLink>
+                <NavLink
+                  exact
+                  to={"/"}
+                  activeClassName={"active"}
+                  tag={RRNavLink}
+                >
+                  Home
+                </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink to={"/about"} activeClassName={"active"} tag={RRNavLink}>About</NavLink>
+                <NavLink
+                  to={"/sponsorship"}
+                  activeClassName={"active"}
+                  tag={RRNavLink}
+                >
+                  Sponsorship Info
+                </NavLink>
               </NavItem>
             </Nav>
           </Collapse>

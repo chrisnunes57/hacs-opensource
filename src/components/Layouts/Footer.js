@@ -2,8 +2,6 @@ import React from "react";
 import { Container, Row } from "reactstrap";
 
 class Footer extends React.PureComponent {
-
-
   render() {
     return (
       <Container>
@@ -16,4 +14,3 @@ class Footer extends React.PureComponent {
 }
 
 export default Footer;
-
