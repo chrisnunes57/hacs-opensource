@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "HACS Site",
+  "name": "Hispanic Association of Computer Scientists Website",
   "icons": [
     {
       "src": "favicon.ico",
