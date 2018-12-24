@@ -52,6 +52,15 @@ class MyNavbar extends React.Component {
                   Sponsorship Info
                 </NavLink>
               </NavItem>
+              <NavItem>
+                <NavLink
+                  to={"/events"}
+                  activeClassName={"active"}
+                  tag={RRNavLink}
+                >
+                  Events
+                </NavLink>
+              </NavItem>
             </Nav>
           </Collapse>
         </Navbar>
