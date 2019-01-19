@@ -7,6 +7,7 @@ class MyNavbar extends React.Component {
   constructor(props) {
     super(props);
     this.toggle = this.toggle.bind(this);
+    this.closeNavbar = this.closeNavbar.bind(this);
     this.state = {
       isOpen: false
     };
@@ -16,6 +17,12 @@ class MyNavbar extends React.Component {
     this.setState({
       isOpen: !this.state.isOpen
     });
+  }
+
+  closeNavbar() {
+    if (this.state.collapsed !== true) {
+      this.toggle();
+    }
   }
 
   render() {
@@ -39,6 +46,7 @@ class MyNavbar extends React.Component {
                   to={"/"}
                   activeClassName={"active"}
                   tag={RRNavLink}
+                  onClick={this.closeNavbar}
                 >
                   Home
                 </NavLink>
@@ -48,6 +56,7 @@ class MyNavbar extends React.Component {
                   to={"/sponsorship"}
                   activeClassName={"active"}
                   tag={RRNavLink}
+                  onClick={this.closeNavbar}
                 >
                   Sponsorship Info
                 </NavLink>
@@ -57,6 +66,7 @@ class MyNavbar extends React.Component {
                   to={"/events"}
                   activeClassName={"active"}
                   tag={RRNavLink}
+                  onClick={this.closeNavbar}
                 >
                   Events
                 </NavLink>

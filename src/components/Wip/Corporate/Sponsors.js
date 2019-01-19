@@ -5,9 +5,15 @@ import SponsorIcon from "./SponsorIcon";
 
 const sponsors = SponsorList.sponsors;
 
+/**
+ * The intent for this component is to hold the
+ * list of SponsorIcon components that make up
+ * all our sponsors. To complete this the sponsorList
+ * under the data folder will need to be filled out properly.
+ */
 export default class Sponsors extends React.Component {
-  /*
-    We can read in a json file here to keep track of sponsors with their name and icon file. Use javascripts map function to
+  /**
+    Use javascript's map function to
     list them out programmatically.
      */
   render() {
