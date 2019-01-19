@@ -1,19 +1,26 @@
 import React from "react";
-import { Col, Container, Row } from "reactstrap";
+import {Container, Row} from "reactstrap";
+import Carousel from "../Wip/LandingPage/Carousel";
+import Agenda from "../Wip/LandingPage/Agenda";
+import TwitterFeed from "../Wip/LandingPage/TwitterFeed";
+import Announcements from "../Wip/LandingPage/Announcements";
 
 export default class LandingPage extends React.Component {
   render() {
     return (
       <Container>
+        <Row>The Landing Page</Row>
         <Row>
-          <Col>Col 1</Col>
-          <Col>
-            <h1>
-              Hey this is the landing page, where the jumbotron and about stuff
-              will go.
-            </h1>
-          </Col>
-          <Col>Col 3</Col>
+          <Carousel />
+        </Row>
+        <Row>
+          <Agenda />
+        </Row>
+        <Row>
+          <TwitterFeed />
+        </Row>
+        <Row>
+          <Announcements />
         </Row>
       </Container>
     );

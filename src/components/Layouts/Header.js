@@ -1,6 +1,6 @@
 import React from "react";
-import { Collapse, Nav, Navbar, NavbarBrand, NavbarToggler, NavItem, NavLink } from "reactstrap";
-import { NavLink as RRNavLink } from "react-router-dom";
+import {Collapse, Nav, Navbar, NavbarBrand, NavbarToggler, NavItem, NavLink} from "reactstrap";
+import {NavLink as RRNavLink} from "react-router-dom";
 import "./styles.css";
 
 class MyNavbar extends React.Component {

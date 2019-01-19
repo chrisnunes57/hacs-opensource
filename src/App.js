@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import { BrowserRouter } from "react-router-dom";
+import React, {Component} from "react";
+import {BrowserRouter} from "react-router-dom";
 import "./App.css";
 import Footer from "./components/Layouts/Footer";
 import Routes from "./components/Routes/Routes";
@@ -10,7 +10,7 @@ export default class App extends Component {
     return (
       <BrowserRouter basename={""}>
         <React.Fragment>
-          <MyNavBar className="App"/>
+          <MyNavBar className="App" />
           <Routes />
           <Footer />
         </React.Fragment>

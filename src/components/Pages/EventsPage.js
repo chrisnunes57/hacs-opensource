@@ -1,5 +1,6 @@
 import React from "react";
-import { Col, Container, Row } from "reactstrap";
+import {Col, Container, Row} from "reactstrap";
+import EventsCalendar from "../Wip/Events/EventsCalendar";
 
 export default class EventsPage extends React.Component {
   render() {
@@ -8,11 +9,12 @@ export default class EventsPage extends React.Component {
         <Row>
           <Col>Col 1</Col>
           <Col>
-            <h1>
-              We got events going on here in this
-            </h1>
+            <h1>We got events going on here in this</h1>
           </Col>
           <Col>Col 3</Col>
+        </Row>
+        <Row>
+          <EventsCalendar />
         </Row>
       </Container>
     );
