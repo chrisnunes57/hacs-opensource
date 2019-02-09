@@ -12,7 +12,8 @@ export default class FeaturedMember extends React.Component {
     render(){
         return(
             <Container>
-                
+                    <p>Name : {member.name}</p>
+            
             </Container>
         )
     }
