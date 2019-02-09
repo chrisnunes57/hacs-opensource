@@ -36,7 +36,10 @@ This is our tentative [sitemap](https://www.gloomaps.com/RpcFrFsN4s)
 #People:
 
 - Jesus Palos
+<<<<<<< HEAD
 - Alberto Aviles-Correa
+=======
+<<<<<<< HEAD
 - Earl Potts
 
 - mANUEL pONCE
