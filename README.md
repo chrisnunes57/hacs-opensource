@@ -37,10 +37,11 @@ This is our tentative [sitemap](https://www.gloomaps.com/RpcFrFsN4s)
 
 - Jesus Palos
 - Andrew Marquez 
+- Alberto Aviles-Correa
+- Pamela Vazquez 
 - Earl Potts
-
 - mANUEL pONCE
-
+- Santiago Cortes
 
 
 
