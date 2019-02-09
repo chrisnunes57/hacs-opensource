@@ -36,9 +36,16 @@ This is our tentative [sitemap](https://www.gloomaps.com/RpcFrFsN4s)
 #People:
 
 - Jesus Palos
--Jesus Luna
+- Jesus Luna
 - Earl Potts
 - mANUEL pONCE
+- Alberto Aviles-Correa
+- Pamela Vazquez 
+- Earl Potts
+- mANUEL pONCE
+
+
+
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
