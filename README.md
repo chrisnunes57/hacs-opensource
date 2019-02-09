@@ -36,12 +36,12 @@ This is our tentative [sitemap](https://www.gloomaps.com/RpcFrFsN4s)
 #People:
 
 - Jesus Palos
-- Andrew Marquez 
+- Andrew Marquez
 - Jesus Luna
 - Earl Potts
 - mANUEL pONCE
 - Alberto Aviles-Correa
-- Pamela Vazquez 
+- Pamela Vazquez
 - Santiago Cortes
 
 
