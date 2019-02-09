@@ -36,17 +36,10 @@ This is our tentative [sitemap](https://www.gloomaps.com/RpcFrFsN4s)
 #People:
 
 - Jesus Palos
-<<<<<<< HEAD
 - Andrew Marquez 
-=======
-<<<<<<< HEAD
 - Earl Potts
 
 - mANUEL pONCE
->>>>>>> a674935949edd658fc7682fdbe5f947cb401ebfb
-
->>>>>>> 52489382868013128c9d1d546dae29673128bd24
-
 
 
 
