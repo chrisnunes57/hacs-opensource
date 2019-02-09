@@ -36,6 +36,7 @@ This is our tentative [sitemap](https://www.gloomaps.com/RpcFrFsN4s)
 #People:
 
 - Jesus Palos
+- Pamela Vazquez 
 
 
 
