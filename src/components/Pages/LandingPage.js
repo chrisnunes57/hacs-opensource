@@ -1,9 +1,10 @@
 import React from "react";
-import {Container, Row} from "reactstrap";
+import { Container, Row, Col } from "reactstrap";
 import Carousel from "../Wip/LandingPage/Carousel";
 import Agenda from "../Wip/LandingPage/Agenda";
 import TwitterFeed from "../Wip/LandingPage/TwitterFeed";
 import Announcements from "../Wip/LandingPage/Announcements";
+import FeaturedMember from "../Wip/LandingPage/FeaturedMember";
 
 export default class LandingPage extends React.Component {
   render() {
@@ -14,13 +15,18 @@ export default class LandingPage extends React.Component {
           <Carousel />
         </Row>
         <Row>
-          <Agenda />
+          <Col>
+            <Announcements />
+          </Col>
+          <Col>
+            <Agenda />
+          </Col>
         </Row>
         <Row>
           <TwitterFeed />
         </Row>
         <Row>
-          <Announcements />
+          <FeaturedMember/>
         </Row>
       </Container>
     );
