@@ -33,6 +33,10 @@ This is our tentative [sitemap](https://www.gloomaps.com/RpcFrFsN4s)
 # Todo:
 - Finish fleshing out the how to contribute section
 
+#People:
+
+- Jesus Palos
+
 
 
 
