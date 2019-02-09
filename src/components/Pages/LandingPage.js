@@ -4,6 +4,7 @@ import Carousel from "../Wip/LandingPage/Carousel";
 import Agenda from "../Wip/LandingPage/Agenda";
 import TwitterFeed from "../Wip/LandingPage/TwitterFeed";
 import Announcements from "../Wip/LandingPage/Announcements";
+import ContactLinks from "../Wip/LandingPage/ContactLinks";
 
 export default class LandingPage extends React.Component {
   render() {
@@ -21,6 +22,9 @@ export default class LandingPage extends React.Component {
         </Row>
         <Row>
           <Announcements />
+        </Row>
+        <Row>
+          <ContactLinks/>
         </Row>
       </Container>
     );
