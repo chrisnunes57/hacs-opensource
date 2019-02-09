@@ -37,9 +37,12 @@ This is our tentative [sitemap](https://www.gloomaps.com/RpcFrFsN4s)
 
 - Jesus Palos
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Alberto Aviles-Correa
 =======
 <<<<<<< HEAD
+=======
+- Pamela Vazquez 
 - Earl Potts
 
 - mANUEL pONCE
