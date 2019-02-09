@@ -1,5 +1,5 @@
 import React from "react";
-import {Container} from "reactstrap";
+import { Container } from "reactstrap";
 
 /**
  * Component for announcements, not limited to events, but including things like signups to stuff
@@ -12,7 +12,16 @@ export default class Announcements extends React.Component {
   render() {
     return (
       <Container>
-        <h1>Announcements</h1>
+        <div
+          style={{
+            backgroundColor: "#F4B24C",
+            width: "100%",
+            borderRadius: 20,
+            overflow: "hidden"
+          }}
+        >
+          <h1>Announcements</h1>
+        </div>
       </Container>
     );
   }

@@ -3,6 +3,7 @@ import { Container, Row, Col } from "reactstrap";
 import Carousel from "../Wip/LandingPage/Carousel";
 import Agenda from "../Wip/LandingPage/Agenda";
 import TwitterFeed from "../Wip/LandingPage/TwitterFeed";
+import FeaturedMember from "../Wip/LandingPage/FeaturedMember";
 import Announcements from "../Wip/LandingPage/Announcements";
 
 export default class LandingPage extends React.Component {
@@ -22,7 +23,12 @@ export default class LandingPage extends React.Component {
           </Col>
         </Row>
         <Row>
-          <TwitterFeed />
+          <Col>
+            <TwitterFeed />
+          </Col>
+          <Col>
+            <FeaturedMember />
+          </Col>
         </Row>
       </Container>
     );

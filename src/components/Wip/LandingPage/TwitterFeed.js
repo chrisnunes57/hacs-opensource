@@ -9,7 +9,16 @@ export default class TwitterFeed extends React.Component {
   render() {
     return (
       <Container>
-        <h1>Twitter Feed Component</h1>
+        <div
+          style={{
+            backgroundColor: "#F4B24C",
+            width: "100%",
+            borderRadius: 20,
+            overflow: "hidden"
+          }}
+        >
+          <h1>Twitter Feed Component</h1>
+        </div>
         <TwitterTimelineEmbed
           sourceType="profile"
           screenName="texasHACS"
