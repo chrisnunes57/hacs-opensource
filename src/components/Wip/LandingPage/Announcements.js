@@ -25,7 +25,14 @@ export default class Announcements extends React.Component {
             overflow: "hidden"
           }}
         >
-          <h1> Announcements </h1>
+          <h1
+            style={{
+              textAlign: "center"
+            }}
+          >
+            {" "}
+            Announcements{" "}
+          </h1>
         </div>
         <dl>
           <dt> Title: {announcement.title} </dt>

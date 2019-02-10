@@ -32,9 +32,6 @@ export default class LandingPage extends React.Component {
           </Col>
         </Row>
         <Row>
-          <FeaturedMember />
-        </Row>
-        <Row>
           <ContactLinks />
         </Row>
       </Container>

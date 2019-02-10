@@ -17,7 +17,13 @@ export default class Agenda extends React.Component {
             overflow: "hidden"
           }}
         >
-          <h1>Agenda</h1>
+          <h1
+            style={{
+              textAlign: "center"
+            }}
+          >
+            Upcoming Events
+          </h1>
         </div>
 
         <iframe
