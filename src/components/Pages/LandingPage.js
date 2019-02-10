@@ -5,7 +5,6 @@ import Agenda from "../Wip/LandingPage/Agenda";
 import TwitterFeed from "../Wip/LandingPage/TwitterFeed";
 import FeaturedMember from "../Wip/LandingPage/FeaturedMember";
 import Announcements from "../Wip/LandingPage/Announcements";
-import FeaturedMember from "../Wip/LandingPage/FeaturedMember";
 
 export default class LandingPage extends React.Component {
   render() {
@@ -32,7 +31,7 @@ export default class LandingPage extends React.Component {
           </Col>
         </Row>
         <Row>
-          <FeaturedMember/>
+          <FeaturedMember />
         </Row>
       </Container>
     );

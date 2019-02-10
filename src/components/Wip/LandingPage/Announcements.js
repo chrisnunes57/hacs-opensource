@@ -17,6 +17,16 @@ export default class Announcements extends React.Component {
   render() {
     return (
       <Container>
+        <div
+          style={{
+            backgroundColor: "#F4B24C",
+            width: "100%",
+            borderRadius: 20,
+            overflow: "hidden"
+          }}
+        >
+          <h1> Announcements </h1>
+        </div>
         <dl>
           <dt> Title: {announcement.title} </dt>
           {announcement.date && <dd>- {announcement.date}</dd>}
