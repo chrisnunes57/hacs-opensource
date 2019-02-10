@@ -6,7 +6,6 @@ import TwitterFeed from "../Wip/LandingPage/TwitterFeed";
 import Announcements from "../Wip/LandingPage/Announcements";
 import ContactLinks from "../Wip/LandingPage/ContactLinks";
 import FeaturedMember from "../Wip/LandingPage/FeaturedMember";
-import Announcements from "../Wip/LandingPage/Announcements";
 
 export default class LandingPage extends React.Component {
   render() {
