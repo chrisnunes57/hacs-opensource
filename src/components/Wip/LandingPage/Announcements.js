@@ -8,20 +8,28 @@ import { Container } from "reactstrap";
  * Announcements will be retrieved via an API Call to our backend,
  * So we'll need at least some mock data to be able to complete this
  */
+const announcement = {
+  title: "Example Announcement",
+  date: "Example Date",
+  description: "Example Description"
+};
 export default class Announcements extends React.Component {
   render() {
     return (
       <Container>
-        <div
-          style={{
-            backgroundColor: "#F4B24C",
-            width: "100%",
-            borderRadius: 20,
-            overflow: "hidden"
-          }}
-        >
-          <h1>Announcements</h1>
-        </div>
+        <dl>
+          <dt> Title: {announcement.title} </dt>
+          {announcement.date && <dd>- {announcement.date}</dd>}
+          <dd>- {announcement.description}</dd>
+
+          <dt> Title: {announcement.title} </dt>
+          {announcement.date && <dd>- {announcement.date}</dd>}
+          <dd>- {announcement.description}</dd>
+
+          <dt> Title: {announcement.title} </dt>
+          {announcement.date && <dd>- {announcement.date}</dd>}
+          <dd>- {announcement.description}</dd>
+        </dl>
       </Container>
     );
   }
