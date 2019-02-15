@@ -10,6 +10,7 @@ export default class Carousel extends React.Component {
     return (
       <Container>
         <h1>Carousel</h1>
+        I edited the carousel
       </Container>
     );
   }
