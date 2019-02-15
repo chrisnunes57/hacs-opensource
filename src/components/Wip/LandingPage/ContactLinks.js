@@ -12,19 +12,7 @@ export default class ContactLinks extends React.Component {
     render(){
         return(
             <Container>
-                <div
-                style={{
-                backgroundColor: "#F4B24C",
-                width: "100%",
-                borderRadius: 20,
-                overflow: "hidden", 
-                margin: "5px"}}>
-                <h1 style={{textAlign: "center"}}>
-                    {" "}
-                    Contact Links{" "}
-                 </h1>
-                </div>
-                <h1 style={{textAlign: "center"}}>
+                <h1 style={{textAlign: "center", paddingTop: '25px'}}>
                     <a  target="_blank" href={"https://twitter.com/texashacs?lang=en"}>
                         <img src={TwitterLogo} alt="Twitter Logo" style={{width:'100px'}} />
                     </a>
