@@ -2,6 +2,7 @@ import React from "react";
 import {Collapse, Nav, Navbar, NavbarBrand, NavbarToggler, NavItem, NavLink} from "reactstrap";
 import {NavLink as RRNavLink} from "react-router-dom";
 import "./styles.css";
+import "../../index.css";
 
 class MyNavbar extends React.Component {
   constructor(props) {
@@ -29,7 +30,8 @@ class MyNavbar extends React.Component {
     return (
       <div>
         <Navbar
-          style={{ backgroundColor: "#07969b" }}
+          // style={{ backgroundColor: "#07969b" }}
+          className="primary-color"
           dark
           expand="md"
           fixed={"top"}
