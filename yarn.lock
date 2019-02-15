@@ -7885,6 +7885,11 @@ react-lifecycles-compat@^3.0.4:
   resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
   integrity sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==
 
+react-obfuscate@^3.1.1:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/react-obfuscate/-/react-obfuscate-3.1.1.tgz#33f6390f59043516cad1ee4eb8f2a5546595b8ee"
+  integrity sha512-X7YL3pLoxqM2gJUVu74qk5N/J/Otora5mSdoq82LMG+c5ec98OW2guhKHAEFe1ZsY0PDQR7r65Fp6yDTdpfFIw==
+
 react-popper@^0.10.4:
   version "0.10.4"
   resolved "https://registry.yarnpkg.com/react-popper/-/react-popper-0.10.4.tgz#af2a415ea22291edd504678d7afda8a6ee3295aa"
