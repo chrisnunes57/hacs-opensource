@@ -10,10 +10,10 @@ The backend of this site will be created using Node.js, Express.js, and MySQL on
    - [Download on Mac](https://blog.teamtreehouse.com/install-node-js-npm-mac)
    - [Download on Linux](https://blog.teamtreehouse.com/install-node-js-npm-linux)
 
-2. Make sure npm is installed.
+2. Make sure yarn is installed, install Node Modules
 
    ```bash
-   npm install
+   yarn install
    ```
 
 3. MySQL (Community Edition for Local Development) - [Download From Official MySQL Website]([https://www.postgresql.org/download/](https://dev.mysql.com/downloads/))
@@ -50,12 +50,12 @@ The backend of this site will be created using Node.js, Express.js, and MySQL on
 
    ```bash
    # This installs node modules defined in package.json
-   npm install
+   yarn install
 
    # Start the server and application
-   npm run start:windev  # On Windows
+   yarn start:windev  # On Windows
    # Or
-   npm run start:dev     # On Mac or Linux
+   yarn start:dev     # On Mac or Linux
    ```
 
 4. Once the server is running, visit `localhost:3000` from your browser.
