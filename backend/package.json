@@ -1,0 +1,35 @@
+{
+  "name": "hacs-opensource-backend",
+  "version": "1.0.0",
+  "description": "Node, Express, MySQL Backend for HACS Website",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "NODE_ENV=development DEBUG=APP_NAME:* nodemon",
+    "start": "NODE_ENV=production npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/j-palos/hacs-opensource.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/j-palos/hacs-opensource/issues"
+  },
+  "homepage": "https://github.com/j-palos/hacs-opensource#readme",
+  "dependencies": {
+    "bcrypt": "^3.0.4",
+    "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.4",
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4",
+    "express-session": "^1.15.6",
+    "express-validator": "^5.3.1",
+    "morgan": "^1.9.1",
+    "mysql": "^2.16.0",
+    "nodemon": "^1.18.10",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0"
+  }
+}
