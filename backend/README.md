@@ -26,7 +26,7 @@ The backend of this site will be created using Node.js, Express.js, and MySQL on
 
 ### Important: Make sure you've cloned the project & MySQL Database Server is running before proceeding
 
-- As of now we are not automating the creation of our Database. I have provided a SQL Scripts that will create a new database, and set up the tables needed for the project in `database_setup.sql`. Open your MySQL Client and find how to run SQL Queries, copy the code from `database_setup.sql` and execute the command
+- Open your MySQL Client and create a new database called `hacs_opensource`. Leave the Database blank, we will automatically create tables in a minute.
 
 - All Operating Systems
 
@@ -51,6 +51,12 @@ The backend of this site will be created using Node.js, Express.js, and MySQL on
    ```bash
    # This installs node modules defined in package.json
    yarn install
+
+   # Run Sequelize Migrations, this automatically sets up tables in our hacs_opensource database
+   yarn db:migrate
+
+   # (Optional) Seed hacs_opensource with dummy data from seeders directory
+   yarn db:seed:all
 
    # Start the server and application
    yarn start:windev  # On Windows
