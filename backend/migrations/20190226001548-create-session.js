@@ -15,6 +15,7 @@ module.exports = {
       expire: {
         allowNull: false,
         type: Sequelize.DATE,
+        defaultValue: new Date()
       }
     });
   },
