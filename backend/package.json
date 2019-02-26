@@ -7,7 +7,16 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start:dev": "NODE_ENV=development DEBUG=APP_NAME:* nodemon ./bin/www",
     "start:windev": "SET \"NODE_ENV=development\" SET DEBUG=myapp:* & nodemon ./bin/www",
-    "start": "NODE_ENV=production node ./bin/www"
+    "start": "NODE_ENV=production node ./bin/www",
+    "db:create:migration": "sequelize migration:generate --name",
+    "db:migrate": "sequelize db:migrate",
+    "db:rollback": "sequelize db:migrate:undo",
+    "db:create:model:announcements": "sequelize model:create --name announcements --attributes title:string,content:string,date:date",
+    "db:create:model:officers": "sequelize model:create --name officers --attributes name:string,grade_level:string,description:string,email:string,phone_number:string,photo_link:string",
+    "db:seed:create": "sequelize seed:create --name",
+    "db:seed:all": "sequelize db:seed:all",
+    "db:seed:undo": "sequelize db:seed:undo --seed",
+    "db:seed:rollback": "sequelize db:seed:undo:all"
   },
   "repository": {
     "type": "git",
