@@ -2,10 +2,7 @@ require('dotenv').config();
 const { Pictures } = require('../..');
 
 /* Define Expected Data */
-// Pull the Date that you Seeded your DB with
-const seedDate = new Date(Date.parse(process.env.SEED_DATE));
 const seederPictures = require('../__test_data__');
-
 
 /* Unit Tests */
 describe(`Test Pictures.getAll()`, () => {

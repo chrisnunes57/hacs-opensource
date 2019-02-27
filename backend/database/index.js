@@ -4,5 +4,7 @@ module.exports = {
   Sponsors: require('./sponsors'),
   Pictures: require('./pictures'),
   Officers: require('./officers'),
-  Mentorship: require('./mentorship')
+  Mentorship: require('./mentorship'),
+  Newsletter: require('./newsletter'),
+  Slides: require('./slides')
 };
