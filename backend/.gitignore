@@ -50,3 +50,6 @@ dist
 # Google Maps api keys #
 ########################
 GoogleMaps.json
+
+# Environment Variables
+.env
