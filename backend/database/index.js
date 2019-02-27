@@ -2,5 +2,6 @@
 module.exports = {
   Announcements: require('./announcements'),
   Sponsors: require('./sponsors'),
-  Pictures: require('./pictures')
+  Pictures: require('./pictures'),
+  Officers: require('./officers')
 };
