@@ -39,3 +39,19 @@ describe('Test Announcements.getById( id ) with 2 different ids',  () => {
     });
   });
 });
+
+describe('Test Announcements.getRecentByNumber( number )', () => {
+  test('Returns most recent Announcement', () => {
+    expect.assertions(1);
+    return Announcements.getRecentByNumber(1).then(data => {
+      expect(data).toEqual([announcement5]);
+    });
+  });
+
+  test('Returns 3 most recent announcements', () => {
+    expect.assertions(1);
+    return Announcements.getRecentByNumber(3).then(data => {
+      expect(data).toEqual([announcement3, announcement4, announcement5]);
+    });
+  });
+});
