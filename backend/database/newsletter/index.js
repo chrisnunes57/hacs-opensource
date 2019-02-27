@@ -1,6 +1,5 @@
-// Export Announcement Queries to the rest of the application
+// Export Newsletter Queries to the rest of the application
 module.exports = {
   getAll: require('./getAll'),
-  getById: require('./getById'),
   getRecentByNumber: require('./getRecentByNumber')
 };
