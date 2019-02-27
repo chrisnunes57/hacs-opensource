@@ -3,5 +3,6 @@ module.exports = {
   Announcements: require('./announcements'),
   Sponsors: require('./sponsors'),
   Pictures: require('./pictures'),
-  Officers: require('./officers')
+  Officers: require('./officers'),
+  Mentorship: require('./mentorship')
 };
