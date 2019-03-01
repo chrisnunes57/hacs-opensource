@@ -41,7 +41,7 @@ describe('Test Announcements.getRecentByNumber( number )', () => {
   test('Returns 3 most recent announcements', () => {
     expect.assertions(1);
     return Announcements.getRecentByNumber(3).then(data => {
-      expect(data).toEqual([seederAnnouncements[2], seederAnnouncements[3], seederAnnouncements[4]]);
+      expect(data).toEqual([seederAnnouncements[4], seederAnnouncements[3], seederAnnouncements[2]]);
     });
   });
 });
