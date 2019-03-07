@@ -1,8 +1,8 @@
 require('dotenv').config();
 const seedDate = new Date(Date.parse(process.env.SEED_DATE));
 
-module.exports = [ 
-  {
+module.exports = { 
+  Theodor: {
     "id": 1,
     "name": 'Theodor Van de Vlies',
     "grade_level": 'Senior',
@@ -11,7 +11,8 @@ module.exports = [
     "phone_number": '909-755-7353',
     "photo_link": 'https://robohash.org/exatquenihil.bmp?size=50x50&set=set1',
     "createdAt": seedDate
-  }, {
+  }, 
+  Carmelina: {
     "id": 2,
     "name": 'Carmelina Parradye',
     "grade_level": 'Junior',
@@ -20,7 +21,8 @@ module.exports = [
     "phone_number": '586-135-3044',
     "photo_link": 'https://robohash.org/omnisquisdebitis.png?size=50x50&set=set1',
     "createdAt": seedDate
-  }, {
+  }, 
+  Garold: {
     "id": 3,
     "name": 'Garold Goodsell',
     "grade_level": 'Sophomore',
@@ -29,7 +31,8 @@ module.exports = [
     "phone_number": '233-838-3908',
     "photo_link": 'https://robohash.org/liberovoluptasbeatae.bmp?size=50x50&set=set1',
     "createdAt": seedDate
-  }, {
+  }, 
+  Felice: {
     "id": 4,
     "name": 'Felice Hincks',
     "grade_level": 'Senior',
@@ -38,7 +41,8 @@ module.exports = [
     "phone_number": '767-584-5405',
     "photo_link": 'https://robohash.org/quisquamducimusdolorem.jpg?size=50x50&set=set1',
     "createdAt": seedDate
-  }, {
+  }, 
+  Stacia: {
     "id": 5,
     "name": 'Stacia Oldrey',
     "grade_level": 'Junior',
@@ -48,4 +52,4 @@ module.exports = [
     "photo_link": 'https://robohash.org/molestiaefuganemo.bmp?size=50x50&set=set1',
     "createdAt": seedDate
   }
-];
+};

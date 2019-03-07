@@ -5,7 +5,10 @@ const db = require('../connection');
 const GET_BY_ID = `SELECT * FROM announcements WHERE id = ?`;
 
 const getById = (announcement_id) => {
-  return db.query(GET_BY_ID,  { replacements: [announcement_id] , type: Sequelize.QueryTypes.SELECT});
+  return db.query(GET_BY_ID,  { 
+    replacements: [announcement_id] , 
+    type: Sequelize.QueryTypes.SELECT
+  });
 };
 
 // Export this call to the rest of the application

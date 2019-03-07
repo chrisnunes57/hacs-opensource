@@ -2,10 +2,13 @@ const Sequelize = require('sequelize');
 const db = require('../connection');
 
 // Sequel Query
-const RENAME_THIS_QUERY = ``;
+const GET_RECENT_BY_NUMBER = `SELECT * FROM announcements ORDER BY id DESC LIMIT ?`;
 
 const getRecentByNumber= (number) => {
-  return new Promise((resolve, reject) => {resolve({msg: "TODO"});});
+  return db.query(GET_RECENT_BY_NUMBER, {
+    replacements: [number],
+    type: Sequelize.QueryTypes.SELECT
+  });
 };
 
 // Export this call to the rest of the application
