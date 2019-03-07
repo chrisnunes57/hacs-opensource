@@ -10,11 +10,11 @@ describe(`Test Mentorship.getAll()`, () => {
     expect.assertions(1);
     return Mentorship.getAll().then(data => {
       expect(data).toEqual([
-        testMentorshipPair.One,
-        testMentorshipPair.Two,
-        testMentorshipPair.Three,
-        testMentorshipPair.Four,
-        testMentorshipPair.Five,        
+        testMentorshipPair.BerkyPatric,
+        testMentorshipPair.PiperOdo,
+        testMentorshipPair.JohannahAndros,
+        testMentorshipPair.MahliaArvie,
+        testMentorshipPair.RaynerEricha,        
       ]);
     });
   });

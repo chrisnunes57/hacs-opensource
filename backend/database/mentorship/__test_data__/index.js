@@ -1,35 +1,35 @@
 require('dotenv').config();
 const seedDate = new Date(Date.parse(process.env.SEED_DATE));
 module.exports = {
-  One: {
+  BerkyPatric: {
     "id": 1,
     "mentor": 'Berky Vasyagin',
     "mentee": 'Patric Jobb',
     "point_total": 35,
     "createdAt": seedDate
   }, 
-  Two: {
+  PiperOdo: {
     "id": 2,
     "mentor": 'Piper Crasford',
     "mentee": 'Odo Boays',
     "point_total": 18,
     "createdAt": seedDate
   }, 
-  Three: {
+  JohannahAndros: {
     "id": 3,
     "mentor": 'Johannah Matis',
     "mentee": 'Andros Myatt',
     "point_total": 51,
     "createdAt": seedDate
   }, 
-  Four: {
+  MahliaArvie: {
     "id": 4,
     "mentor": 'Mahalia Anglish',
     "mentee": 'Arvie Haydn',
     "point_total": 7,
     "createdAt": seedDate 
   }, 
-  Five: {
+  RaynerEricha: {
     "id": 5,
     "mentor": 'Rayner Grain',
     "mentee": 'Ericha Jiruch',
