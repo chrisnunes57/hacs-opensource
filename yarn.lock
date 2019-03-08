@@ -6854,6 +6854,11 @@ react-obfuscate@^3.1.1:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/react-obfuscate/-/react-obfuscate-3.2.0.tgz#b51ccd2db9f8fad1ed28c250b2e6192f42b90042"
 
+react-obfuscate@^3.1.1:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/react-obfuscate/-/react-obfuscate-3.1.1.tgz#33f6390f59043516cad1ee4eb8f2a5546595b8ee"
+  integrity sha512-X7YL3pLoxqM2gJUVu74qk5N/J/Otora5mSdoq82LMG+c5ec98OW2guhKHAEFe1ZsY0PDQR7r65Fp6yDTdpfFIw==
+
 react-popper@^0.10.4:
   version "0.10.4"
   resolved "https://registry.yarnpkg.com/react-popper/-/react-popper-0.10.4.tgz#af2a415ea22291edd504678d7afda8a6ee3295aa"
