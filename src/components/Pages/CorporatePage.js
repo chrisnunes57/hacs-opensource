@@ -1,5 +1,5 @@
 import React from "react";
-import {Col, Container, Row} from "reactstrap";
+import { Col, Container, Row } from "reactstrap";
 import SponsorPackage from "../Wip/Corporate/SponsorPackage";
 import Sponsors from "../Wip/Corporate/Sponsors";
 
