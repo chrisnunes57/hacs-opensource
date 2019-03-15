@@ -1,5 +1,5 @@
 import React from "react";
-import {Col, Container, Row} from "reactstrap";
+import { Col, Container, Row } from "reactstrap";
 import EventsCalendar from "../Wip/Events/EventsCalendar";
 
 export default class EventsPage extends React.Component {

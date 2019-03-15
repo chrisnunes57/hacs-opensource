@@ -1,5 +1,5 @@
 import React from "react";
-import {Container} from "reactstrap";
+import { Container } from "reactstrap";
 
 /**
  * This should just be a simple component that renders the corporate package,

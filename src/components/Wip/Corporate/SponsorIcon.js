@@ -1,5 +1,5 @@
 import React from "react";
-import {Container, Row} from "reactstrap";
+import { Container, Row } from "reactstrap";
 
 /**
  * Most of the logic for this component has already been created.
