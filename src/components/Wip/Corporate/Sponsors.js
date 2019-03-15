@@ -1,6 +1,6 @@
 import React from "react";
-import {Col, Container, Row} from "reactstrap";
-import {SponsorList} from "../../../data/sponsorList";
+import { Col, Container, Row } from "reactstrap";
+import { SponsorList } from "../../../data/sponsorList";
 import SponsorIcon from "./SponsorIcon";
 
 const sponsors = SponsorList.sponsors;
