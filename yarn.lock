@@ -7242,8 +7242,8 @@ react-lifecycles-compat@^3.0.4:
   resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
 
 react-obfuscate@^3.1.1:
-  version "3.1.1"
-  resolved "https://registry.yarnpkg.com/react-obfuscate/-/react-obfuscate-3.1.1.tgz#33f6390f59043516cad1ee4eb8f2a5546595b8ee"
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/react-obfuscate/-/react-obfuscate-3.2.0.tgz#b51ccd2db9f8fad1ed28c250b2e6192f42b90042"
 
 react-popper@^0.10.4:
   version "0.10.4"
@@ -8255,7 +8255,7 @@ string-width@^3.0.0:
   dependencies:
     emoji-regex "^7.0.1"
     is-fullwidth-code-point "^2.0.0"
-    strip-ansi "^5.1.0"
+    strip-ansi "^5.0.0"
 
 string_decoder@^1.0.0, string_decoder@~1.1.1:
   version "1.1.1"
@@ -8281,7 +8281,7 @@ stringify-object@^3.2.2:
     is-obj "^1.0.1"
     is-regexp "^1.0.0"
 
-strip-ansi@5.0.0:
+strip-ansi@5.0.0, strip-ansi@^5.0.0:
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/strip-ansi/-/strip-ansi-5.0.0.tgz#f78f68b5d0866c20b2c9b8c61b5298508dc8756f"
   dependencies:
@@ -8302,6 +8302,7 @@ strip-ansi@^4.0.0:
 strip-ansi@^5.0.0, strip-ansi@^5.1.0:
   version "5.1.0"
   resolved "https://registry.yarnpkg.com/strip-ansi/-/strip-ansi-5.1.0.tgz#55aaa54e33b4c0649a7338a43437b1887d153ec4"
+  integrity sha512-TjxrkPONqO2Z8QDCpeE2j6n0M6EwxzyDgzEeGp+FbdvaJAt//ClYi6W5my+3ROlC/hZX2KACUwDfK49Ka5eDvg==
   dependencies:
     ansi-regex "^4.1.0"
 
