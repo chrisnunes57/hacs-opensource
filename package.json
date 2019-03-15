@@ -15,6 +15,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "dev": "concurrently \"yarn start\" \"yarn --cwd ./backend start:dev\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -29,6 +30,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "concurrently": "^4.1.0",
     "prettier": "^1.15.3"
   }
 }
