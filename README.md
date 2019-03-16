@@ -39,7 +39,7 @@ This is our tentative [sitemap](https://www.gloomaps.com/RpcFrFsN4s)
 - Andrew Marquez
 - Jesus Luna
 - Earl Potts
-- mANUEL pONCE
+- Manuel Ponce
 - Alberto Aviles-Correa
 - Pamela Vazquez
 - Santiago Cortes
@@ -60,6 +60,14 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.<br>
 You will also see any lint errors in the console.
+
+### `yarn dev`
+Starts up both local backend server and the app in development mode.
+Compatible with macOS and linux machines.
+
+### `yarn win:dev`
+Starts up both local backend server and the app in development mode.
+Compatible with Windows machines.
 
 ### `yarn test`
 

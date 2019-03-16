@@ -16,6 +16,7 @@
   "scripts": {
     "start": "react-scripts start",
     "dev": "concurrently \"yarn start\" \"yarn --cwd ./backend start:dev\"",
+    "win:dev": "concurrently \"yarn start\" \"yarn --cwd ./backend start:windev\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
