@@ -7,13 +7,16 @@
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-event-calendar": "^0.3.0",
+    "react-obfuscate": "^3.1.1",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "2.1.1",
+    "react-scripts": "2.1.5",
     "react-twitter-embed": "^2.0.4",
-    "reactstrap": "^6.5.0"
+    "reactstrap": "^7.1.0"
   },
   "scripts": {
     "start": "react-scripts start",
+    "dev": "concurrently \"yarn start\" \"yarn --cwd ./backend start:dev\"",
+    "win:dev": "concurrently \"yarn start\" \"yarn --cwd ./backend start:windev\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -28,6 +31,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "concurrently": "^4.1.0",
     "prettier": "^1.15.3"
   }
 }
