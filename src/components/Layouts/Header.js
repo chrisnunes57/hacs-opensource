@@ -30,7 +30,7 @@ class MyNavbar extends React.Component {
     return (
       <div>
         <Navbar
-          // style={{ backgroundColor: "#07969b" }}
+        //sets the background color to the main color 
           className="primary-color"
           dark
           expand="md"
