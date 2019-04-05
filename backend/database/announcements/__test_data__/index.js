@@ -30,5 +30,9 @@ module.exports = {
     "title": "Announcement #5",
     "content": "Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla.",
     "createdAt": new Date(Date.parse(process.env.SEED_DATE_FIVE))
+  },
+  Six: {
+    "title": "Integration Test Announcement Title",
+    "content": "Integration Test Announcement Content"
   }
 };

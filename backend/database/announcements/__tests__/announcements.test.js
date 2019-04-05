@@ -69,7 +69,7 @@ describe('Integration Test - Announcements.create and Announcements.remove', () 
   test('Create a fake Announcement', () => {
     expect.assertions(1);
 
-    return Announcements.create("Test Title", "Test Content").then( data => {
+    return Announcements.create(testAnnouncement.Six.title, testAnnouncement.Six.content).then(data => {
       announcementId = data[0];
       // We don't care what the announcementId is, just that we get one
       expect(announcementId).toEqual(announcementId);
@@ -82,8 +82,8 @@ describe('Integration Test - Announcements.create and Announcements.remove', () 
     return Announcements.getById(announcementId).then( data => {
       // data is an array that holds a single JSON object
       expect(data[0].id).toEqual(announcementId);
-      expect(data[0].title).toEqual("Test Title");
-      expect(data[0].content).toEqual("Test Content");
+      expect(data[0].title).toEqual(testAnnouncement.Six.title);
+      expect(data[0].content).toEqual(testAnnouncement.Six.content);
     });
   });
 
