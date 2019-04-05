@@ -1,5 +1,4 @@
 require('dotenv').config();
-const seedDate = new Date(Date.parse(process.env.SEED_DATE));
 
 module.exports = { 
   Theodor: {
@@ -10,7 +9,7 @@ module.exports = {
     "email": 'tvan0@nature.com',
     "phone_number": '909-755-7353',
     "photo_link": 'https://robohash.org/exatquenihil.bmp?size=50x50&set=set1',
-    "createdAt": seedDate
+    "createdAt": new Date(Date.parse(process.env.SEED_DATE_ONE))
   }, 
   Carmelina: {
     "id": 2,
@@ -20,7 +19,7 @@ module.exports = {
     "email": 'cparradye1@ft.com',
     "phone_number": '586-135-3044',
     "photo_link": 'https://robohash.org/omnisquisdebitis.png?size=50x50&set=set1',
-    "createdAt": seedDate
+    "createdAt": new Date(Date.parse(process.env.SEED_DATE_TWO))
   }, 
   Garold: {
     "id": 3,
@@ -30,7 +29,7 @@ module.exports = {
     "email": 'ggoodsell2@joomla.org',
     "phone_number": '233-838-3908',
     "photo_link": 'https://robohash.org/liberovoluptasbeatae.bmp?size=50x50&set=set1',
-    "createdAt": seedDate
+    "createdAt": new Date(Date.parse(process.env.SEED_DATE_THREE))
   }, 
   Felice: {
     "id": 4,
@@ -40,7 +39,7 @@ module.exports = {
     "email": 'fhincks3@springer.com',
     "phone_number": '767-584-5405',
     "photo_link": 'https://robohash.org/quisquamducimusdolorem.jpg?size=50x50&set=set1',
-    "createdAt": seedDate
+    "createdAt": new Date(Date.parse(process.env.SEED_DATE_FOUR))
   }, 
   Stacia: {
     "id": 5,
@@ -50,6 +49,6 @@ module.exports = {
     "email": 'soldrey4@hugedomains.com',
     "phone_number": '857-315-2635',
     "photo_link": 'https://robohash.org/molestiaefuganemo.bmp?size=50x50&set=set1',
-    "createdAt": seedDate
+    "createdAt": new Date(Date.parse(process.env.SEED_DATE_FIVE))
   }
 };
