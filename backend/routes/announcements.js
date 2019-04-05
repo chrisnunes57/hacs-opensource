@@ -13,8 +13,23 @@ router.use((request, response, next) => {
 router.get('/', (request, response, next) => {
   Announcements.getAll().then( (result) => {
     response.status(200).json(result);
+  
   }).catch((error) => {
     response.status(400).json(error);
+  
+  });
+});
+
+router.post('/create', (request, response, next) => {
+  // TODO - Validate and Sanitize Inputs
+  const { title, content } = request.body;
+
+  Announcements.create( title, content ).then( () => {
+    response.status(201).json( { msg: `Announcement "${title}" has been saved.`});
+  
+  }).catch( (error) => {
+    response.status(400).json( { error: "New announcement was not created." } );
+  
   });
 });
 
