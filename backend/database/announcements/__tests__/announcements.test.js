@@ -61,3 +61,26 @@ describe('Test Announcements.getRecentByNumber( number )', () => {
     });
   });
 });
+
+/* Integration Tests */
+describe('Test Announcements.create and Announcements.remove', () => {
+  let announcementId;
+
+  test('Create a fake Announcement', () => {
+    expect.assertions(1);
+
+    return Announcements.create("Test Title", "Test Content").then( data => {
+      announcementId = data[0];
+      // We don't care what the announcementId is, just that we get one
+      expect(announcementId).toEqual(announcementId);
+    });
+  });
+
+  test('Remove the fake Announcement', () => {
+    expect.assertions(1);
+    return Announcements.removeById( announcementId ).then( data => {
+      // No data should be returned if successful removal
+      expect(data).toEqual(undefined);
+    }); 
+  });
+});
