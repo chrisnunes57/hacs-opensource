@@ -2,5 +2,6 @@
 module.exports = {
   getAll: require('./getAll'),
   getById: require('./getById'),
-  getRecentByNumber: require('./getRecentByNumber')
+  getRecentByNumber: require('./getRecentByNumber'),
+  create: require('./create')
 };
