@@ -58,4 +58,15 @@ describe(`Test Pictures.getRecentByNumber( number )`, () => {
       ]);
     });
   });
+
+  test('Returns 3 most recent pictures', () => {
+    expect.assertions(1);
+    return Pictures.getRecentByNumber(3).then(data => {
+      expect(data).toEqual([
+        testPicture.Five,
+        testPicture.Four,
+        testPicture.Three
+      ]);
+    });
+    });
 });
