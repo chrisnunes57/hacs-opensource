@@ -68,9 +68,9 @@ describe('Integration Test - Announcements.create and Announcements.remove', () 
 
   test('Create a fake Announcement', () => {
     expect.assertions(1);
-
     return Announcements.create(testAnnouncement.Six.title, testAnnouncement.Six.content).then(data => {
       announcementId = data[0];
+
       // We don't care what the announcementId is, just that we get one
       expect(announcementId).toEqual(announcementId);
     });
@@ -78,17 +78,19 @@ describe('Integration Test - Announcements.create and Announcements.remove', () 
 
   test('Get newly created Announcement and test its values', () => {
     expect.assertions(3);
-
     return Announcements.getById(announcementId).then( data => {
       // data is an array that holds a single JSON object
-      expect(data[0].id).toEqual(announcementId);
-      expect(data[0].title).toEqual(testAnnouncement.Six.title);
-      expect(data[0].content).toEqual(testAnnouncement.Six.content);
+      const announcement = data[0];
+
+      expect(announcement.id).toEqual(announcementId);
+      expect(announcement.title).toEqual(testAnnouncement.Six.title);
+      expect(announcement.content).toEqual(testAnnouncement.Six.content);
     });
   });
 
   test('Remove the fake Announcement', () => {
     expect.assertions(1);
+
     return Announcements.removeById( announcementId ).then( data => {
       // No data should be returned if successful removal
       expect(data).toEqual(undefined);
@@ -97,7 +99,6 @@ describe('Integration Test - Announcements.create and Announcements.remove', () 
 
   test('Confirm removal by using getById', () => {
     expect.assertions(1);
-
     return Announcements.getById(announcementId).then(data => {
       // data should be an empty array, since no JSON Object of the
       // announcement can be found or returned
