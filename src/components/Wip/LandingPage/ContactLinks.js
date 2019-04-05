@@ -11,21 +11,21 @@ export default class ContactLinks extends React.Component {
     return (
       <Container>
         <h1 style={{ textAlign: "center", paddingTop: "25px" }}>
-          <a target="_blank" href={"https://twitter.com/texashacs?lang=en"}>
+          <a target="_blank" rel="noopener noreferrer" href={"https://twitter.com/texashacs?lang=en"}>
             <img
               src={TwitterLogo}
               alt="Twitter Logo"
               style={{ width: "100px" }}
             />
           </a>
-          <a target="_blank" href={"https://www.instagram.com/texashacs/"}>
+          <a target="_blank" rel="noopener noreferrer" href={"https://www.instagram.com/texashacs/"}>
             <img
               src={InstagramLogo}
               alt="Instagram Logo"
               style={{ width: "150px", padding: "25px" }}
             />
           </a>
-          <a target="_blank" href={"https://www.facebook.com/groups/TexasHACS"}>
+          <a target="_blank"  rel="noopener noreferrer" href={"https://www.facebook.com/groups/TexasHACS"}>
             <img
               src={FacebookLogo}
               alt="Facebook Logo"
