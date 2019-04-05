@@ -5,7 +5,7 @@ const { Announcements } = require('../..');
 const testAnnouncement = require('../__test_data__');
 
 /* Unit Tests */
-describe(`Test Announcement.getAll()`, () => {
+describe(`Unit Test - Announcement.getAll()`, () => {
   test('Method returns 5 Seeder Announcements', () => {
     expect.assertions(1);
     return Announcements.getAll().then(data => {
@@ -20,7 +20,7 @@ describe(`Test Announcement.getAll()`, () => {
   });
 });
 
-describe('Test Announcements.getById( id ) with 2 different ids', () => {
+describe('Unit Test - Announcements.getById( id ) with 2 different ids', () => {
   test('Returns announcement with id = 1', () => {
     expect.assertions(1);
     return Announcements.getById(1).then(data => {
@@ -40,7 +40,7 @@ describe('Test Announcements.getById( id ) with 2 different ids', () => {
   });
 });
 
-describe('Test Announcements.getRecentByNumber( number )', () => {
+describe('Unit Test - Announcements.getRecentByNumber( number )', () => {
   test('Returns most recent Announcement', () => {
     expect.assertions(1);
     return Announcements.getRecentByNumber(1).then(data => {
@@ -63,7 +63,7 @@ describe('Test Announcements.getRecentByNumber( number )', () => {
 });
 
 /* Integration Tests */
-describe('Test Announcements.create and Announcements.remove', () => {
+describe('Integration Test - Announcements.create and Announcements.remove', () => {
   let announcementId;
 
   test('Create a fake Announcement', () => {
@@ -76,11 +76,32 @@ describe('Test Announcements.create and Announcements.remove', () => {
     });
   });
 
+  test('Get newly created Announcement and test its values', () => {
+    expect.assertions(3);
+
+    return Announcements.getById(announcementId).then( data => {
+      // data is an array that holds a single JSON object
+      expect(data[0].id).toEqual(announcementId);
+      expect(data[0].title).toEqual("Test Title");
+      expect(data[0].content).toEqual("Test Content");
+    });
+  });
+
   test('Remove the fake Announcement', () => {
     expect.assertions(1);
     return Announcements.removeById( announcementId ).then( data => {
       // No data should be returned if successful removal
       expect(data).toEqual(undefined);
     }); 
+  });
+
+  test('Confirm removal by using getById', () => {
+    expect.assertions(1);
+
+    return Announcements.getById(announcementId).then(data => {
+      // data should be an empty array, since no JSON Object of the
+      // announcement can be found or returned
+      expect(data).toEqual([])
+    });
   });
 });
