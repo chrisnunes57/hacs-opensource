@@ -2,13 +2,12 @@ const Sequelize = require('sequelize');
 const db = require('../connection');
 
 // Sequel Query
-const RENAME_THIS_QUERY = ``;
+const GET_BY_PACKAGE_TYPE_SPONSORS = `SELECT * FROM sponsors WHERE package_type = ?`;
 
-const getByPackageType= (type) => {
-  return new Promise((resolve, reject) => {
-    resolve({
-      msg: "TODO"
-    });
+const getByPackageType = (type) => {
+  return db.query(GET_BY_PACKAGE_TYPE_SPONSORS,  { 
+    replacements: [type] , 
+    type: Sequelize.QueryTypes.SELECT
   });
 };
 
