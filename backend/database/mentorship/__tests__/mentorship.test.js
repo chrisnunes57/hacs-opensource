@@ -5,7 +5,7 @@ const { Mentorship } = require('../..');
 const testMentorshipPair = require('../__test_data__');
 
 /* Unit Tests */
-describe(`Test Mentorship.getAll()`, () => {
+describe(`Unit Test - Mentorship.getAll()`, () => {
   test('Method returns 5 Seeder Mentorship Pairs', () => {
     expect.assertions(1);
     return Mentorship.getAll().then(data => {

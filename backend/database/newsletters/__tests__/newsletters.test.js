@@ -5,7 +5,7 @@ const { Newsletters } = require('../..');
 const testNewsletters = require('../__test_data__');
 
 /* Unit Tests */
-describe(`Test Newsletter.getAll()`, () => {
+describe(`Unit Test - Newsletter.getAll()`, () => {
   test('Method returns 5 Seeder Newsletters', () => {
     expect.assertions(1);
     return Newsletters.getAll().then(data => {
@@ -20,7 +20,7 @@ describe(`Test Newsletter.getAll()`, () => {
   });
 });
 
-describe(`Test Newsletter.getRecentByNumber( number )`, () => {
+describe(`Unit Test - Newsletter.getRecentByNumber( number )`, () => {
   test('Method returns most recent newsletter', () => {
     expect.assertions(1);
     return Newsletters.getRecentByNumber(1).then(data => {

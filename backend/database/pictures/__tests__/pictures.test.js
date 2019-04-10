@@ -5,7 +5,7 @@ const { Pictures } = require('../..');
 const testPicture = require('../__test_data__');
 
 /* Unit Tests */
-describe(`Test Pictures.getAll()`, () => {
+describe(`Unit Test - Pictures.getAll()`, () => {
   test('Method returns 5 Seeder Pictures', () => {
     expect.assertions(1);
     return Pictures.getAll().then(data => {
@@ -20,7 +20,7 @@ describe(`Test Pictures.getAll()`, () => {
   });
 });
 
-describe('Test Pictures.getPictureByAlbumId( album_id )', () => {
+describe('Unit Test - Pictures.getPictureByAlbumId( album_id )', () => {
   test('Method returns Picture with Album Id = 1', () => {
     expect.assertions(1);
     return Pictures.getPictureByAlbumId(1).then(data => {
@@ -49,7 +49,7 @@ describe('Test Pictures.getPictureByAlbumId( album_id )', () => {
   });
 });
 
-describe(`Test Pictures.getRecentByNumber( number )`, () => {
+describe(`Unit Test - Pictures.getRecentByNumber( number )`, () => {
   test('Method returns most recent picture', () => {
     expect.assertions(1);
     return Pictures.getRecentByNumber(1).then(data => {

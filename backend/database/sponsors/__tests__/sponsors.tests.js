@@ -5,7 +5,7 @@ const { Sponsors } = require('../..');
 const testSponsor = require('../__test_data__');
 
 /* Unit Tests */
-describe(`Test Sponsors.getAll()`, () => {
+describe(`Unit Test - Sponsors.getAll()`, () => {
   test('Method returns 5 Seeder Sponsors', () => {
     expect.assertions(1);
     return Sponsors.getAll().then(data => {
@@ -20,7 +20,7 @@ describe(`Test Sponsors.getAll()`, () => {
   });
 });
 
-describe('Test Announcements.getByPackageType( type ) with all types', () => {
+describe('Unit Test - Announcements.getByPackageType( type ) with all types', () => {
   test('Returns Platinum Level Sponsors', () => {
     expect.assertions(1);
     return Sponsors.getByPackageType('platinum').then(data => {

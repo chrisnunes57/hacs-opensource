@@ -5,7 +5,7 @@ const { Slides } = require('../..');
 const testSlide = require('../__test_data__');
 
 /* Unit Tests */
-describe(`Test Slides.getAll()`, () => {
+describe(`Unit Test - Slides.getAll()`, () => {
   test('Method returns 5 Seeder Slides', () => {
     expect.assertions(1);
     return Slides.getAll().then(data => {
@@ -20,7 +20,7 @@ describe(`Test Slides.getAll()`, () => {
   });
 });
 
-describe(`Test Slides.getRecentByNumber( number )`, () => {
+describe(`Unit Test - Slides.getRecentByNumber( number )`, () => {
   test('Method returns most recent Slide', () => {
     expect.assertions(1);
     return Slides.getRecentByNumber(1).then(data => {
