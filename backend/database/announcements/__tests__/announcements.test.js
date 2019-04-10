@@ -97,12 +97,12 @@ describe('Integration Test - Announcements.create and Announcements.remove', () 
     }); 
   });
 
-  test('Confirm removal by using getById', () => {
+  test('Confirm removal of fake Announcement', () => {
     expect.assertions(1);
     return Announcements.getById(announcementId).then(data => {
       // data should be an empty array, since no JSON Object of the
       // announcement can be found or returned
-      expect(data).toEqual([])
+      expect(data).toEqual([]);
     });
   });
 });
