@@ -50,5 +50,15 @@ module.exports = {
     "phone_number": '857-315-2635',
     "photo_link": 'https://robohash.org/molestiaefuganemo.bmp?size=50x50&set=set1',
     "createdAt": new Date(Date.parse(process.env.SEED_DATE_FIVE))
+  },
+  Jeffrey: {
+    "id": 6,
+    "name": 'Jeffrey Jefferson',
+    "grade_level": 'Senior',
+    "description": 'I am Jeffrey Jefferson, a Senior at UT.',
+    "email": 'jjefferson@hugedomains.com',
+    "phone_number": '111-222-3333',
+    "photo_link": 'https://robohash.org/molestiaefuganemo.bmp?size=50x50&set=set1',
+    "createdAt": new Date(Date.parse(process.env.SEED_DATE_FIVE))
   }
 };

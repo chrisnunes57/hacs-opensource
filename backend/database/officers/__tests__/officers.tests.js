@@ -44,7 +44,7 @@ describe( 'Integration Test - Officers.create, Officers.updateById, and Officers
   });
 
   test( 'Confirm Officer creation and its values' , () => {
-    expect.assertions( 6 );
+    expect.assertions( 7 );
 
     return Officers.getById( officerId ).then( data => {
       const officer = data[ 0 ];
@@ -72,13 +72,13 @@ describe( 'Integration Test - Officers.create, Officers.updateById, and Officers
       "nophoto.png"
 
     ).then( data => {
-      // NO data should be returned from update
-      expect( data ).toEqual( undefined );
+      // NO data should be returned from update query, but a 1 signifies the row exists
+      expect( data ).toEqual( [ undefined, 1 ] );
     });
   });
 
   test('Confirm update of Officer values', () => {
-    expect.assertions( 6 );
+    expect.assertions( 7 );
 
     return Officers.getById( officerId ).then( data => {
       const officer = data[ 0 ];

@@ -5,7 +5,7 @@ const { Albums } = require('../..');
 const testAlbums = require('../__test_data__');
 
 /* Unit Tests */
-describe(`Test Announcement.getAll()`, () => {
+describe(`Unit Test - Announcement.getAll()`, () => {
   test('Method returns 5 Seeder Albums', () => {
     expect.assertions(1);
     return Albums.getAll().then(data => {
@@ -20,7 +20,7 @@ describe(`Test Announcement.getAll()`, () => {
   });
 });
 
-describe('Test Albums.getById( id ) with 2 different ids', () => {
+describe('Unit Test - Albums.getById( id ) with 2 different ids', () => {
   test('Returns announcement with id = 1', () => {
     expect.assertions(1);
     return Albums.getById(1).then(data => {
@@ -40,7 +40,7 @@ describe('Test Albums.getById( id ) with 2 different ids', () => {
   });
 });
 
-describe('Test Albums.getRecentByNumber( number )', () => {
+describe('Unit Test -  Albums.getRecentByNumber( number )', () => {
   test('Returns most recent Announcement', () => {
     expect.assertions(1);
     return Albums.getRecentByNumber(1).then(data => {
