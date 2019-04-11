@@ -1,12 +1,12 @@
-const Sequelize = require('sequelize');
-const db = require('../connection');
+const Sequelize = require("sequelize");
+const db = require("../connection");
 
 // Sequel Query
 const GET_BY_PACKAGE_TYPE_SPONSORS = `SELECT * FROM sponsors WHERE package_type = ?`;
 
-const getByPackageType = (type) => {
-  return db.query(GET_BY_PACKAGE_TYPE_SPONSORS,  { 
-    replacements: [type] , 
+const getByPackageType = type => {
+  return db.query(GET_BY_PACKAGE_TYPE_SPONSORS, {
+    replacements: [type],
     type: Sequelize.QueryTypes.SELECT
   });
 };

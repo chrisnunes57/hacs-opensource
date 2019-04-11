@@ -1,10 +1,10 @@
-const Sequelize = require('sequelize');
-const db = require('../connection');
+const Sequelize = require("sequelize");
+const db = require("../connection");
 
 // Sequel Query
 const RENAME_THIS_QUERY = ``;
 
-const getRecentByNumber = (number) => {
+const getRecentByNumber = number => {
   return new Promise((resolve, reject) => {
     resolve({
       msg: "TODO"
