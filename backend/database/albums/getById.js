@@ -4,9 +4,9 @@ const db = require("../connection");
 // Sequel Query
 const GET_BY_ID = `SELECT * FROM albums WHERE id = ?`;
 
-const getById = album_id => {
+const getById = albumId => {
   return db.query(GET_BY_ID, {
-    replacements: [album_id],
+    replacements: [albumId],
     type: Sequelize.QueryTypes.SELECT
   });
 };
