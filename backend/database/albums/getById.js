@@ -1,10 +1,10 @@
-const Sequelize = require('sequelize');
-const db = require('../connection');
+const Sequelize = require("sequelize");
+const db = require("../connection");
 
 // Sequel Query
 const GET_BY_ID = `SELECT * FROM albums WHERE id = ?`;
 
-const getById = (album_id) => {
+const getById = album_id => {
   return db.query(GET_BY_ID, {
     replacements: [album_id],
     type: Sequelize.QueryTypes.SELECT

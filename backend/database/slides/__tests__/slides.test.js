@@ -1,12 +1,12 @@
-require('dotenv').config();
-const { Slides } = require('../..');
+require("dotenv").config();
+const { Slides } = require("../..");
 
 /* Define Expected Data */
-const testSlide = require('../__test_data__');
+const testSlide = require("../__test_data__");
 
 /* Unit Tests */
 describe(`Unit Test - Slides.getAll()`, () => {
-  test('Method returns 5 Seeder Slides', () => {
+  test("Method returns 5 Seeder Slides", () => {
     expect.assertions(1);
     return Slides.getAll().then(data => {
       expect(data).toEqual([
@@ -21,12 +21,10 @@ describe(`Unit Test - Slides.getAll()`, () => {
 });
 
 describe(`Unit Test - Slides.getRecentByNumber( number )`, () => {
-  test('Method returns most recent Slide', () => {
+  test("Method returns most recent Slide", () => {
     expect.assertions(1);
     return Slides.getRecentByNumber(1).then(data => {
-      expect(data).toEqual([
-        testSlide.Five
-      ]);
+      expect(data).toEqual([testSlide.Five]);
     });
   });
 });

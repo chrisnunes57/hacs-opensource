@@ -1,12 +1,12 @@
-require('dotenv').config();
-const { Newsletters } = require('../..');
+require("dotenv").config();
+const { Newsletters } = require("../..");
 
 /* Define Expected Data */
-const testNewsletters = require('../__test_data__');
+const testNewsletters = require("../__test_data__");
 
 /* Unit Tests */
 describe(`Unit Test - Newsletter.getAll()`, () => {
-  test('Method returns 5 Seeder Newsletters', () => {
+  test("Method returns 5 Seeder Newsletters", () => {
     expect.assertions(1);
     return Newsletters.getAll().then(data => {
       expect(data).toEqual([
@@ -14,19 +14,17 @@ describe(`Unit Test - Newsletter.getAll()`, () => {
         testNewsletters.Two,
         testNewsletters.Three,
         testNewsletters.Four,
-        testNewsletters.Five,
+        testNewsletters.Five
       ]);
     });
   });
 });
 
 describe(`Unit Test - Newsletter.getRecentByNumber( number )`, () => {
-  test('Method returns most recent newsletter', () => {
+  test("Method returns most recent newsletter", () => {
     expect.assertions(1);
     return Newsletters.getRecentByNumber(1).then(data => {
-      expect(data).toEqual([
-        testNewsletters.Five
-      ]);
+      expect(data).toEqual([testNewsletters.Five]);
     });
   });
 });

@@ -1,12 +1,12 @@
-const Sequelize = require('sequelize');
-const db = require('../connection');
+const Sequelize = require("sequelize");
+const db = require("../connection");
 
 // Sequel Query
 const CREATE_ANNOUNCEMENT = `INSERT INTO announcements ( title, content ) VALUES ( ?, ? );`;
 
 const create = (title, content) => {
   return db.query(CREATE_ANNOUNCEMENT, {
-    replacements: [ title, content ],
+    replacements: [title, content],
     type: Sequelize.QueryTypes.INSERT
   });
 };

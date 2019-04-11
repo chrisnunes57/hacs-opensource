@@ -1,18 +1,28 @@
-const Sequelize = require('sequelize');
-const db = require('../connection');
+const Sequelize = require("sequelize");
+const db = require("../connection");
 
 // Sequel Query
-const CREATE_OFFICER = `INSERT INTO officers ( name, grade_level, description,` + 
-                                               `email, phone_number, photo_link )` +
-                       `VALUES ( ?, ?, ?, ?, ?, ? );`;
+const CREATE_OFFICER =
+  `INSERT INTO officers ( name, grade_level, description,` +
+  `email, phone_number, photo_link )` +
+  `VALUES ( ?, ?, ?, ?, ?, ? );`;
 
-const create = ( name, grade_level, description, 
-                 email, phone_number, photo_link ) => {
-
+const create = (
+  name,
+  grade_level,
+  description,
+  email,
+  phone_number,
+  photo_link
+) => {
   return db.query(CREATE_OFFICER, {
     replacements: [
-      name, grade_level, description, 
-      email, phone_number, photo_link 
+      name,
+      grade_level,
+      description,
+      email,
+      phone_number,
+      photo_link
     ],
     type: Sequelize.QueryTypes.INSERT
   });

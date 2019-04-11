@@ -1,12 +1,12 @@
-const Sequelize = require('sequelize');
-const db = require('../connection');
+const Sequelize = require("sequelize");
+const db = require("../connection");
 
 // Sequel Query
 const GET_BY_ID = `SELECT * FROM officers WHERE id = ?`;
 
-const getById = ( officerId ) => {
+const getById = officerId => {
   return db.query(GET_BY_ID, {
-    replacements: [ officerId ],
+    replacements: [officerId],
     type: Sequelize.QueryTypes.SELECT
   });
 };

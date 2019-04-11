@@ -1,5 +1,5 @@
-const Sequelize = require('sequelize');
-const db = require('../connection');
+const Sequelize = require("sequelize");
+const db = require("../connection");
 
 // Sequel Query
 const RENAME_THIS_QUERY = ``;
