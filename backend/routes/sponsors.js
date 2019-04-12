@@ -19,7 +19,9 @@ router.get("/", (request, response, next) => {
       response.status(200).json(result);
     })
     .catch(error => {
-      response.status(400).json(error);
+      response.status(400).json({
+        error: `Unable to fetch sponsors`
+      });
     });
 });
 
@@ -29,7 +31,9 @@ router.get("/:type", (request, response, next) => {
       response.status(200).json(result);
     })
     .catch(error => {
-      response.status(400).json(error);
+      response.status(400).json({
+        error: `Unable to fetch sponsors`
+      });
     });
 });
 
