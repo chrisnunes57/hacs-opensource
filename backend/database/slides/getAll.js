@@ -2,13 +2,11 @@ const Sequelize = require("sequelize");
 const db = require("../connection");
 
 // Sequel Query
-const RENAME_THIS_QUERY = ``;
+const GET_ALL_SLIDES = `SELECT * FROM slides`;
 
 const getAll = () => {
-  return new Promise((resolve, reject) => {
-    resolve({
-      msg: "TODO"
-    });
+  return db.query(GET_ALL_SLIDES, {
+    type: Sequelize.QueryTypes.SELECT
   });
 };
 
