@@ -1,12 +1,12 @@
-const Sequelize = require('sequelize');
-const db = require('../connection');
+const Sequelize = require("sequelize");
+const db = require("../connection");
 
 // Sequel Query
 const GET_ALL_OFFICERS = `SELECT * FROM officers`;
 
 const getAll = () => {
-    return db.query(GET_ALL_OFFICERS, {
-     type: Sequelize.QueryTypes.SELECT
+  return db.query(GET_ALL_OFFICERS, {
+    type: Sequelize.QueryTypes.SELECT
   });
 };
 
