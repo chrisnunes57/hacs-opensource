@@ -2,5 +2,7 @@
 module.exports = {
   create: require("./create"),
   getAll: require("./getAll"),
-  getByPackageType: require("./getByPackageType")
+  getByPackageType: require("./getByPackageType"),
+  removeById: require("./removeById"),
+  updateById: require("./updateById")
 };
