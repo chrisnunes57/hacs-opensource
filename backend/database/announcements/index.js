@@ -4,5 +4,6 @@ module.exports = {
   getAll: require("./getAll"),
   getById: require("./getById"),
   getRecentByNumber: require("./getRecentByNumber"),
-  removeById: require("./removeById")
+  removeById: require("./removeById"),
+  updateById: require("./updateById")
 };

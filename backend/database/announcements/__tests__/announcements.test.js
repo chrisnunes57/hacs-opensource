@@ -73,7 +73,7 @@ describe("Integration Test - Announcements.create and Announcements.remove", () 
     });
   });
 
-  test("Get newly created Announcement and test its values", () => {
+  test("Get newly created Announcement and confirm its values", () => {
     expect.assertions(3);
     return Announcements.getById(announcementId).then(data => {
       // data is an array that holds a single JSON object
@@ -84,6 +84,31 @@ describe("Integration Test - Announcements.create and Announcements.remove", () 
       expect(announcement.content).toEqual(testAnnouncement.Six.content);
     });
   });
+
+    test("Update fake Announcement data", () => {
+      expect.assertions(1);
+
+      return Announcements.updateById(
+        announcementId,
+        "Updated Announcement Title",
+        "Updated Announcment Content"
+      ).then(data => {
+        // NO data should be returned from update query, but a 1 signifies the row exists
+        expect(data).toEqual([undefined, 1]);
+      });
+    });
+
+    test("Confirm update of Announcement values", () => {
+      expect.assertions(3);
+
+      return Announcements.getById(announcementId).then(data => {
+        const announcement = data[0];
+
+        expect(announcement.id).toEqual(announcementId);
+        expect(announcement.title).toEqual("Updated Announcement Title");
+        expect(announcement.content).toEqual("Updated Announcment Content");
+      });
+    });
 
   test("Remove the fake Announcement", () => {
     expect.assertions(1);
