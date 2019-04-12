@@ -78,7 +78,7 @@ describe("Integration Test - Sponsors.create, Sponsors.updateById, and Sponsors.
       expect(sponsor.id).toEqual(sponsorId);
       expect(sponsor.name).toEqual(testSponsor.Test.name);
       expect(sponsor.package_type).toEqual(testSponsor.Test.package_type);
-      expect(sponsor.photo_link).toEqual(testSponsor.Test.logo_link);
+      expect(sponsor.logo_link).toEqual(testSponsor.Test.logo_link);
     });
   });
 
@@ -105,7 +105,7 @@ describe("Integration Test - Sponsors.create, Sponsors.updateById, and Sponsors.
       expect(sponsor.id).toEqual(sponsorId);
       expect(sponsor.name).toEqual("A Better Company");
       expect(sponsor.package_type).toEqual("platinum");
-      expect(sponsor.photo_link).toEqual("no_picture.png");
+      expect(sponsor.logo_link).toEqual("no_picture.png");
     });
   });
 
