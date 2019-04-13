@@ -40,5 +40,11 @@ module.exports = {
     logo_link:
       "https://valleyspadoctor.com/wp-content/uploads/2016/08/Google-Logo-200x200.jpg",
     createdAt: new Date(Date.parse(process.env.SEED_DATE_FIVE))
+  },
+  Test: {
+    name: "Test Sponsor",
+    package_type: "bronze",
+    logo_link:
+      "no_picture.png"
   }
 };
