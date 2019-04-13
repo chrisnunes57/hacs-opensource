@@ -38,6 +38,22 @@ router.post("/create", (request, response, next) => {
     });
 });
 
+router.post("/update/:id", (request, response, next) => {
+  // TODO - Validate and Sanitize Inputs
+  const { title, content } = request.body;
+
+  Announcements.updateById( request.params.id, title, content )
+    .then( () => {
+      response
+        .status(200)
+        .json({ msg: `Announcement "${title}" has been updated` });
+    })
+    .catch(error => {
+      response.status(400).json({ error: `Announcement "${title}" failed to update`});
+    });
+
+});
+
 router.post("/remove/:id", (request, response, next) => {
   // TODO - Validate and Sanitize Inputs
 
