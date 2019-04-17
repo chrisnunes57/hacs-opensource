@@ -8,7 +8,7 @@ import { Container } from "reactstrap";
 export default class Agenda extends React.Component {
   render() {
     return (
-      <Container>
+      <React.Fragment>
         <div
           style={{
             backgroundColor: "#F4B24C",
@@ -36,7 +36,7 @@ export default class Agenda extends React.Component {
           }}
           title="HACS Agenda"
         />
-      </Container>
+      </React.Fragment>
     );
   }
 }

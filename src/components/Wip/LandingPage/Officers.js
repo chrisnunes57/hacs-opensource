@@ -1,26 +1,15 @@
 import React from "react";
-import { Container } from "reactstrap";
+import Officer from "./Officer";
+import Grid from "@material-ui/core/Grid";
 
-/**
- * Component for announcements, not limited to events, but including things like signups to stuff
- * dates of volunteer events, and news immediately relevant to our members.
- * TODO:
- * Announcements will be retrieved via an API Call to our backend,
- * So we'll need at least some mock data to be able to complete this
- */
-const announcement = {
-  title: "Example Announcement",
-  date: "Example Date",
-  description: "Example Description"
-};
 
-const apiURL = "http://127.0.0.1:3001/announcements";
+const apiURL = "http://127.0.0.1:3001/officers";
 
-export default class Announcements extends React.Component {
+export default class Officers extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      announcements: []
+      officers: []
     };
   }
   componentDidMount() {
@@ -28,53 +17,40 @@ export default class Announcements extends React.Component {
       .then(results => {
         return results.json();
       })
-      .then(announcements => {
+      .then(officers => {
         debugger;
         let data = [];
-        for (let i = 0; i < announcements.length; i++) {
-          let announcement = announcements[i];
-          if (announcement) {
-            data.push(announcement);
+        for (let i = 0; i < officers.length; i++) {
+          let officer = officers[i];
+          if (officer) {
+            data.push(officer);
           }
         }
         this.setState({
-          announcements: data
+          officers: data
         });
       });
   }
 
   render() {
+    debugger;
     return (
-      <Container>
-        <div
-          style={{
-            backgroundColor: "#F4B24C",
-            width: "100%",
-            borderRadius: 20,
-            overflow: "hidden"
-          }}
+        <Grid
+          container
+          direction="row"
+          justify="center"
+          alignItems="center"
+          spacing={24}
         >
-          <h1
-            style={{
-              textAlign: "center"
-            }}
-          >
-            {" "}
-            Announcements{" "}
-          </h1>
-        </div>
-        <dl>
-          {this.state.announcements.map(announcement => {
+          { this.state.officers && this.state.officers.map(officer => {
             return (
-              <React.Fragment>
-                <dt> Title: {announcement.title} </dt>
-                <dd>- {announcement.createdAt}</dd>}
-                <dd>- {announcement.content}</dd>
-              </React.Fragment>
-            );
+              <Grid  item xs={4}>
+                <Officer description={officer.description} photo_link={officer.photo_link} name={officer.name}/>
+              </Grid>
+                );
           })}
-        </dl>
-      </Container>
+        </Grid>
+
     );
   }
 }

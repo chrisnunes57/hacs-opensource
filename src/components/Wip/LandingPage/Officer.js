@@ -6,27 +6,40 @@ import Typography from "@material-ui/core/Typography";
 import CardContent from "@material-ui/core/CardContent";
 import CardActions from "@material-ui/core/CardActions";
 import Button from "@material-ui/core/Button";
-// import Card from '@material-ui/core'
+import { withStyles } from '@material-ui/core/styles';
 
+const styles = {
+  card: {
+    maxHeight: 400,
+  },
+  media: {
+    // ⚠️ object-fit is not supported by IE 11.
+    height: 200,
+    objectFit: 'cover',
+  },
+};
 
-export default class Officer extends React.PureComponent{
+export default withStyles(styles)( class Officer extends React.PureComponent{
       render(){
         const { classes } = this.props;
+        debugger;
         return(
-          <React.Fragment>
-            <Card className={classes.card}>
+            <Card
+              className={classes.card}
+            >
               <CardActionArea>
                 <CardMedia
                   className={classes.media}
-                  image={this.props.imageURL}
+                  component={"img"}
+                  src={"https://i.ytimg.com/vi/EDzLx3hkli0/maxresdefault.jpg"}
                   title={this.props.name}
                 />
-                <CardContent>
+                <CardContent style={{height:'200'}}>
                   <Typography gutterBottom variant="h5" component="h2">
                     {this.props.name}
                   </Typography>
                   <Typography component="p">
-                    {this.props.bio}
+                    {this.props.description}
                   </Typography>
                 </CardContent>
               </CardActionArea>
@@ -39,7 +52,8 @@ export default class Officer extends React.PureComponent{
                 </Button>
               </CardActions>
             </Card>
-          </React.Fragment>
+
         )
       }
 }
+)
