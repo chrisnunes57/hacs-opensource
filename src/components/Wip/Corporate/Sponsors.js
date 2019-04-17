@@ -25,7 +25,7 @@ export default class Sponsors extends React.Component {
           //  This function maps over the array of data we imported and passes the name and icon image onto
           //  a component called SponsorIcon. We need icon images for each of our sponsors
           return (
-            <Grid item xs={2}>
+            <Grid item xs={3}>
               <SponsorIcon name={sponsor.name} icon={sponsor.icon} />
             </Grid>
           );

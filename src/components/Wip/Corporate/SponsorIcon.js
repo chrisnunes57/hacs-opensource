@@ -11,7 +11,7 @@ export default class SponsorIcon extends React.Component {
   render() {
     return (
       <Container>
-        <Row>{this.props.name}</Row>
+        <Row><Col>{this.props.name}</Col></Row>
         <Row>
           <Col>
           <img

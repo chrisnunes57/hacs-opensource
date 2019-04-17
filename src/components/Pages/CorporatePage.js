@@ -7,7 +7,6 @@ export default class CorporatePage extends React.Component {
   render() {
     return (
       <Container>
-        <h1>This will be the Corporate page</h1>
         <Row>
           <Col>
             <SponsorPackage />
