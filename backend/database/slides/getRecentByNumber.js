@@ -1,14 +1,13 @@
-const Sequelize = require('sequelize');
-const db = require('../connection');
+const Sequelize = require("sequelize");
+const db = require("../connection");
 
 // Sequel Query
-const RENAME_THIS_QUERY = ``;
+const GET_RECENT_BY_NUMBER = `SELECT * FROM slides ORDER BY createdAT DESC LIMIT ?`;
 
-const getRecentByNumber = (number) => {
-  return new Promise((resolve, reject) => {
-    resolve({
-      msg: "TODO"
-    });
+const getRecentByNumber = number => {
+  return db.query(GET_RECENT_BY_NUMBER, {
+    replacements: [number],
+    type: Sequelize.QueryTypes.SELECT
   });
 };
 

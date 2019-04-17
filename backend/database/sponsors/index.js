@@ -1,5 +1,9 @@
 // Export Sponsor Queries to the rest of the application
 module.exports = {
-  getAll: require('./getAll'),
-  getByPackageType: require('./getByPackageType')
+  create: require("./create"),
+  getAll: require("./getAll"),
+  getById: require("./getById"),
+  getByPackageType: require("./getByPackageType"),
+  removeById: require("./removeById"),
+  updateById: require("./updateById")
 };
