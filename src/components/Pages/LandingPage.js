@@ -43,7 +43,7 @@ export default class LandingPage extends React.Component {
         <Grid item={12}>
           <Officers/>
         </Grid>
-        <Grid item xs={12}>
+        <Grid item xs={4}>
           <ContactLinks />
         </Grid>
       </Grid>

@@ -1,7 +1,12 @@
 import React from "react";
 import { Container } from "reactstrap";
 import GridList from "@material-ui/core/GridList";
-import { GridListTile, ListItem, ListItemText, ListSubheader } from "@material-ui/core";
+import {
+  GridListTile,
+  ListItem,
+  ListItemText,
+  ListSubheader
+} from "@material-ui/core";
 import ListGroup from "reactstrap/es/ListGroup";
 import ListGroupItemHeading from "reactstrap/es/ListGroupItemHeading";
 import TableHead from "@material-ui/core/TableHead";
@@ -72,26 +77,28 @@ export default class Announcements extends React.Component {
             Announcements{" "}
           </h1>
         </div>
-         <Table>
-        <TableHead>
-          <TableRow>
-            <TableCell>Event</TableCell>
-            <TableCell align="right">Date</TableCell>
-            <TableCell align="right">What's it about?</TableCell>
-          </TableRow>
-        </TableHead>
-        <TableBody>
-          {this.state.announcements.map(announcement => {
-            return (
-              <TableRow key={announcement.id}>
-                <TableCell component="th" scope="row">Title: {announcement.title}</TableCell>
-                <TableCell align="right"> {announcement.createdAt}</TableCell>
-                <TableCell align="right">{announcement.content}</TableCell>
-              </TableRow>
-            );
-          })}
-        </TableBody>
-         </Table>
+        <Table>
+          <TableHead>
+            <TableRow>
+              <TableCell>Event</TableCell>
+              <TableCell align="right">Date</TableCell>
+              <TableCell align="right">What's it about?</TableCell>
+            </TableRow>
+          </TableHead>
+          <TableBody>
+            {this.state.announcements.map(announcement => {
+              return (
+                <TableRow key={announcement.id}>
+                  <TableCell component="th" scope="row">
+                    Title: {announcement.title}
+                  </TableCell>
+                  <TableCell align="right"> {announcement.createdAt}</TableCell>
+                  <TableCell align="right">{announcement.content}</TableCell>
+                </TableRow>
+              );
+            })}
+          </TableBody>
+        </Table>
       </React.Fragment>
     );
   }

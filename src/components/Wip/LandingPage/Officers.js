@@ -2,7 +2,6 @@ import React from "react";
 import Officer from "./Officer";
 import Grid from "@material-ui/core/Grid";
 
-
 const apiURL = "http://127.0.0.1:3001/officers";
 
 export default class Officers extends React.Component {
@@ -35,22 +34,26 @@ export default class Officers extends React.Component {
   render() {
     debugger;
     return (
-        <Grid
-          container
-          direction="row"
-          justify="center"
-          alignItems="center"
-          spacing={24}
-        >
-          { this.state.officers && this.state.officers.map(officer => {
+      <Grid
+        container
+        direction="row"
+        justify="center"
+        alignItems="center"
+        spacing={24}
+      >
+        {this.state.officers &&
+          this.state.officers.map(officer => {
             return (
-              <Grid  item xs={4}>
-                <Officer description={officer.description} photo_link={officer.photo_link} name={officer.name}/>
+              <Grid item xs={4}>
+                <Officer
+                  description={officer.description}
+                  photo_link={officer.photo_link}
+                  name={officer.name}
+                />
               </Grid>
-                );
+            );
           })}
-        </Grid>
-
+      </Grid>
     );
   }
 }
