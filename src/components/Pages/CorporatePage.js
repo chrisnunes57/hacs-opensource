@@ -12,11 +12,7 @@ export default class CorporatePage extends React.Component {
             <SponsorPackage />
           </Col>
         </Row>
-        <Row>
-          <Col>
             <Sponsors />
-          </Col>
-        </Row>
       </Container>
     );
   }
