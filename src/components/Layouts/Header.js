@@ -73,6 +73,16 @@ class MyNavbar extends React.Component {
                   Events
                 </NavLink>
               </NavItem>
+              <NavItem>
+                <NavLink
+                  to={"/newsletter"}
+                  activeClassName={"active"}
+                  tag={RRNavLink}
+                  onClick={this.closeNavbar}
+                >
+                  News
+                </NavLink>
+              </NavItem>
             </Nav>
           </Collapse>
         </Navbar>
