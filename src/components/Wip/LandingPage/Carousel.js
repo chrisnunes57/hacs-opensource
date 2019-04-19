@@ -8,9 +8,9 @@ import { Container } from "reactstrap";
 export default class Carousel extends React.Component {
   render() {
     return (
-      <Container>
+      <div>
         <h1>Carousel</h1>I edited the carousel
-      </Container>
+      </div>
     );
   }
 }
