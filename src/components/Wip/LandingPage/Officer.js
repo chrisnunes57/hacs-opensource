@@ -30,7 +30,7 @@ export default withStyles(styles)(
             <CardMedia
               className={classes.media}
               component={"img"}
-              src={"https://i.ytimg.com/vi/EDzLx3hkli0/maxresdefault.jpg"}
+              src={this.props.photo_link}
               title={this.props.name}
             />
             <CardContent style={{ height: "200" }}>

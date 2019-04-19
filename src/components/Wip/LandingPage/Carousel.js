@@ -1,5 +1,4 @@
 import React from "react";
-import { Container } from "reactstrap";
 
 /**
  * Simple component displaying our mission statement

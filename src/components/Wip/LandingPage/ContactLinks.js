@@ -1,5 +1,4 @@
 import React from "react";
-// import { Col, Container, Row } from "reactstrap";
 import TwitterLogo from "./logoPics/twitter.png";
 import FacebookLogo from "./logoPics/facebook.png";
 import InstagramLogo from "./logoPics/instagram.png";
