@@ -1,13 +1,9 @@
 import React from "react";
-// import { Col, Container, Row } from "reactstrap";
 import { SponsorList } from "../../../data/sponsorList";
-import SponsorIcon from "./SponsorIcon";
-import Grid from "@material-ui/core/Grid";
 import GridList from "@material-ui/core/GridList";
 import GridListTile from "@material-ui/core/GridListTile";
 import ListSubheader from "@material-ui/core/ListSubheader";
 import GridListTileBar from "@material-ui/core/GridListTileBar";
-import IconButton from "@material-ui/core/IconButton";
 import { withStyles } from "@material-ui/core/styles";
 
 const sponsors = SponsorList.sponsors;

@@ -1,14 +1,18 @@
 import React from "react";
-import { Container, Row } from "reactstrap";
+import Grid from "@material-ui/core/Grid";
 
 class Footer extends React.PureComponent {
   render() {
     return (
-      <Container>
-        <Row>
+
+      <Grid
+        container
+        direction="row"
+        justify="center"
+        spacing={0}
+      >
           <p>Footer</p>
-        </Row>
-      </Container>
+      </Grid>
     );
   }
 }

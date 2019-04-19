@@ -1,5 +1,4 @@
 import React from "react";
-import { Container } from "reactstrap";
 
 /**
  * This should contain an embed of the agenda view
