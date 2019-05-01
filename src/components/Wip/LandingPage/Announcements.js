@@ -80,7 +80,7 @@ export default class Announcements extends React.Component {
               return (
                 <TableRow key={announcement.id}>
                   <TableCell component="th" scope="row">
-                    Title: {announcement.title}
+                    {announcement.title}
                   </TableCell>
                   <TableCell align="right"> {announcement.createdAt}</TableCell>
                   <TableCell align="right">{announcement.content}</TableCell>
