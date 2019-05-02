@@ -3,7 +3,7 @@ import React from "react";
 
 
 
-export default class SubHeader extends React.Component {
+export default class MyButton extends React.Component {
     render() {
       return (
         <div

@@ -9,13 +9,11 @@ export default class CorporatePage extends React.Component {
   render() {
     return (
       <Grid container direction="row" spacing={8}>
-        <Grid item xs={6}></Grid>
-        <Grid item xs={6}>
-         <CorpContact/>
-        </Grid>
-      <Grid container direction="row" spacing={8} >
         <Grid item xs={6}>
           <HowToSponsor style/>
+        </Grid>
+        <Grid item xs={6}>
+          <CorpContact/>
         </Grid>
         <Grid item xs={12}>
           <SponsorPackage />
