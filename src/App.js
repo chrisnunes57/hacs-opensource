@@ -4,10 +4,12 @@ import "./App.css";
 import Footer from "./components/Layouts/Footer";
 import Routes from "./components/Routes/Routes";
 import MyNavBar from "./components/Layouts/Header";
+import { CssBaseline } from "@material-ui/core";
 
 export default class App extends Component {
   render() {
     return (
+      <CssBaseline>
       <BrowserRouter basename={""}>
         <React.Fragment>
           <MyNavBar className="App" />
@@ -15,6 +17,7 @@ export default class App extends Component {
           <Footer />
         </React.Fragment>
       </BrowserRouter>
+      </CssBaseline>
     );
   }
 }

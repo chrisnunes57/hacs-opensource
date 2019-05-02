@@ -12,21 +12,28 @@ import MissionStatement from "../Wip/LandingPage/MissionStatement";
 export default class LandingPage extends React.Component {
   render() {
     return (
-      <Grid container direction="row" justify="center" spacing={0}>
+      <Grid
+        container
+        direction="row"
+        justify="center"
+        style={{ marginLeft: 20, marginRight: 20 }}
+      >
         <Grid item xs={12}>
           <Carousel />
         </Grid>
         <Grid item xs={12}>
           <MissionStatement />
         </Grid>
-        <Grid item xs={6}>
-          <Announcements />
-        </Grid>
-        <Grid item xs={6}>
-          <Agenda />
-        </Grid>
-        <Grid item xs={6}>
-          <TwitterFeed />
+        <Grid container item xs={12}>
+          <Grid item xs={4}>
+            <Announcements />
+          </Grid>
+          <Grid item xs={4}>
+            <Agenda />
+          </Grid>
+          <Grid item xs={4}>
+            <TwitterFeed />
+          </Grid>
         </Grid>
         <Grid item xs={6}>
           <FeaturedMember />
