@@ -1,7 +1,7 @@
 import React from "react";
-import SponsorPackage from "../Wip/Corporate/SponsorPackage";
-import Sponsors from "../Wip/Corporate/Sponsors";
-import Grid from "@material-ui/core/Grid";
+import SponsorPackage from "./SponsorPackage";
+import Sponsors from "./Sponsors";
+import Grid from "@material-ui/core/Grid/index";
 
 export default class CorporatePage extends React.Component {
   render() {

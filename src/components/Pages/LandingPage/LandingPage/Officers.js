@@ -1,6 +1,6 @@
 import React from "react";
 import Officer from "./Officer";
-import Grid from "@material-ui/core/Grid";
+import Grid from "@material-ui/core/Grid/index";
 
 const apiURL = "http://127.0.0.1:3001/officers";
 

@@ -1,10 +1,10 @@
 import React from "react";
 import { SponsorList } from "../../../data/sponsorList";
-import GridList from "@material-ui/core/GridList";
-import GridListTile from "@material-ui/core/GridListTile";
-import ListSubheader from "@material-ui/core/ListSubheader";
-import GridListTileBar from "@material-ui/core/GridListTileBar";
-import { withStyles } from "@material-ui/core/styles";
+import GridList from "@material-ui/core/GridList/index";
+import GridListTile from "@material-ui/core/GridListTile/index";
+import ListSubheader from "@material-ui/core/ListSubheader/index";
+import GridListTileBar from "@material-ui/core/GridListTileBar/index";
+import { withStyles } from "@material-ui/core/styles/index";
 
 const sponsors = SponsorList.sponsors;
 

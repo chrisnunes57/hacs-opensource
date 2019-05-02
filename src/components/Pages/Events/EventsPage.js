@@ -1,6 +1,6 @@
 import React from "react";
-import EventsCalendar from "../Wip/Events/EventsCalendar";
-import Grid from "@material-ui/core/Grid";
+import EventsCalendar from "./EventsCalendar";
+import Grid from "@material-ui/core/Grid/index";
 
 export default class EventsPage extends React.Component {
   render() {

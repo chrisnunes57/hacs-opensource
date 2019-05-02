@@ -1,13 +1,13 @@
 import React from "react";
-import Carousel from "../Wip/LandingPage/Carousel";
-import Agenda from "../Wip/LandingPage/Agenda";
-import TwitterFeed from "../Wip/LandingPage/TwitterFeed";
-import Announcements from "../Wip/LandingPage/Announcements";
-import ContactLinks from "../Wip/LandingPage/ContactLinks";
-import FeaturedMember from "../Wip/LandingPage/FeaturedMember";
-import Officers from "../Wip/LandingPage/Officers";
-import Grid from "@material-ui/core/Grid";
-import MissionStatement from "../Wip/LandingPage/MissionStatement";
+import Carousel from "./LandingPage/Carousel";
+import Agenda from "./LandingPage/Agenda";
+import TwitterFeed from "./LandingPage/TwitterFeed";
+import Announcements from "./LandingPage/Announcements";
+import ContactLinks from "./LandingPage/ContactLinks";
+import FeaturedMember from "./LandingPage/FeaturedMember";
+import Officers from "./LandingPage/Officers";
+import Grid from "@material-ui/core/Grid/index";
+import MissionStatement from "./LandingPage/MissionStatement";
 
 export default class LandingPage extends React.Component {
   render() {
