@@ -16,7 +16,7 @@ export default class MissionStatement extends React.PureComponent {
         spacing={0}
         alignItems="center"
       >
-        <Grid item xs={6} offset={3}>
+        <Grid item xs={6}>
           <Typography center>
             The Hispanic Association of Computer Scientists (HACS) is an
             organization that aims to empower and provide support for Hispanic

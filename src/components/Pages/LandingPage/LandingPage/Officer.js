@@ -23,7 +23,7 @@ export default withStyles(styles)(
   class Officer extends React.PureComponent {
     render() {
       const { classes } = this.props;
-      debugger;
+      // debugger;
       return (
         <Card className={classes.card}>
           <CardActionArea>
