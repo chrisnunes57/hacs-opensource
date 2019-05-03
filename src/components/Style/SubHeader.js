@@ -18,7 +18,7 @@ export default class SubHeader extends React.Component {
       >
         <h1
           style={{
-            textAlign: "center", fontWeight: "10px",
+            textAlign: "center", fontSize: 45,
           }}
         >
           {" "}

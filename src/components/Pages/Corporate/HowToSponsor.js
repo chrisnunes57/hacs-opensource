@@ -12,7 +12,7 @@ import SubHeader from "../../Style/SubHeader"
 export default class HowToSponsor extends React.Component {
   render() {
     return (
-      <Grid container direction="row" spacing={0}>
+      <Grid container direction="row" spacing={0} style={{background: "#FFFFFF"}}>
         <Grid item xs={12}>
            <SubHeader>How To Sponsor</SubHeader>
         </Grid>

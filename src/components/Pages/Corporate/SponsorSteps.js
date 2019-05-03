@@ -8,11 +8,11 @@ export default class SponsorSteps extends React.Component {
       return (
         <h1
           style={{
-            fontWeight: "35px",
-            padding: "10px",
-            paddingLeft: "35px",
+            paddingLeft: 45,
+            paddingBottom: 15,
             color: 255,
             alignItems: "left",
+            fontSize: 35
           }}
         >
           {" "}
