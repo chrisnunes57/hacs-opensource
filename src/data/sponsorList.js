@@ -10,7 +10,6 @@ import Sponsor9 from "../images/quorared.png";
 import Sponsor10 from "../images/statestreet.png";
 import Sponsor11 from "../images/Tableau.png";
 import Sponsor12 from "../images/target.png";
-import SponsorIcon from "../components/Wip/Corporate/SponsorIcon";
 
 /**
  * This is dummy data for now, but will need the name of all our sponsors (maybe)

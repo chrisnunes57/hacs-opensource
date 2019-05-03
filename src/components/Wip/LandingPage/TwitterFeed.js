@@ -1,5 +1,4 @@
 import React from "react";
-import { Container } from "reactstrap";
 import { TwitterTimelineEmbed } from "react-twitter-embed";
 
 /**
@@ -8,7 +7,7 @@ import { TwitterTimelineEmbed } from "react-twitter-embed";
 export default class TwitterFeed extends React.Component {
   render() {
     return (
-      <Container>
+      <React.Fragment>
         <div
           style={{
             backgroundColor: "#000000",
@@ -32,7 +31,7 @@ export default class TwitterFeed extends React.Component {
           screenName="texasHACS"
           options={{ height: 500, width: "100%" }}
         />
-      </Container>
+      </React.Fragment>
     );
   }
 }

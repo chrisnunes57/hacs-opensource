@@ -30,6 +30,28 @@ Check out our todo list:
 
 This is our tentative [sitemap](https://www.gloomaps.com/RpcFrFsN4s)
 
+## Rules for Branching
+
+In order to have a consistent flow with developer branches we need to implement a naming convention on new branches, as well as a step by step approach to merging and pull requests.
+
+### Branch Naming Convention
+
+```bash
+developerName-feature
+
+# Example
+robert-announcement-queries
+```
+
+### Merging and Pull Requests
+
+1. Push your branch's code to GitHub.
+2. Create a new Pull Request.
+3. Set the base branch to 'master' and the compare branch to your personal branch.
+4. Request others to review your code.
+5. After review, your code will be merged by designated Git Master.
+
+
 # Todo:
 - Finish fleshing out the how to contribute section
 

@@ -1,5 +1,4 @@
 import React from "react";
-import { Container } from "reactstrap";
 
 /**
  * Simple component displaying our mission statement
@@ -8,9 +7,9 @@ import { Container } from "reactstrap";
 export default class Carousel extends React.Component {
   render() {
     return (
-      <Container>
+      <div>
         <h1>Carousel</h1>I edited the carousel
-      </Container>
+      </div>
     );
   }
 }

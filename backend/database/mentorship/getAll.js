@@ -1,5 +1,5 @@
-const Sequelize = require('sequelize');
-const db = require('../connection');
+const Sequelize = require("sequelize");
+const db = require("../connection");
 
 // Sequel Query
 const GET_ALL_MENTORSHIP_PAIRS = `SELECT * FROM mentorship_program`;
