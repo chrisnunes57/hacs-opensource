@@ -10,15 +10,15 @@ export default class CorporatePage extends React.Component {
     return (
       <Grid container direction="row" spacing={8}>
         <Grid item xs={6}>
-          <HowToSponsor style/>
+          <HowToSponsor style />
         </Grid>
         <Grid item xs={6}>
-          <CorpContact/>
+          <CorpContact />
         </Grid>
         <Grid item xs={12}>
           <SponsorPackage />
         </Grid>
-        <Grid item xs={12} >
+        <Grid item xs={12}>
           <Sponsors />
         </Grid>
       </Grid>
