@@ -3,7 +3,7 @@ import Grid from "@material-ui/core/Grid";
 import { Button, CardMedia} from "@material-ui/core";
 import Card from "@material-ui/core/Card";
 import { withStyles } from "@material-ui/core/styles";
-
+import { shadows } from '@material-ui/system';
 import Javier from "./logoPics/javier.png";
 import Typography from "@material-ui/core/Typography";
 import CardContent from "@material-ui/core/CardContent";
@@ -12,8 +12,10 @@ const styles = theme => ({
   card: {
     display: "flex",
     backgroundColor: "#e9ebee !important",
-    borderWidth: 0,
-    shadowColor: "#e9ebee !important"
+    // lineHeight: 46
+    borderWidth: "0px !important",
+    // shadowColor: "#e9ebee !important"
+    borderBottomWidth: "0px !important"
   },
   button: {
     margin: theme.spacing.unit
@@ -30,7 +32,7 @@ const styles = theme => ({
     textAlign: "center"
   },
   cover: {
-    width: 200,
+    height: 300,
     objectFit: "cover"
   }
 });
@@ -49,7 +51,9 @@ export default withStyles(styles)(
           <Grid item container xs={12}>
             <Card className={classes.card}>
               <Grid item xs={4}>
-                <CardMedia component={"img"} image={Javier} />
+                <CardMedia component={"img"} image={Javier}
+                           // className={classes.cover}
+                />
               </Grid>
               <Grid item container justify={"center"} xs={8}>
                 <CardContent>
