@@ -1,12 +1,9 @@
 import React from "react";
 
-
-
-
 export default class MyButton extends React.Component {
-    render() {
-      return (
-        <div
+  render() {
+    return (
+      <div
         style={{
           backgroundColor: "#F4B24C",
           width: "60%",
@@ -22,10 +19,9 @@ export default class MyButton extends React.Component {
           }}
         >
           {" "}
-          {this.props.children}
-          {" "}
+          {this.props.children}{" "}
         </h1>
       </div>
-      )
-    }
+    );
+  }
 }
