@@ -1,6 +1,12 @@
 import React from 'react';
 import { Card, CardActionArea, CardContent, CardMedia, withStyles, Grid } from "@material-ui/core";
 // import CardImgOverlay from "reactstrap/es/CardImgOverlay";
+import styled from '@emotion/styled'
+import TextOnHover from "./TextOnHover";
+import TestimonialModal from "./TestimonialModal";
+
+
+
 
 
 
@@ -75,11 +81,12 @@ export default withStyles(styles)( class Testimonials extends React.Component {
             <Grid item container  xs={8} justify={"center"}>
               <Card raised>
               <CardActionArea>
-                {/*<CardContent>*/}
-                  <CardMedia component={"img"} src={testimonial.image_link} className={classes.media}>
+                <TestimonialModal>
+                  <TextOnHover name={testimonial.name} blurb={testimonial.blurb} >
+                    <CardMedia component={"img"} src={testimonial.image_link} className={classes.media}>
                   </CardMedia>
-                {/*</CardContent>*/}
-
+                  </TextOnHover>
+                </TestimonialModal>
               </CardActionArea>
             </Card>
             </Grid>
