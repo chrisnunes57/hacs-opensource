@@ -7,8 +7,6 @@ import React from "react";
  */
 export default class EventsCalendar extends React.Component {
   render() {
-    return (
-        <h1>Events Calendar from google</h1>
-    );
+    return <h1>Events Calendar from google</h1>;
   }
 }

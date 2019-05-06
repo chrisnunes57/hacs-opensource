@@ -11,14 +11,16 @@ export default class SponsorIcon extends React.Component {
   render() {
     return (
       <Container>
-        <Row><Col>{this.props.name}</Col></Row>
+        <Row>
+          <Col>{this.props.name}</Col>
+        </Row>
         <Row>
           <Col>
-          <img
-            src={this.props.icon}
-            style={{ height: "100px" }}
-            alt={`Icon for ${this.props.name}`}
-          />
+            <img
+              src={this.props.icon}
+              style={{ height: "100px" }}
+              alt={`Icon for ${this.props.name}`}
+            />
           </Col>
         </Row>
       </Container>

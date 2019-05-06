@@ -4,7 +4,7 @@ import FacebookLogo from "./logoPics/facebook.png";
 import InstagramLogo from "./logoPics/instagram.png";
 import EmailLogo from "./logoPics/email.png";
 import Obfuscate from "react-obfuscate";
-import Grid from "@material-ui/core/Grid";
+import Grid from "@material-ui/core/Grid/index";
 
 export default class ContactLinks extends React.Component {
   render() {

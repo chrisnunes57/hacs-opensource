@@ -1,9 +1,9 @@
 import React from "react";
-import TableHead from "@material-ui/core/TableHead";
-import TableRow from "@material-ui/core/TableRow";
-import TableCell from "@material-ui/core/TableCell";
-import TableBody from "@material-ui/core/TableBody";
-import Table from "@material-ui/core/Table";
+import TableHead from "@material-ui/core/TableHead/index";
+import TableRow from "@material-ui/core/TableRow/index";
+import TableCell from "@material-ui/core/TableCell/index";
+import TableBody from "@material-ui/core/TableBody/index";
+import Table from "@material-ui/core/Table/index";
 
 /**
  * Component for announcements, not limited to events, but including things like signups to stuff
@@ -80,7 +80,7 @@ export default class Announcements extends React.Component {
               return (
                 <TableRow key={announcement.id}>
                   <TableCell component="th" scope="row">
-                    Title: {announcement.title}
+                    {announcement.title}
                   </TableCell>
                   <TableCell align="right"> {announcement.createdAt}</TableCell>
                   <TableCell align="right">{announcement.content}</TableCell>
