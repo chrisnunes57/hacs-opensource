@@ -12,7 +12,7 @@ export default class CorporatePage extends React.Component {
     return (
       <Grid container direction="row" spacing={8}>
         <Grid item xs={6}>
-          <HowToSponsor  />
+          <HowToSponsor />
         </Grid>
         <Grid item xs={6}>
           <CorpContact />
@@ -29,7 +29,6 @@ export default class CorporatePage extends React.Component {
         <Grid item xs={12}>
           <Sponsors />
         </Grid>
-
       </Grid>
     );
   }

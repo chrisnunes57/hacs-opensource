@@ -1,9 +1,8 @@
 import React from "react";
 import Grid from "@material-ui/core/Grid";
-import { Button, CardMedia} from "@material-ui/core";
+import { Button, CardMedia } from "@material-ui/core";
 import Card from "@material-ui/core/Card";
 import { withStyles } from "@material-ui/core/styles";
-import { shadows } from '@material-ui/system';
 import Javier from "./logoPics/javier.png";
 import Typography from "@material-ui/core/Typography";
 import CardContent from "@material-ui/core/CardContent";
@@ -51,8 +50,10 @@ export default withStyles(styles)(
           <Grid item container xs={12}>
             <Card className={classes.card}>
               <Grid item xs={4}>
-                <CardMedia component={"img"} image={Javier}
-                           // className={classes.cover}
+                <CardMedia
+                  component={"img"}
+                  image={Javier}
+                  // className={classes.cover}
                 />
               </Grid>
               <Grid item container justify={"center"} xs={8}>
