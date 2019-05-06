@@ -5,6 +5,7 @@ import Grid from "@material-ui/core/Grid/index";
 import CorpContact from "./CorpContact";
 import HowToSponsor from "./HowToSponsor";
 import EventsNoPic from "./EventsNoPics";
+import Testimonials from "./Testimonials";
 
 export default class CorporatePage extends React.Component {
   render() {
@@ -23,8 +24,12 @@ export default class CorporatePage extends React.Component {
           <SponsorPackage />
         </Grid>
         <Grid item xs={12}>
+          <Testimonials />
+        </Grid>
+        <Grid item xs={12}>
           <Sponsors />
         </Grid>
+
       </Grid>
     );
   }
