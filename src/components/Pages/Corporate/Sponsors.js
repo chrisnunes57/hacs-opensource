@@ -1,58 +1,61 @@
 import React from "react";
-import { SponsorList } from "../../../data/sponsorList";
-import GridList from "@material-ui/core/GridList/index";
-import GridListTile from "@material-ui/core/GridListTile/index";
-import ListSubheader from "@material-ui/core/ListSubheader/index";
-import GridListTileBar from "@material-ui/core/GridListTileBar/index";
-import { withStyles } from "@material-ui/core/styles/index";
+import TableHead from "@material-ui/core/TableHead/index";
+import TableRow from "@material-ui/core/TableRow/index";
+import TableCell from "@material-ui/core/TableCell/index";
+import TableBody from "@material-ui/core/TableBody/index";
+import Table from "@material-ui/core/Table/index";
+import Grid from "@material-ui/core/Grid/index";
+import SubHeader from "../../Style/SubHeader";
 
-const sponsors = SponsorList.sponsors;
+const sponsors = {
+  title: "Example Announcement",
+  date: "Example Date",
+  description: "Example Description"
+};
 
-const styles = theme => ({
-  root: {
-    display: "flex",
-    flexWrap: "wrap",
-    justifyContent: "space-around",
-    overflow: "hidden"
-    // backgroundColor: theme.palette.background.paper,
-  },
-  gridList: {
-    width: 1000,
-    height: 500
-  },
-  icon: {
-    color: "rgba(255, 255, 255, 0.54)"
+const apiURL = "http://127.0.0.1:3001/sponsors";
+
+export default class Sponsors extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      sponsors: []
+    };
   }
-});
-/**
- * The intent for this component is to hold the
- * list of SponsorIcon components that make up
- * all our sponsors. To complete this the sponsorList
- * under the data folder will need to be filled out properly.
- */
-export default withStyles(styles)(
-  class Sponsors extends React.Component {
-    /**
-    Use javascript's map function to
-    list them out programmatically.
-     */
-    render() {
-      const { classes } = this.props;
-      return (
-        <div className={classes.root}>
-          <GridList cellHeight={180} className={classes.gridList}>
-            <GridListTile key="Subheader" cols={2} style={{ height: "auto" }}>
-              <ListSubheader component="div">Our Sponsors</ListSubheader>
-            </GridListTile>
-            {sponsors.map(tile => (
-              <GridListTile key={tile.img}>
-                <img src={tile.icon} alt={tile.name} />
-                <GridListTileBar title={tile.title} />
-              </GridListTile>
-            ))}
-          </GridList>
-        </div>
-      );
-    }
+  componentDidMount() {
+    fetch(apiURL)
+      .then(results => {
+        return results.json();
+      })
+      .then(sponsors => {
+        // debugger;
+        let data = [];
+        for (let i = 0; i < sponsors.length; i++) {
+          let sponsor = sponsors[i];
+          if (sponsor) {
+            data.push(sponsor);
+          }
+        }
+        this.setState({
+          sponsors: data
+        });
+      });
   }
-);
+
+  render() {
+    return (
+      <Grid container justify={"center"} item xs={12} spacing={0}>
+      <Grid item xs={12}>
+        <SubHeader>HACS Sponsors</SubHeader>
+      </Grid>
+            {this.state.sponsors.map(sponsor => {
+              return (
+                <Grid item xs={3} container justify={"center"} spacing={0} style={{paddingBottom: 45}}>
+                  <img src={sponsor.logo_link}/>
+                </Grid>
+              );
+            })}
+      </Grid>
+    );
+  } 
+}
