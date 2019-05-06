@@ -21,6 +21,7 @@ const announcement = {
 const apiURL = "http://127.0.0.1:3001/announcements";
 
 export default class Announcements extends React.Component {
+
   constructor(props) {
     super(props);
     this.state = {
