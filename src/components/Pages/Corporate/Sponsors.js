@@ -1,17 +1,6 @@
 import React from "react";
-import TableHead from "@material-ui/core/TableHead/index";
-import TableRow from "@material-ui/core/TableRow/index";
-import TableCell from "@material-ui/core/TableCell/index";
-import TableBody from "@material-ui/core/TableBody/index";
-import Table from "@material-ui/core/Table/index";
 import Grid from "@material-ui/core/Grid/index";
 import SubHeader from "../../Style/SubHeader";
-
-const sponsors = {
-  title: "Example Announcement",
-  date: "Example Date",
-  description: "Example Description"
-};
 
 const apiURL = "http://127.0.0.1:3001/sponsors";
 
