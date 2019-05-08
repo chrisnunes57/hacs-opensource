@@ -34,9 +34,8 @@ export default class Announcements extends React.Component {
         return results.json();
       })
       .then(announcements => {
-        debugger;
         let data = [];
-        for (let i = 0; i < announcements.length; i++) {
+        for (let i = 0; i < 3; i++) {
           let announcement = announcements[i];
           if (announcement) {
             data.push(announcement);
@@ -50,24 +49,15 @@ export default class Announcements extends React.Component {
 
   render() {
     return (
+
       <React.Fragment>
-        <div
-          style={{
-            backgroundColor: "#F4B24C",
-            width: "100%",
-            borderRadius: 20,
-            overflow: "hidden"
-          }}
-        >
           <h1
             style={{
-              textAlign: "center"
+            textAlign: "center"
             }}
           >
-            {" "}
-            Announcements{" "}
-          </h1>
-        </div>
+            Announcements
+          </h1> 
         <Table>
           <TableHead>
             <TableRow>
