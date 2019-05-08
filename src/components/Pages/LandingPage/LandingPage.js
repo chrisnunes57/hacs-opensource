@@ -8,6 +8,7 @@ import FeaturedMember from "./LandingPage/FeaturedMember";
 import Officers from "./LandingPage/Officers";
 import Grid from "@material-ui/core/Grid/index";
 import MissionStatement from "./LandingPage/MissionStatement";
+import Divider from '@material-ui/core/Divider';
 
 export default class LandingPage extends React.Component {
   render() {
@@ -33,11 +34,19 @@ export default class LandingPage extends React.Component {
           </Grid>
         </Grid>
         <Grid item xs={12}>
+          <Grid item xs={12} container justify={"center"}>
+            <h1>
+               Featured Header Tittle 
+            </h1>
+          </Grid>
+          <Grid item xs={12} container justify={"center"}>
+            <Divider style={{width: "300%",justifyContent: "center", maxWidth: 900, }} />
+            </Grid>
           <FeaturedMember />
         </Grid>
-        <Grid item={12}>
+        {/* <Grid item={12}>
           <Officers />
-        </Grid>
+        </Grid> */}
       </Grid>
     );
   }
