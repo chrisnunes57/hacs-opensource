@@ -36,8 +36,6 @@ class MyNavbar extends React.Component {
     });
   }
 
-
-
   // closeNavbar() {
   //   if (this.state.collapsed !== true) {
   //     this.toggle();
@@ -48,19 +46,29 @@ class MyNavbar extends React.Component {
     return (
       <div>
         <Navbar
-          style={{height: 55, background: "#F0BB40", paddingTop:"0px" , paddingBottom: "0px", padding:0 }}
+          style={{
+            height: 55,
+            background: "#F0BB40",
+            paddingTop: "0px",
+            paddingBottom: "0px",
+            padding: 0
+          }}
           className="primary-color"
           dark
           expand="md"
         >
           <NavbarBrand tag={RRNavLink} to={"/"}>
             {/* <span className="text-white">HACS</span>  */}
-              <HacsLogo style={{paddingLeft: 10, width: 55,  height: 55}}/>
+            <HacsLogo style={{ paddingLeft: 10, width: 55, height: 55 }} />
           </NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
-            <Nav className="ml-auto" navbar style={{ paddingTop:"0px" , paddingBottom: "0px"}}>
-              <NavItem className="nav-item" >
+            <Nav
+              className="ml-auto"
+              navbar
+              style={{ paddingTop: "0px", paddingBottom: "0px" }}
+            >
+              <NavItem className="nav-item">
                 <NavLink
                   exact
                   to={"/"}
@@ -92,21 +100,56 @@ class MyNavbar extends React.Component {
                 </NavLink>
               </NavItem>
               <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href={"https://www.facebook.com/groups/TexasHACS"}
-              ><FaceBookLogo style={{paddingLeft: 5, paddingRight: 5, width: 44, height: 44}}/> </a>
+                target="_blank"
+                rel="noopener noreferrer"
+                href={"https://www.facebook.com/groups/TexasHACS"}
+              >
+                <FaceBookLogo
+                  style={{
+                    paddingLeft: 5,
+                    paddingRight: 5,
+                    width: 44,
+                    height: 44
+                  }}
+                />{" "}
+              </a>
               <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href={"https://www.instagram.com/texashacs/"}
-              ><InstagramLogo style={{paddingLeft: 5, paddingRight: 5, width: 44, height: 44}}/> </a>
+                target="_blank"
+                rel="noopener noreferrer"
+                href={"https://www.instagram.com/texashacs/"}
+              >
+                <InstagramLogo
+                  style={{
+                    paddingLeft: 5,
+                    paddingRight: 5,
+                    width: 44,
+                    height: 44
+                  }}
+                />{" "}
+              </a>
               <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href={"https://twitter.com/texashacs?lang=en"}
-              > <TwitterLogo style={{paddingLeft: 5, paddingRight: 5, width: 44, height: 44}}/> </a>
-              <EmailLogo style={{paddingLeft: 5, paddingRight: 5, width: 44, height: 44}}/>
+                target="_blank"
+                rel="noopener noreferrer"
+                href={"https://twitter.com/texashacs?lang=en"}
+              >
+                {" "}
+                <TwitterLogo
+                  style={{
+                    paddingLeft: 5,
+                    paddingRight: 5,
+                    width: 44,
+                    height: 44
+                  }}
+                />{" "}
+              </a>
+              <EmailLogo
+                style={{
+                  paddingLeft: 5,
+                  paddingRight: 5,
+                  width: 44,
+                  height: 44
+                }}
+              />
             </Nav>
           </Collapse>
         </Navbar>
