@@ -114,10 +114,10 @@ export default withStyles(styles)(
                           top: `${50}%`,
                           left: `${50}%`,
                           transform: `translate(-${50}%, -${50}%)`,
-                          paddingBottom:0
+                          paddingBottom: 0
                         }}
                       >
-                        <Grid container item md={12} >
+                        <Grid container item md={12}>
                           <Grid item md={6}>
                             <CardMedia
                               component={"img"}
@@ -126,7 +126,13 @@ export default withStyles(styles)(
                             />
                           </Grid>
 
-                          <Grid item container justify={"center"} md={6} style={{paddingLeft:30, paddingRight:30}}>
+                          <Grid
+                            item
+                            container
+                            justify={"center"}
+                            md={6}
+                            style={{ paddingLeft: 30, paddingRight: 30 }}
+                          >
                             <Grid item container justify={"center"} md={12}>
                               <Typography variant="h3" id="modal-title">
                                 {testimonial.name}

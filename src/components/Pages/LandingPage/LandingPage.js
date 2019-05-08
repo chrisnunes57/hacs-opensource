@@ -14,9 +14,9 @@ export default class LandingPage extends React.Component {
         container
         direction="row"
         justify="center"
-        style={{ marginLeft: 20, marginRight: 20 }}
+        // style={{ marginLeft: 20, marginRight: 20 }}
       >
-        <Grid item xs={12}>
+        <Grid item xs={12} style={{ paddingTop: 0 }}>
           <Carousel />
         </Grid>
         <Grid item xs={12}>
@@ -25,7 +25,7 @@ export default class LandingPage extends React.Component {
  <Grid item xs={12}>
           <Fake/>
         </Grid>
-        
+
         <Grid item xs={12}>
           <MissionStatement />
         </Grid>

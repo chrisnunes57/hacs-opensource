@@ -52,11 +52,10 @@ class MyNavbar extends React.Component {
           className="primary-color"
           dark
           expand="md"
-          fixed={"top"}
         >
           <NavbarBrand tag={RRNavLink} to={"/"}>
             {/* <span className="text-white">HACS</span>  */}
-              <HacsLogo style={{paddingLeft: 10, width: 55,  height: 55}}/> 
+              <HacsLogo style={{paddingLeft: 10, width: 55,  height: 55}}/>
           </NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
