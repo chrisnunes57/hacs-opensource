@@ -34,17 +34,24 @@ export default class Sponsors extends React.Component {
   render() {
     return (
       <Grid container justify={"center"} item xs={12} spacing={0}>
-      <Grid item xs={12}>
-        <SubHeader>HACS Sponsors</SubHeader>
-      </Grid>
-            {this.state.sponsors.map(sponsor => {
-              return (
-                <Grid item xs={3} container justify={"center"} spacing={0} style={{paddingBottom: 45}}>
-                  <img src={sponsor.logo_link}/>
-                </Grid>
-              );
-            })}
+        <Grid item xs={12}>
+          <SubHeader>HACS Sponsors</SubHeader>
+        </Grid>
+        {this.state.sponsors.map(sponsor => {
+          return (
+            <Grid
+              item
+              xs={3}
+              container
+              justify={"center"}
+              spacing={0}
+              style={{ paddingBottom: 45 }}
+            >
+              <img src={sponsor.logo_link} />
+            </Grid>
+          );
+        })}
       </Grid>
     );
-  } 
+  }
 }
