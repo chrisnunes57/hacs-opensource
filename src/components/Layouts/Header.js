@@ -38,11 +38,9 @@ class MyNavbar extends React.Component {
     return (
       <div>
         <Navbar
-          // style={{ backgroundColor: "#07969b" }}
           className="primary-color"
           dark
           expand="md"
-          fixed={"top"}
         >
           <NavbarBrand tag={RRNavLink} to={"/"}>
             <span className="text-white">HACS</span>

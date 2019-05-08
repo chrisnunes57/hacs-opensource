@@ -38,7 +38,7 @@ export default class MyCarousel extends React.Component {
     return (
       <Carousel autoPlay stopOnHover showThumbs={false} infiniteLoop>
         {this.state.pictures.map(picture => {
-          return <img src={picture.image_link} style={{ height: 450 }} />;
+          return <img src={picture.image_link} style={{ height: 400 }} />;
         })}
       </Carousel>
     );
