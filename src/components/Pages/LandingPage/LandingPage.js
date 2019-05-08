@@ -18,7 +18,7 @@ export default class LandingPage extends React.Component {
         justify="center"
         // style={{ marginLeft: 20, marginRight: 20 }}
       >
-        <Grid item xs={12} style={{paddingTop:0}}>
+        <Grid item xs={12} style={{ paddingTop: 0 }}>
           <Carousel />
         </Grid>
         {/*<Grid item xs={12}>*/}
