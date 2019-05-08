@@ -20,10 +20,10 @@ export default class LandingPage extends React.Component {
           <Carousel />
         </Grid>
         <Grid item xs={12}>
-          <UnderCarousel/>
-          </Grid>
- <Grid item xs={12}>
-          <Fake/>
+          <UnderCarousel />
+        </Grid>
+        <Grid item xs={12}>
+          <Fake />
         </Grid>
 
         <Grid item xs={12}>

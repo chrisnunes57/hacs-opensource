@@ -8,30 +8,28 @@ export default class UnderCarousel extends React.Component {
   render() {
     return (
       <Grid
-      container
-      direction="row"
-      spacing={0}
-      style={{ background: "#FFFFFF", paddingTop: 50}}
-    >
-      <Grid container item xs={12}>
-      <Grid item xs={4} spacing={0} container justify={"center"}>
-          <Agenda />
-        </Grid>
+        container
+        direction="row"
+        spacing={0}
+        style={{ background: "#FFFFFF", paddingTop: 50 }}
+      >
+        <Grid container item xs={12}>
+          <Grid item xs={4} spacing={0} container justify={"center"}>
+            <Agenda />
+          </Grid>
 
           <Grid item xs={4} spacing={0} container justify={"center"}>
             <Grid item xs={12}>
-              <Announcements/>
+              <Announcements />
             </Grid>
           </Grid>
-        <Grid item xs={4}>
-          <Grid item xs={12} spacing={0} container justify={"center"}> 
+          <Grid item xs={4}>
+            <Grid item xs={12} spacing={0} container justify={"center"}>
               <TwitterFeed />
+            </Grid>
           </Grid>
         </Grid>
-
       </Grid>
-    </Grid>
-    
     );
   }
 }

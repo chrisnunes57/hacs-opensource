@@ -11,21 +11,20 @@ export default class TwitterFeed extends React.Component {
       <React.Fragment>
         <Grid item xs={12} container justify={"center"}>
           <Grid item xs={12}>
-          <h1
-            style={{
-              color: "#000000",
-              textAlign: "center"
-            }}
-          >
-            Twitter Feed
-          </h1>
+            <h1
+              style={{
+                color: "#000000",
+                textAlign: "center"
+              }}
+            >
+              Twitter Feed
+            </h1>
           </Grid>
-        <TwitterTimelineEmbed
-          sourceType="profile"
-          screenName="texasHACS"
-          options={{ height: 500, width: "100%" }}
-        />
-
+          <TwitterTimelineEmbed
+            sourceType="profile"
+            screenName="texasHACS"
+            options={{ height: 500, width: "100%" }}
+          />
         </Grid>
       </React.Fragment>
     );

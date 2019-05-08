@@ -48,15 +48,14 @@ export default class Announcements extends React.Component {
 
   render() {
     return (
-
       <React.Fragment>
-          <h1
-            style={{
+        <h1
+          style={{
             textAlign: "center"
-            }}
-          >
-            Announcements
-          </h1> 
+          }}
+        >
+          Announcements
+        </h1>
         <Table>
           <TableHead>
             <TableRow>
