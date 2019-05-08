@@ -61,7 +61,6 @@ export default class ContactLinks extends React.Component {
           <img src={EmailLogo} alt="Email Logo" style={{ width: "100px" }} />
           <Obfuscate element={"span"}>Texashacs@gmail.com</Obfuscate>
         </Grid>
-        {/*</h1>*/}
       </Grid>
     );
   }
