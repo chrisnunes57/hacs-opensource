@@ -21,9 +21,6 @@ export default class LandingPage extends React.Component {
         <Grid item xs={12} style={{ paddingTop: 0 }}>
           <Carousel />
         </Grid>
-        {/*<Grid item xs={12}>*/}
-        {/*  <MissionStatement />*/}
-        {/*</Grid>*/}
         <Grid container item xs={12}>
           <Grid item xs={4}>
             <Announcements />
@@ -35,7 +32,7 @@ export default class LandingPage extends React.Component {
             <TwitterFeed />
           </Grid>
         </Grid>
-        <Grid item xs={6}>
+        <Grid item xs={12}>
           <FeaturedMember />
         </Grid>
         <Grid item={12}>
