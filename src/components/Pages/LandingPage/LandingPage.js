@@ -3,9 +3,8 @@ import Carousel from "./LandingPage/Carousel";
 import FeaturedMember from "./LandingPage/FeaturedMember";
 import Officers from "./LandingPage/Officers";
 import Grid from "@material-ui/core/Grid/index";
-import MissionStatement from "./LandingPage/MissionStatement";
+
 import UnderCarousel from "./LandingPage/UnderCarousel";
-import Fake from "./Fake";
 
 export default class LandingPage extends React.Component {
   render() {
@@ -14,21 +13,12 @@ export default class LandingPage extends React.Component {
         container
         direction="row"
         justify="center"
-        // style={{ marginLeft: 20, marginRight: 20 }}
       >
         <Grid item xs={12} style={{ paddingTop: 0 }}>
           <Carousel />
         </Grid>
         <Grid container item xs={12}>
-          <Grid item xs={4}>
-            <Announcements />
-          </Grid>
-          <Grid item xs={4}>
-            <Agenda />
-          </Grid>
-          <Grid item xs={4}>
-            <TwitterFeed />
-          </Grid>
+         <UnderCarousel/>
         </Grid>
         <Grid item xs={12}>
           <FeaturedMember />
