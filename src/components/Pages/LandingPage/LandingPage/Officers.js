@@ -17,7 +17,7 @@ export default class Officers extends React.Component {
         return results.json();
       })
       .then(officers => {
-        debugger;
+        //debugger;
         let data = [];
         for (let i = 0; i < officers.length; i++) {
           let officer = officers[i];
