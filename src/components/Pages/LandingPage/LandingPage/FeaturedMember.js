@@ -15,8 +15,8 @@ import Button from "@material-ui/core/Button";
 
 const styles = theme => ({
   media: {
-    height: 400,
-    width: 300,
+    height: 300,
+    width: 290,
     objectFit: "cover"
   },
   paper: {
