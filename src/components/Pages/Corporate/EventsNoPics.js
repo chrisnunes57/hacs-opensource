@@ -1,7 +1,5 @@
 import React from "react";
-import SponsorPackage from "./SponsorPackage";
 import Grid from "@material-ui/core/Grid/index";
-import { ListItemText } from "@material-ui/core";
 import SubHeader from "../../Style/SubHeader";
 import TextStyle from "../../Style/TextStyle";
 

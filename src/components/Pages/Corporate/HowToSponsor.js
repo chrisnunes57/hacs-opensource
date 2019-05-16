@@ -1,10 +1,6 @@
 import React from "react";
-import SponsorPackage from "./SponsorPackage";
-import Sponsors from "./Sponsors";
 import Grid from "@material-ui/core/Grid/index";
-import MyButton from "../../MyButton.js";
-import SponsorSteps from "../Corporate/SponsorSteps";
-import { ListItemText } from "@material-ui/core";
+import SponsorSteps from "./Sponsors/SponsorSteps";
 
 import SubHeader from "../../Style/SubHeader";
 

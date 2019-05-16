@@ -1,6 +1,6 @@
 import React from "react";
 import Grid from "@material-ui/core/Grid/index";
-import SubHeader from "../../Style/SubHeader";
+import SubHeader from "../../../Style/SubHeader";
 
 const apiURL = "http://127.0.0.1:3001/sponsors";
 
