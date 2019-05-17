@@ -1,6 +1,7 @@
 import React from "react";
 import Grid from "@material-ui/core/Grid";
-import TargetPic from "src/images/target.png";
+import TargetPic from "../../images/target.png";
+
 
 export default class NetworkingEventsPic extends React.Component {
     render () {

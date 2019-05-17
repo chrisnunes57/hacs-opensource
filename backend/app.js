@@ -44,14 +44,18 @@ app.use(
 );
 
 // Routers
+const slides = require("./routes/slides");
 const announcements = require("./routes/announcements");
 const officers = require("./routes/officers");
 const sponsors = require("./routes/sponsors");
 const mentorship = require("./routes/mentorship");
+const pictures = require("./routes/pictures");
 
 app.use("/announcements", announcements);
 app.use("/officers", officers);
 app.use("/sponsors", sponsors);
 app.use("/mentorship", mentorship);
+app.use("/slides", slides);
+app.use("/pictures", pictures);
 
 module.exports = app;

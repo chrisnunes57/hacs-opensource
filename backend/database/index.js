@@ -7,5 +7,6 @@ module.exports = {
   Officers: require("./officers"),
   Mentorship: require("./mentorship"),
   Newsletters: require("./newsletters"),
-  Slides: require("./slides")
+  Slides: require("./slides"),
+  Pictures: require("./pictures")
 };
