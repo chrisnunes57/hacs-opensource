@@ -1,9 +1,12 @@
 import React from "react";
 import "./Homepage.scss";
+import Hero from "./Hero";
 
 function Homepage() {
   return (
-    <p>Hi! Welcome to HACS!</p>
+    <section className="homepage">
+      <Hero />
+    </section>
   );
 }
 

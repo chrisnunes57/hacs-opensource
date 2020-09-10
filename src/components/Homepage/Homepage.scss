@@ -1,0 +1,143 @@
+@import "../../variables";
+
+@font-face {
+  font-family: computerfont;
+  src: url("Computerfont.ttf");
+}
+
+.homepage {
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+.hero {
+    display: flex;
+    margin-top: 60px;
+
+    .content {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+
+        h1 {
+            font-family: $title-font;
+            color: $title-text;
+            font-size: 48px;
+            font-weight: bold;
+            line-height: 64px;
+            margin: 0;
+        }
+
+        h1 + p {
+            font-family: $title-font;
+            color: $subtitle;
+            font-size: 14px;
+            line-height: 18px;
+            margin-top: 4px;
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 18px;
+            font-family: $content-font;
+            color: $subtitle;
+        }
+
+        span {
+            color: $hacs-blue;
+        }
+    }
+
+    svg {
+        min-width: 550px;
+        height: 500px;
+        display: block;
+        max-width: 100%;
+    }
+
+    .cls-1,
+    .cls-3 {
+        fill: #27246a;
+    }
+
+    .cls-3 {
+        font-size: 110px;
+        font-family: Computerfont;
+    }
+
+    .cls-4,
+    .cls-6,
+    .cls-8 {
+        fill: none;
+        stroke-miterlimit: 10;
+    }
+
+    .cls-4 {
+        stroke: #27246a;
+        stroke-width: 7px;
+    }
+
+    .cls-5 {
+        fill: #981b1e;
+    }
+
+    .cls-6 {
+        stroke: #088c45;
+        stroke-width: 5px;
+    }
+
+    .cls-7 {
+        fill: #eba222;
+    }
+
+    .cls-8 {
+        stroke: #981b1e;
+        stroke-width: 4px;
+    }
+
+    #Inner_Ring {
+        animation: rotateLeft 120s infinite linear;
+        transform-origin: 50% 50%;
+        transform-box: fill-box;
+    }
+
+    #Outer_Ring {
+        animation: rotateRight 120s infinite linear;
+        transform-origin: 50% 50%;
+        transform-box: fill-box;
+    }
+
+    @media (prefers-reduced-motion) {
+    #Inner_Ring, #Outer_Ring {
+        animation: none;
+    }
+    }
+
+    @keyframes rotateLeft {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+    }
+
+    @keyframes rotateRight {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-359deg);
+    }
+    }
+
+    /* Smartphones (portrait) ----------- */
+    @media only screen and (max-width : 450px) {
+    /* Styles */
+        svg {
+            height: 300px;
+        }
+    }
+
+}
+
