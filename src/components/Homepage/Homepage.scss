@@ -6,13 +6,13 @@
 }
 
 .homepage {
-    max-width: 1240px;
-    margin: 0 auto;
+    
 }
 
 .hero {
     display: flex;
-    margin-top: 60px;
+    margin: 60px auto;
+    max-width: 1240px;
 
     .content {
         display: flex;
@@ -139,5 +139,48 @@
         }
     }
 
+}
+
+.slider {
+    margin-top: 180px;
+    height: 900px;
+    background-color: $faded-blue;
+}
+
+.member-highlight {
+    margin: 60px auto;
+    max-width: 1240px;
+
+    img {
+        min-width: 300px;
+        max-width: 300px;
+        min-height: 300px;
+        max-height: 300px;
+        border-radius: 100%;
+    }
+
+    .member-wrapper {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 60px;
+        color: $title-text;
+        
+        .content {
+            max-width: 800px;
+            
+            .name {
+                font-size: 24px;
+                line-height: 32px;
+                font-family: $title-font;
+            }
+
+            .description {
+                font-size: 16px;
+                line-height: 22px;
+                font-family: content-font;
+            }
+        }
+    }
 }
 

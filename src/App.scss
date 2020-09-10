@@ -1,3 +1,5 @@
+@import "variables";
+
 body, html {
     margin: 0;
     padding: 0;
@@ -25,5 +27,26 @@ body, html {
         &::after {
             width: 100%;
         }
+    }
+}
+
+.section-title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    font-family: $title-font;
+    position: relative;
+    width: max-content; 
+
+    &::after {
+        content: ' ';
+        width: calc(100% + 15px);
+        height: 3px;
+        background-color: $hacs-blue;
+        position: absolute;
+        bottom: -16px;
+        left: 0;
+        right: 0;
+        margin: auto;
     }
 }
