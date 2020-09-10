@@ -1,0 +1,32 @@
+@import "../../variables";
+
+.global-header {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    max-width: 1240px;
+    margin: 0 auto;
+    height: 120px;
+    border-bottom: 5px solid $hacs-blue;
+
+    h3 {
+        font-family: $title-font;
+        color: $title-text;
+        font-size: 16px;
+    }
+
+    .socials {
+        font-size: 24px;
+        color: $social;
+        display: flex;
+        align-items: center;
+        height: 24px;
+        padding-bottom: 16px;
+
+        svg {
+            margin: 0 12px;
+        }
+
+    }
+}
