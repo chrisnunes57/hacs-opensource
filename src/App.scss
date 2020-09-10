@@ -1,0 +1,29 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.fancy {
+    text-decoration: none;
+    position: relative;
+    letter-spacing: 0.5px;
+
+    &::after {
+        content: ' ';
+        width: 0;
+        height: 2px;
+        background-color: currentColor;
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        transition: 0.2s all;
+    }
+
+    &:hover, &:focus, &:active {
+        &::after {
+            width: 100%;
+        }
+    }
+}

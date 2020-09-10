@@ -15,22 +15,4 @@
         color: $title-text;
         font-size: 16px;
     }
-
-    .socials {
-        font-size: 24px;
-        color: $social;
-        display: flex;
-        align-items: center;
-        height: 24px;
-        padding-bottom: 16px;
-
-        a, a:visited{
-            color: $social;
-        }
-
-        svg {
-            margin: 0 12px;
-        }
-
-    }
 }

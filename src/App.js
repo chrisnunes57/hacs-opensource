@@ -4,6 +4,7 @@ import './App.scss';
 // import Navigation from './components/Navigation';
 import Homepage from './components/Homepage';
 import Header from './components/Header';
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -12,12 +13,14 @@ function App() {
         <div>
           {/* <Navigation /> */}
           <Header />
-
+        
           <Switch>
             <Route path="/">
               <Homepage />
             </Route>
           </Switch>
+
+          <Footer />
         </div>
       </Router>
     </div>
