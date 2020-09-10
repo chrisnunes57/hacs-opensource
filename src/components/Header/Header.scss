@@ -7,7 +7,7 @@
     align-items: flex-end;
     max-width: 1240px;
     margin: 0 auto;
-    height: 120px;
+    height: 100px;
     border-bottom: 5px solid $hacs-blue;
 
     h3 {
@@ -23,6 +23,10 @@
         align-items: center;
         height: 24px;
         padding-bottom: 16px;
+
+        a, a:visited{
+            color: $social;
+        }
 
         svg {
             margin: 0 12px;
