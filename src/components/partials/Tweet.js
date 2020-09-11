@@ -13,8 +13,8 @@ function Tweet(props) {
                 </div>
             </div>
             <div className="tweet-content">
-                <p>{props.data.content}</p>
-                <p class="timestamp">{props.data.timestamp}</p>
+                <p>{props.content}</p>
+                <p class="timestamp">{props.timestamp}</p>
             </div>
         </div>
     );

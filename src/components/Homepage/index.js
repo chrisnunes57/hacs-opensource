@@ -5,6 +5,7 @@ import ImageSlider from "./ImageSlider";
 import MemberHighlight from "./MemberHighlight";
 import UpcomingEvents from "./UpcomingEvents";
 import TwitterFeed from "./TwitterFeed";
+import Leadership from "./Leadership";
 
 const placeholderMemberData = {
   name: "Satya Nadella",
@@ -40,6 +41,7 @@ function Homepage() {
       <MemberHighlight member={placeholderMemberData} />
       <UpcomingEvents events={placeholderEvents} />
       <TwitterFeed />
+      <Leadership />
     </section>
   );
 }

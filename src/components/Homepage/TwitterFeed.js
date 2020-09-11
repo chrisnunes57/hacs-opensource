@@ -24,7 +24,7 @@ function TwitterFeed() {
             <h3 className="section-title">Latest Tweets</h3>
             <div className="tweet-wrapper">
                 {tweets.map( (tweet, i) => {
-                    return <Tweet data={tweet} key={i} />
+                    return <Tweet {...tweet} key={i} />
                 })}
             </div>
         </div>

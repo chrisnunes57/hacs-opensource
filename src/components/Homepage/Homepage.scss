@@ -205,3 +205,31 @@
     }
 }
 
+.leadership {
+    background-color: $faded-blue;
+
+    .container {
+        margin: 0 auto;
+        margin-top: 100px;
+        max-width: 1240px;
+
+        h1 {
+            font-weight: bold;
+            font-size: 48px;
+            line-height: 63px;
+            font-family: $title-font;
+            color: $hacs-blue;
+            padding: 60px 0;
+            text-align: center;
+            margin: 0;
+        }
+    }
+
+    .leadership-wrapper {
+        padding-bottom: 60px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
