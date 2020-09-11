@@ -5,10 +5,6 @@
   src: url("Computerfont.ttf");
 }
 
-.homepage {
-    
-}
-
 .hero {
     display: flex;
     margin: 60px auto;
@@ -181,6 +177,31 @@
                 font-family: content-font;
             }
         }
+    }
+}
+
+.upcoming-events {
+    background-color: $faded-blue;
+
+    .section-title {
+        margin-bottom: 100px;
+    }
+
+    .content-wrapper {
+        margin: 100px auto;
+        max-width: 1240px;
+        padding: 60px 0;
+    }
+}
+
+.twitter-feed {
+    margin: 60px auto;
+    max-width: 1240px;
+
+    .tweet-wrapper {
+        margin-top: 60px;
+        display: flex;
+        justify-content: space-between;
     }
 }
 

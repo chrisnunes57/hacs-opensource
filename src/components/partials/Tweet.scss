@@ -1,0 +1,56 @@
+@import "../../variables";
+
+.tweet {
+
+    border: 1px solid $light-light;
+    max-width: 380px;
+    border-radius: 5px;
+    position: relative;
+
+    .tweet-header {
+        display: flex;
+        align-items: center;
+        background-color: #F8F8F8;
+        padding: 10px;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+        
+        img {
+            width: 60px;
+            height: 60px;
+        }
+
+        .text {
+
+            margin-left: 15px;
+            font-size: 16px;
+            line-height: 21px;
+            font-family: $title-font;
+
+            p, a {
+                margin: 0;
+            }
+
+            .handle {
+                color: $hacs-blue;
+            }
+        }
+    }
+
+    .tweet-content {
+        padding: 10px;
+        font-size: 16px;
+        line-height: 21px;
+        font-family: $content-font;
+        display: flex;
+        flex-flow: column;
+
+        .timestamp {
+            font-size: 12px;
+            line-height: 16px;
+            color: $subtitle;
+            margin-top: auto;
+            margin-bottom: 0;
+        }
+    }
+}
