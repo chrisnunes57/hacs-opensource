@@ -8,12 +8,10 @@ import TwitterFeed from "./TwitterFeed";
 import Leadership from "./Leadership";
 
 const placeholderMemberData = {
-  name: "Satya Nadella",
-  description: `Satya Narayana Nadella (/nəˈdɛlə/; born 19 August 1967) is an Indian-American business executive. He is the chief executive officer (CEO) of Microsoft, succeeding Steve Ballmer in 2014. Before becoming CEO, he was the executive vice president of Microsoft's cloud and enterprise group, responsible for building and running the company's computing platforms.
-
-At Microsoft, Nadella has led major projects that included the company's move to cloud computing and the development of one of the largest cloud infrastructures in the world.`,
+  name: "Josiah Valdez",
+  description: `Josiah's an incoming freshman studying CS who's already being active within the org by going to events and chatting in the Discord! In high school, he participated in his robotics club and even placed top 8 in state-wide robotics tournaments. HACS always appreciates new members bringing their knowledge, passion for technology, and positive attitude to the familia. Thank you, Josiah, for all that you do! `,
   imageUrl:
-    "https://cdn.vox-cdn.com/thumbor/k_EaMfAhfbXn40BMkE0aBq3YI7o=/0x0:640x427/1400x1400/filters:focal(0x0:640x427):format(jpeg)/cdn.vox-cdn.com/assets/3666711/satyanadella.jpg",
+    "https://ci5.googleusercontent.com/proxy/HHc5qI_tJ9dMVjB_TwOd0XZJpKxxSvU9CTPSIacxGz0Mb6Jk89AQgerzOe0zl8GshxrIal10lQ8A665EEEH3mhuGLxvqk4Q2Cn2OM5AbTBeth7W2lrKdnuUxskB33NLh5BwsszGw9SYoB4AU1HQjvSvUJ5LfKQ=s0-d-e1-ft?trnonsuspmrk=1#https://mcusercontent.com/659d3054a1f01cae233080c14/images/11bbeb60-9544-4a70-9b1c-346845ff4972.jpg",
 };
 
 const placeholderEvents = [

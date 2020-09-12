@@ -14,39 +14,39 @@ import TopGolfTalking from "../../media/Top Golf Talking w Google.jpg";
 const images = [
   {
     original: ABCSQuora,
-    caption: "HACS Game Night w ABCS & Quora",
+    originalAlt: "HACS Game Night w ABCS & Quora",
   },
   {
     original: GeneralMeeting,
-    caption: "HACS General Meeting",
+    originalAlt: "HACS General Meeting",
   },
   {
     original: GroupPhoto,
-    caption: "Group Photo of HACS Members",
+    originalAlt: "Group Photo of HACS Members",
   },
   {
     original: GoogleMeeting,
-    caption: "General Meeting with Google Employees",
+    originalAlt: "General Meeting with Google Employees",
   },
   {
     original: NetworkingDinner,
-    caption: "Diversity Networking Dinner with ABCS",
+    originalAlt: "Diversity Networking Dinner with ABCS",
   },
   {
     original: StudyNight,
-    caption: "Study Night with HACS Members",
+    originalAlt: "Study Night with HACS Members",
   },
   {
     original: TopGolfFood,
-    caption: "Waiting in line for food at TopGolf social",
+    originalAlt: "Waiting in line for food at TopGolf social",
   },
   {
     original: TopGolfPlaying,
-    caption: "Playing gold at TopGolf social",
+    originalAlt: "Playing gold at TopGolf social",
   },
   {
     original: TopGolfTalking,
-    caption: "Talking to Google recruiters at TopGolf social",
+    originalAlt: "Talking to Google recruiters at TopGolf social",
   },
 ];
 
@@ -66,11 +66,11 @@ function ImageSlider() {
         showFullscreenButton={false}
         showPlayButton={false}
         autoPlay={true}
-        slideDuration={1000}
+        slideDuration={0}
         slideInterval={10000}
         onBeforeSlide={updateCaptionIndex}
       />
-      <p className="caption">{images[captionIndex].caption}</p>
+      <p className="caption">{images[captionIndex].originalAlt}</p>
     </section>
   );
 }
