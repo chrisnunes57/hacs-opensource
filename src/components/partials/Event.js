@@ -2,7 +2,6 @@ import React from "react";
 import "./Event.scss";
 
 function Event(props) {
-    console.log(props)
     return (
         <div className="event">
             <p className="title">{props.data.title}</p>
