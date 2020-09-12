@@ -164,6 +164,13 @@
     }
 }
 
+@media only screen and (max-width : 800px) {
+/* Styles */
+    .content {
+        margin-left: 0 !important;
+    }
+}
+
 .slider {
     margin-top: 180px;
     background-color: $faded-blue;

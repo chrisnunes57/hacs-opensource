@@ -1,28 +1,53 @@
 import React, { useState } from "react";
 import "./Homepage.scss";
 import ImageGallery from "react-image-gallery";
-import TopGolf from "../../media/top_golf.jpg";
-import StudyNight from "../../media/study-night.jpg";
-import GoogleInterview from "../../media/google_interview.jpg";
-import DropboxInterview from "../../media/dropbox_interview.jpg";
+import ABCSQuora from "../../media/Game Night w ABCS & Quora.jpg";
+import GeneralMeeting from "../../media/General Meeting.jpg";
+import GroupPhoto from "../../media/Group Photo.jpg";
+import GoogleMeeting from "../../media/Meeting w Google.jpg";
+import NetworkingDinner from "../../media/Networking Dinner.jpg";
+import StudyNight from "../../media/Study Night.jpg";
+import TopGolfFood from "../../media/Top Golf Food Line.jpg";
+import TopGolfPlaying from "../../media/Top Golf Playing.jpg";
+import TopGolfTalking from "../../media/Top Golf Talking w Google.jpg";
 
 const images = [
   {
-    original: TopGolf,
-    caption: "HACS Social with Google at TopGolf, Fall 2019"
+    original: ABCSQuora,
+    caption: "HACS Game Night w ABCS & Quora",
   },
   {
-    original: DropboxInterview,
-    caption: "Interview Prep with Dropbox"
+    original: GeneralMeeting,
+    caption: "HACS General Meeting",
   },
   {
-    original: GoogleInterview,
-    caption: "\"Demystifying the Technical Interview\" with Google"
+    original: GroupPhoto,
+    caption: "Group Photo of HACS Members",
+  },
+  {
+    original: GoogleMeeting,
+    caption: "General Meeting with Google Employees",
+  },
+  {
+    original: NetworkingDinner,
+    caption: "Diversity Networking Dinner with ABCS",
   },
   {
     original: StudyNight,
-    caption: "HACS networking event with ABCS, Fall 2019"
-  }  
+    caption: "Study Night with HACS Members",
+  },
+  {
+    original: TopGolfFood,
+    caption: "Waiting in line for food at TopGolf social",
+  },
+  {
+    original: TopGolfPlaying,
+    caption: "Playing gold at TopGolf social",
+  },
+  {
+    original: TopGolfTalking,
+    caption: "Talking to Google recruiters at TopGolf social",
+  },
 ];
 
 let handleSlide = (nextIndex) => {
