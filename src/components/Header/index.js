@@ -5,7 +5,8 @@ import Socials from "../partials/Socials";
 function Header() {
   return (
     <div className="global-header">
-      <h3>Hispanic Association of Computer Scientists</h3>
+      <h3 className="header-desktop">Hispanic Association of Computer Scientists</h3>
+      <h3 className="header-mobile">HACS</h3>
       <Socials />
     </div>
   );

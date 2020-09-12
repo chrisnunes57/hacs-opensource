@@ -18,11 +18,12 @@ const styles = `
         font-size: 16px !important;
         line-height: 21px !important;
         font-weight: 400 !important;
+        margin-top: 10px;
     }
 
     .timeline-Tweet {
-        max-width: 380px;
-        width: 380px;
+        max-width: 350px;
+        width: 350px;
         border: 1px solid #EDEDED;
         margin-right: 30px;
         border-radius: 5px;
@@ -44,6 +45,10 @@ const styles = `
 
     .timeline-Tweet-media {
         display: none;
+    }
+
+    .customisable-border {
+        border: none !important;
     }
 </style>`;
 

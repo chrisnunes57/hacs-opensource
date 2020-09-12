@@ -9,6 +9,7 @@
     display: flex;
     margin: 60px auto;
     max-width: 1240px;
+    padding: 0 20px;
 
     .content {
         display: flex;
@@ -46,9 +47,9 @@
 
     svg {
         min-width: 550px;
-        height: 500px;
+        height: 510px;
         display: block;
-        max-width: 100%;
+        max-width: 700px;
     }
 
     .cls-1,
@@ -125,27 +126,71 @@
     to {
         transform: rotate(-359deg);
     }
+}
+}
+
+@media only screen and (max-width : 800px) {
+/* Styles */
+    .hero {
+        flex-wrap: wrap;
     }
 
-    /* Smartphones (portrait) ----------- */
-    @media only screen and (max-width : 450px) {
-    /* Styles */
-        svg {
-            height: 300px;
+
+    .hero svg {
+        min-width: 0;
+    }
+
+    .slider {
+        margin-top: 40px !important;
+    }
+
+    .member-wrapper {
+        flex-wrap: wrap;
+
+        img {
+            margin: 0 auto;
         }
     }
 
+    .card {
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width : 610px) {
+/* Styles */
+    .hero {
+        margin: 0 auto;
+    }
 }
 
 .slider {
     margin-top: 180px;
-    height: 900px;
     background-color: $faded-blue;
+    padding: 20px 0 60px 0;
+
+    .image-gallery {
+        margin: 60px auto;
+        max-width: 1240px;
+
+        img {
+            max-width: 1080px;
+        }
+    }
+
+    .caption {
+        font-size: 24px;
+        line-height: 32px;
+        font-family: $title-font;
+        color: $title-text;
+        text-align: center;
+    }
 }
 
 .member-highlight {
     margin: 60px auto;
     max-width: 1240px;
+    padding: 0 20px;
 
     img {
         min-width: 300px;
@@ -164,6 +209,7 @@
         
         .content {
             max-width: 800px;
+            margin-left: 30px;
             
             .name {
                 font-size: 24px;
@@ -182,6 +228,7 @@
 
 .upcoming-events {
     background-color: $faded-blue;
+    padding: 0 20px;
 
     .section-title {
         margin-bottom: 100px;
@@ -197,6 +244,7 @@
 .twitter-feed {
     margin: 60px auto;
     max-width: 1240px;
+    padding: 0 20px;
 
     .tweet-wrapper {
         margin-top: 60px;
