@@ -37,11 +37,10 @@ const placeholderLeadership = [
   },
   {
     name: "Max Patrick",
-    imageUrl:
-      "https://avatars3.githubusercontent.com/u/20052335?s=460&u=20b01c4275495c7c9ee123aa97ac556fece087a8&v=4",
+    imageUrl: "",
     role: "Social",
-    linkedin: "https://linkedin.com/in/chris-nunes",
-    email: "chrisnunes57@gmail.com",
+    linkedin: "",
+    email: "",
   },
   {
     name: "Levi Villarreal",
@@ -54,10 +53,10 @@ const placeholderLeadership = [
   {
     name: "Ivan Romero",
     imageUrl:
-      "https://avatars3.githubusercontent.com/u/20052335?s=460&u=20b01c4275495c7c9ee123aa97ac556fece087a8&v=4",
+      "",
     role: "Academic",
-    linkedin: "https://linkedin.com/in/chris-nunes",
-    email: "chrisnunes57@gmail.com",
+    linkedin: "",
+    email: "",
   },
   {
     name: "Maria Maynard",
@@ -65,15 +64,15 @@ const placeholderLeadership = [
       "https://media-exp1.licdn.com/dms/image/C4E03AQH1ouQwC71jUA/profile-displayphoto-shrink_400_400/0?e=1605139200&v=beta&t=yU6C_EA--CNUEJLNZZuFRRWLW4pbrooTp1F5tLKZ9UQ",
     role: "Outreach",
     linkedin: "https://www.linkedin.com/in/mariamaynard/",
-    email: "chrisnunes57@gmail.com",
+    email: "",
   },
   {
     name: "Michelle Sanchez",
     imageUrl:
-      "https://avatars3.githubusercontent.com/u/20052335?s=460&u=20b01c4275495c7c9ee123aa97ac556fece087a8&v=4",
+      "",
     role: "Marketing",
-    linkedin: "https://linkedin.com/in/chris-nunes",
-    email: "chrisnunes57@gmail.com",
+    linkedin: "",
+    email: "",
   },
   {
     name: "Chris Nunes",
@@ -89,7 +88,7 @@ const placeholderLeadership = [
       "https://media-exp1.licdn.com/dms/image/C4E03AQEV2oi5WxcQXA/profile-displayphoto-shrink_400_400/0?e=1605139200&v=beta&t=6IaQ3cX9aS-y_yUBShL89yL1NHEQMy7ceEFcLwVjaAA",
     role: "Junior Officer",
     linkedin: "https://www.linkedin.com/in/fideltinajero/",
-    email: "chrisnunes57@gmail.com",
+    email: "",
   },
   {
     name: "Fina Sierra",

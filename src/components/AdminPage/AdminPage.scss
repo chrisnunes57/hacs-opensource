@@ -1,0 +1,69 @@
+@import "../../variables";
+
+.login-wrapper, .admin-panel {
+    margin: 60px auto;
+    max-width: 1240px;
+    padding: 0 20px;
+    font-family: $title-font;
+
+    .login {
+        max-width: 600px;
+    }
+
+    .form-control {
+        display: block;
+        width: 100%;
+        padding: .375rem .75rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        color: #495057;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        border-radius: .25rem;
+        transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    }
+
+    .form-group {
+        margin-bottom: 1rem;
+    }
+
+    small {
+        display: block;
+        margin-top: .5rem;
+        font-size: 80%;
+        font-weight: 400;
+    }
+
+    label {
+        display: inline-block;
+        margin-bottom: .5rem;
+    }
+
+    .btn {
+        margin-top: 0.5rem;
+        background-color: $hr;
+        color: $title-text;
+        display: inline-block;
+        cursor: pointer;
+        font-weight: 400;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        border: 1px solid transparent;
+            border-top-color: transparent;
+            border-right-color: transparent;
+            border-bottom-color: transparent;
+            border-left-color: transparent;
+        padding: .375rem .75rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        border-radius: .25rem;
+        transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    }
+    
+}

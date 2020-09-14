@@ -7,7 +7,7 @@ function MemberHighlight(props) {
       <h3 className="section-title">Member of the Week</h3>
       <div className="member-wrapper">
         <img
-          src={props.member.imageUrl}
+          src={props.member.image}
           alt={"HACS member of the week, " + props.member.name}
         />
         <div className="content">

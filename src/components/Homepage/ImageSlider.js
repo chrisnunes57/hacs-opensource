@@ -42,17 +42,13 @@ const images = [
   },
   {
     original: TopGolfPlaying,
-    originalAlt: "Playing gold at TopGolf social",
+    originalAlt: "Playing golf at TopGolf social",
   },
   {
     original: TopGolfTalking,
     originalAlt: "Talking to Google recruiters at TopGolf social",
   },
 ];
-
-let handleSlide = (nextIndex) => {
-  console.log("switching to slide " + nextIndex);
-}
 
 function ImageSlider() {
 
@@ -67,7 +63,7 @@ function ImageSlider() {
         showPlayButton={false}
         autoPlay={true}
         slideDuration={0}
-        slideInterval={10000}
+        slideInterval={7000}
         onBeforeSlide={updateCaptionIndex}
       />
       <p className="caption">{images[captionIndex].originalAlt}</p>

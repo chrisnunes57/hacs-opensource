@@ -6,6 +6,17 @@ body, html {
     padding: 0;
 }
 
+.main-content {
+    min-height: 60vh;
+}
+
+a {
+    text-decoration: none;
+    &:visited {
+        color: currentColor;
+    }
+}
+
 .fancy {
     text-decoration: none;
     position: relative;
