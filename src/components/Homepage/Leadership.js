@@ -7,7 +7,7 @@ const placeholderLeadership = [
   {
     name: "América Quistiano",
     imageUrl:
-      "https://drive.google.com/uc?export=view&id=1Pl3d2hrV75Wg7Vo5eUMho-aFz0sUY9Nh",
+      "https://drive.google.com/uc?export=view&id=14T-iOQboTBx3QYo2Cd2tTa0p3NXvLygh",
     role: "President",
     linkedin: "",
     email: "",
