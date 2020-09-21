@@ -49,6 +49,7 @@ a {
     font-family: $title-font;
     position: relative;
     width: max-content; 
+    margin-bottom: 100px;
 
     &::after {
         content: ' ';

@@ -10,6 +10,7 @@ import StudyNight from "../../media/Study Night.jpg";
 import TopGolfFood from "../../media/Top Golf Food Line.jpg";
 import TopGolfPlaying from "../../media/Top Golf Playing.jpg";
 import TopGolfTalking from "../../media/Top Golf Talking w Google.jpg";
+import Fade from "react-reveal/Fade";
 
 const images = [
   {
@@ -56,17 +57,21 @@ function ImageSlider() {
 
   return (
     <section className="slider">
-      <ImageGallery
-        items={images}
-        showThumbnails={false}
-        showFullscreenButton={false}
-        showPlayButton={false}
-        autoPlay={true}
-        slideDuration={0}
-        slideInterval={7000}
-        onBeforeSlide={updateCaptionIndex}
-      />
-      <p className="caption">{images[captionIndex].originalAlt}</p>
+      <Fade>
+        <ImageGallery
+          items={images}
+          showThumbnails={false}
+          showFullscreenButton={false}
+          showPlayButton={false}
+          autoPlay={true}
+          slideDuration={0}
+          slideInterval={7000}
+          onBeforeSlide={updateCaptionIndex}
+        />
+      </Fade>
+      <Fade bottom>
+        <p className="caption">{images[captionIndex].originalAlt}</p>
+      </Fade>
     </section>
   );
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import "./Homepage.scss";
 import OfficerCard from "../partials/OfficerCard";
+import Fade from "react-reveal/Fade";
 
 const placeholderLeadership = [
   {
@@ -108,7 +109,11 @@ function Leadership() {
                 <h1>Leadership</h1>
                 <div className="leadership-wrapper">
                     {placeholderLeadership.map( (officer, i) => {
-                        return <OfficerCard {...officer} key={i} />
+                        return (
+                          <Fade bottom>
+                            <OfficerCard {...officer} key={i} />
+                          </Fade>
+                        );
                     })}
                 </div>
             </div>

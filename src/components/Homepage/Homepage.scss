@@ -198,6 +198,7 @@
     margin: 60px auto;
     max-width: 1240px;
     padding: 0 20px;
+    min-height: 440px;
 
     img {
         min-width: 300px;
@@ -262,6 +263,10 @@
 
     .timeline-Header {
         display: none;
+    }
+
+    .feed-wrapper {
+        min-height: 440px;
     }
 }
 
@@ -336,3 +341,5 @@
     }
 
 }
+
+

@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "./Homepage.scss";
-import { Timeline } from "react-twitter-widgets";
+import Fade from "react-reveal/Fade";
 
 const styles = `
 <style>
@@ -81,10 +81,15 @@ function TwitterFeed() {
 
     return (
       <div className="twitter-feed">
-        <h3 className="section-title">Latest Tweets</h3>
-        <Timeline
-          dataSource={{ sourceType: "profile", screenName: "texasHACS" }}
-        />
+        <Fade bottom>
+          <h3 className="section-title">Latest Tweets</h3>
+        </Fade>
+        <div className="feed-wrapper">
+            <Fade bottom>
+                <a className="twitter-timeline" href="https://twitter.com/texasHACS?ref_src=twsrc%5Etfw">Tweets by texasHACS</a> 
+                <script async src="https://platform.twitter.com/widgets.js" charSet="utf-8"></script> 
+            </Fade>
+        </div>
       </div>
     );
 }

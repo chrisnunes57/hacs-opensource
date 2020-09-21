@@ -29,7 +29,7 @@ function Homepage(props) {
     <section className="homepage">
       <Hero />
       <ImageSlider />
-      {props.memberOfWeek ? <MemberHighlight member={props.memberOfWeek} /> : ""}
+      <MemberHighlight member={props.memberOfWeek} />
       <UpcomingEvents events={placeholderEvents} />
       <TwitterFeed />
       <Leadership />
