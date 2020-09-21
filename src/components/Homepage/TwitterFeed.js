@@ -53,7 +53,6 @@ const styles = `
 </style>`;
 
 const injectCss = () => {
-    console.log("ah")
     let timelineFrame = document.getElementById("twitter-widget-0");
 
     if (timelineFrame) {

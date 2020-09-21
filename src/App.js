@@ -14,7 +14,6 @@ function App() {
   const [siteContent, updateSiteContent] = useState({memberOfTheWeek: null, meetingLink: {link: null}});
 
   const loginUser = (loginData) => {
-    console.log(btoa(`${loginData.username}:${loginData.password}`));
     fetch("https://enigmatic-shore-29691.herokuapp.com/login", {
         method: "POST", // or 'PUT'
         credentials: "same-origin",
@@ -26,7 +25,6 @@ function App() {
       })
         .then((response) => response.json())
         .then((data) => {
-          console.log("Success:", data);
           updateUser(data);
         })
         .catch((error) => {
@@ -39,7 +37,6 @@ function App() {
     fetch("https://enigmatic-shore-29691.herokuapp.com/siteContent")
       .then((response) => response.json())
       .then((data) => {
-        console.log("Success:", data);
         updateSiteContent(data);
       })
       .catch((error) => {

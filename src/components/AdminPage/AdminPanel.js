@@ -2,7 +2,6 @@ import React, {useRef} from "react";
 import "./AdminPage.scss";
 
 const updateInDB = (data) => {
-    console.log(data)
     fetch("https://enigmatic-shore-29691.herokuapp.com/siteContent", {
         method: "POST", // or 'PUT'
         credentials: "same-origin",
@@ -32,13 +31,12 @@ function AdminPanel(props) {
             }
 
             data[name] = value;
-            console.log(data);
-            updateInDB(data);
         })
+
+        updateInDB(data);
 
     };
 
-    console.log(props);
     return (
       <div className="admin-panel">
         <div className="form-group">

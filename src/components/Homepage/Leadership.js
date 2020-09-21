@@ -6,38 +6,39 @@ const placeholderLeadership = [
   {
     name: "América Quistiano",
     imageUrl:
-      "https://media-exp1.licdn.com/dms/image/C4E03AQEo09iqOX19fw/profile-displayphoto-shrink_400_400/0?e=1605139200&v=beta&t=Ho50nBxnoA7KiR5ZMUld14SCOP8boSNPGTZdhNvwLRE",
+      "https://drive.google.com/uc?export=view&id=1Pl3d2hrV75Wg7Vo5eUMho-aFz0sUY9Nh",
     role: "President",
-    linkedin: "https://www.linkedin.com/in/america-quistiano/",
-    email: "quistianoamerica@gmail.com",
+    linkedin: "",
+    email: "",
   },
   {
     name: "Diana de la Torre",
     imageUrl:
-      "https://media-exp1.licdn.com/dms/image/C5603AQEB_yldWq071Q/profile-displayphoto-shrink_400_400/0?e=1605139200&v=beta&t=bXdZKNgszmFoVkftt1P9h22kdEDRMbe89Ki3fGE4AFc",
+      "https://drive.google.com/uc?export=view&id=11Fg_ItALRS3GKPfYolAsKgr47o4wuRVZ",
     role: "Vice President",
-    linkedin: "https://www.linkedin.com/in/dianadlt/",
-    email: "dianadelatorre098@gmail.com",
+    linkedin: "",
+    email: "",
   },
   {
     name: "Jeffrey Moulckers",
     imageUrl:
-      "https://media-exp1.licdn.com/dms/image/C4E03AQHfdVwA6hSiQw/profile-displayphoto-shrink_400_400/0?e=1605139200&v=beta&t=_koQq-6djS0DupvJwvF7Uh-HqLZpI6w543O3EXtI_6Y",
+      "https://drive.google.com/uc?export=view&id=10mAaVpd7oNhA2jhPAtZ06vkRbP9eD6Iy",
     role: "Corporate",
-    linkedin: "https://www.linkedin.com/in/jeffreymoulckers",
-    email: "jrmoulckers@gmail.com",
+    linkedin: "",
+    email: "",
   },
   {
     name: "Chelsie M Barrientos",
     imageUrl:
-      "https://media-exp1.licdn.com/dms/image/C4E03AQHuSVhdZdrEnw/profile-displayphoto-shrink_400_400/0?e=1605139200&v=beta&t=2o26RqQChQegNzTqExXRDsdRJBhaGLNeER4D7r1-NT4",
+      "https://drive.google.com/uc?export=view&id=161WcEgIXfKBI5V-idLznI_i7zMm5kSgt",
     role: "Financial",
-    linkedin: "https://www.linkedin.com/in/chelsie-barrientos/",
-    email: "csant1391@outlook.com",
+    linkedin: "",
+    email: "",
   },
   {
     name: "Max Patrick",
-    imageUrl: "",
+    imageUrl:
+      "https://drive.google.com/uc?export=view&id=1y6WbV-J1YhUlAFepn8Fm9KnBfyPDDg46",
     role: "Social",
     linkedin: "",
     email: "",
@@ -45,15 +46,15 @@ const placeholderLeadership = [
   {
     name: "Levi Villarreal",
     imageUrl:
-      "https://media-exp1.licdn.com/dms/image/C4E03AQGZGfiJ5-twMA/profile-displayphoto-shrink_400_400/0?e=1605139200&v=beta&t=-xDQ3kD3d-QqcXhPuiowex6wvsR8ZTQuLHemcBAThCc",
+      "https://drive.google.com/uc?export=view&id=1eXIqjfrgMaHQFa9OkNSXelAHN0p9oYMZ",
     role: "Professional Development",
-    linkedin: "https://www.linkedin.com/in/villarreallevi/",
-    email: "villarreallevi@gmail.com",
+    linkedin: "",
+    email: "",
   },
   {
     name: "Ivan Romero",
     imageUrl:
-      "",
+      "https://drive.google.com/uc?export=view&id=1lbEV_yaqq_fPxsOlBvroUnFA3J5vIp4Y",
     role: "Academic",
     linkedin: "",
     email: "",
@@ -61,15 +62,15 @@ const placeholderLeadership = [
   {
     name: "Maria Maynard",
     imageUrl:
-      "https://media-exp1.licdn.com/dms/image/C4E03AQH1ouQwC71jUA/profile-displayphoto-shrink_400_400/0?e=1605139200&v=beta&t=yU6C_EA--CNUEJLNZZuFRRWLW4pbrooTp1F5tLKZ9UQ",
+      "https://drive.google.com/uc?export=view&id=1Tmda-GsHP6jLiWtLCxAq8FPfOw6yLEDm",
     role: "Outreach",
-    linkedin: "https://www.linkedin.com/in/mariamaynard/",
+    linkedin: "",
     email: "",
   },
   {
     name: "Michelle Sanchez",
     imageUrl:
-      "",
+      "https://drive.google.com/uc?export=view&id=1SFfUEke2--dz-x7HwIQs4aCv-nvsdE6i",
     role: "Marketing",
     linkedin: "",
     email: "",
@@ -77,26 +78,26 @@ const placeholderLeadership = [
   {
     name: "Chris Nunes",
     imageUrl:
-      "https://avatars3.githubusercontent.com/u/20052335?s=460&u=20b01c4275495c7c9ee123aa97ac556fece087a8&v=4",
+      "https://drive.google.com/uc?export=view&id=1WsNS0zkdosk15RGIM8ZN7vDlO9-m4jUO",
     role: "Web Development",
-    linkedin: "https://linkedin.com/in/chris-nunes",
-    email: "chrisnunes57@gmail.com",
+    linkedin: "",
+    email: "",
   },
   {
     name: "Fidel Tinajero Soriano",
     imageUrl:
-      "https://media-exp1.licdn.com/dms/image/C4E03AQEV2oi5WxcQXA/profile-displayphoto-shrink_400_400/0?e=1605139200&v=beta&t=6IaQ3cX9aS-y_yUBShL89yL1NHEQMy7ceEFcLwVjaAA",
+      "https://drive.google.com/uc?export=view&id=1tl2eVtgnFSrzdg5Ke9E3-tLYdGQJFrLY",
     role: "Junior Officer",
-    linkedin: "https://www.linkedin.com/in/fideltinajero/",
+    linkedin: "",
     email: "",
   },
   {
     name: "Fina Sierra",
     imageUrl:
-      "https://media-exp1.licdn.com/dms/image/C4E03AQFMtcLlY35IUw/profile-displayphoto-shrink_400_400/0?e=1605139200&v=beta&t=yNejO96gJ0ho9PKuhU-_VAETW01pPCiXsiraCtDrgFY",
+      "https://drive.google.com/uc?export=view&id=1XuS85aMZMklyT9mpQDpo65Lo6Gwg5VyL",
     role: "Junior Officer",
-    linkedin: "https://www.linkedin.com/in/mariasierra09/",
-    email: "mariasierra023@gmail.com",
+    linkedin: "",
+    email: "",
   },
 ];
 
