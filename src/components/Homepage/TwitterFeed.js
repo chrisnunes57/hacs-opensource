@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import "./Homepage.scss";
 import Fade from "react-reveal/Fade";
+import { TwitterTimelineEmbed } from 'react-twitter-embed';
 
 const styles = `
 <style>
@@ -85,10 +86,13 @@ function TwitterFeed() {
           <h3 className="section-title">Latest Tweets</h3>
         </Fade>
         <div className="feed-wrapper">
-            <Fade bottom>
-                <a className="twitter-timeline" href="https://twitter.com/texasHACS?ref_src=twsrc%5Etfw">Tweets by texasHACS</a> 
-                <script async src="https://platform.twitter.com/widgets.js" charSet="utf-8"></script> 
-            </Fade>
+          <Fade bottom>
+            <TwitterTimelineEmbed
+              sourceType="profile"
+              screenName="texasHACS"
+              options={{ height: 440 }}
+            />
+          </Fade>
         </div>
       </div>
     );
