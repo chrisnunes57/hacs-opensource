@@ -11,13 +11,14 @@ function UpcomingEvents(props) {
           <h3 className="section-title">Upcoming Events</h3>
         </Fade>
         <Fade>
-          <div className="responsive-iframe-container">
+          <div className="calendar-wrapper">
             <iframe
               src="https://enigmatic-shore-29691.herokuapp.com/calendar"
               style={{
                 border: 0,
                 height: "600px",
                 background: "none",
+                width: "100%"
               }}
               frameBorder="0"
               id="calendar"
@@ -27,7 +28,7 @@ function UpcomingEvents(props) {
               src="https://enigmatic-shore-29691.herokuapp.com/calendar?agenda=true"
               style={{
                 border: 0,
-                height: "600px",
+                height: "400px",
                 background: "none",
               }}
               frameBorder="0"
