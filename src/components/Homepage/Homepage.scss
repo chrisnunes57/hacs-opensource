@@ -152,8 +152,8 @@
         }
     }
 
-    .card {
-        margin: 0 auto;
+    .leadership-wrapper .react-reveal {
+        margin: 0 auto !important;
     }
 }
 
@@ -298,6 +298,8 @@
     }
 
     .card {
+        
+
         img {
             height: 380px;
             width: 380px;
