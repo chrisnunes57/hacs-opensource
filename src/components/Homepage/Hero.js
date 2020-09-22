@@ -347,8 +347,7 @@ function Hero() {
         <h1>Welcome to HACS!</h1>
         <p>We're the Hispanic Association of Computer Scientists</p>
         <p>
-          The <span>Hispanic Association of Computer Scientists (HACS)</span> is
-          an organization that aims to empower and provide support for Hispanic 
+          The <span>Hispanic Association of Computer Scientists (HACS)</span> aims to empower and provide support for Hispanic 
           and Latinx students in computer science through academic,
           professional, and social events.
         </p>
