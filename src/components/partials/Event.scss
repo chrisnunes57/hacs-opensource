@@ -1,0 +1,75 @@
+@import "../../variables";
+
+.event {
+    margin: 60px 0;
+
+    &:not(:last-child) {
+        border-bottom: 2px solid $hr;
+        padding-bottom: 40px;
+    }
+
+    .title {
+        font-size: 24px;
+        line-height: 32px;
+        font-family: $title-font;
+        color: $title-text;
+        font-weight: bold;
+        margin: 0;
+    }
+
+    .description {
+        font-size: 20px;
+        line-height: 27px;
+        font-family: $content-font;
+        color: $subtitle;
+    }
+
+    .location, .link, .date {
+        font-size: 20px;
+        line-height: 26px;
+        font-family: $title-font;
+        color: $subtitle;
+        margin: 0;
+
+        &::before {
+            -moz-osx-font-smoothing: grayscale;
+            -webkit-font-smoothing: antialiased;
+            display: inline-block; 
+            font-style: normal;
+            font-variant: normal;
+            text-rendering: auto;
+            line-height: 1;
+        }
+    }
+
+    .date {
+
+        &::before {
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            content: "\f017";
+            margin-right: 8px;
+        }
+    }
+
+    .link {
+        color: $hacs-blue;
+
+        &::before {
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            content: "\f35d";
+            margin-right: 8px;
+        }
+    }
+
+    .location {
+
+        &::before {
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            content: "\f1ad";
+            margin-right: 8px;
+        }
+    }
+}

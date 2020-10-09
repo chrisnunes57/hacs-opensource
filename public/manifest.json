@@ -1,6 +1,6 @@
 {
-  "short_name": "HACS Site",
-  "name": "Hispanic Association of Computer Scientists Website",
+  "short_name": "HACS",
+  "name": "Hispanic Association of Computer Scientists",
   "icons": [
     {
       "src": "favicon.ico",

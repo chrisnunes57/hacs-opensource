@@ -1,0 +1,329 @@
+@import "../../variables";
+
+@font-face {
+  font-family: computerfont;
+  src: url("Computerfont.ttf");
+}
+
+.hero {
+    display: flex;
+    margin: 60px auto;
+    max-width: 1240px;
+    padding: 0 20px;
+
+    .content {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+
+        h1 {
+            font-family: $title-font;
+            color: $title-text;
+            font-size: 48px;
+            font-weight: bold;
+            line-height: 64px;
+            margin: 0;
+        }
+
+        h1 + p {
+            font-family: $title-font;
+            color: $subtitle;
+            font-size: 16px;
+            line-height: 18px;
+            margin-top: 4px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 18px;
+            font-family: $content-font;
+            color: $subtitle;
+        }
+
+        span {
+            color: $hacs-blue;
+        }
+    }
+
+    svg {
+        min-width: 550px;
+        height: 510px;
+        display: block;
+        max-width: 700px;
+    }
+
+    .cls-1,
+    .cls-3 {
+        fill: #27246a;
+    }
+
+    .cls-3 {
+        font-size: 110px;
+        font-family: Computerfont;
+    }
+
+    .cls-4,
+    .cls-6,
+    .cls-8 {
+        fill: none;
+        stroke-miterlimit: 10;
+    }
+
+    .cls-4 {
+        stroke: #27246a;
+        stroke-width: 7px;
+    }
+
+    .cls-5 {
+        fill: #981b1e;
+    }
+
+    .cls-6 {
+        stroke: #088c45;
+        stroke-width: 5px;
+    }
+
+    .cls-7 {
+        fill: #eba222;
+    }
+
+    .cls-8 {
+        stroke: #981b1e;
+        stroke-width: 4px;
+    }
+
+    #Inner_Ring {
+        animation: rotateLeft 120s infinite linear;
+        transform-origin: 50% 50%;
+        transform-box: fill-box;
+    }
+
+    #Outer_Ring {
+        animation: rotateRight 120s infinite linear;
+        transform-origin: 50% 50%;
+        transform-box: fill-box;
+    }
+
+    @media (prefers-reduced-motion) {
+    #Inner_Ring, #Outer_Ring {
+        animation: none;
+    }
+    }
+
+    @keyframes rotateLeft {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+    }
+
+    @keyframes rotateRight {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-359deg);
+    }
+}
+}
+
+@media only screen and (max-width : 800px) {
+/* Styles */
+    .hero {
+        flex-wrap: wrap;
+    }
+
+
+    .hero svg {
+        min-width: 0;
+    }
+
+    .slider {
+        margin-top: 40px !important;
+    }
+
+    .member-wrapper {
+        flex-wrap: wrap;
+
+        img {
+            margin: 0 auto;
+        }
+    }
+
+    .leadership-wrapper .react-reveal {
+        margin: 0 auto !important;
+    }
+}
+
+@media only screen and (max-width : 610px) {
+/* Styles */
+    .hero {
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width : 800px) {
+/* Styles */
+    .content {
+        margin-left: 0 !important;
+    }
+}
+
+.slider {
+    margin-top: 180px;
+    background-color: $faded-blue;
+    padding: 20px 0 60px 0;
+
+    .image-gallery {
+        margin: 60px auto;
+        max-width: 1240px;
+
+        img {
+            max-width: 1080px;
+        }
+    }
+
+    .caption {
+        font-size: 24px;
+        line-height: 32px;
+        font-family: $title-font;
+        color: $title-text;
+        text-align: center;
+    }
+}
+
+.member-highlight {
+    margin: 60px auto;
+    max-width: 1240px;
+    padding: 0 20px;
+    min-height: 440px;
+
+    img {
+        min-width: 300px;
+        max-width: 300px;
+        min-height: 300px;
+        max-height: 300px;
+        border-radius: 100%;
+        object-fit:cover;
+    }
+
+    .member-wrapper {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 60px;
+        color: $title-text;
+        
+        .content {
+            max-width: 800px;
+            margin-left: 30px;
+            
+            .name {
+                font-size: 24px;
+                line-height: 32px;
+                font-family: $title-font;
+            }
+
+            .description {
+                font-size: 16px;
+                line-height: 22px;
+                font-family: $content-font;
+            }
+        }
+    }
+}
+
+.upcoming-events {
+    background-color: $faded-blue;
+    padding: 0 20px;
+
+    .section-title {
+        margin-bottom: 100px;
+    }
+
+    .content-wrapper {
+        margin: 100px auto;
+        max-width: 1240px;
+        padding: 60px 0;
+    }
+}
+
+.twitter-feed {
+    margin: 60px auto;
+    max-width: 1240px;
+    padding: 0 20px;
+
+    .tweet-wrapper {
+        margin-top: 60px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .timeline-Header {
+        display: none;
+    }
+
+    .feed-wrapper {
+        min-height: 440px;
+    }
+}
+
+.leadership {
+    background-color: $faded-blue;
+
+    .container {
+        margin: 0 auto;
+        margin-top: 100px;
+        max-width: 1240px;
+
+        h1 {
+            font-weight: bold;
+            font-size: 48px;
+            line-height: 63px;
+            font-family: $title-font;
+            color: $hacs-blue;
+            padding: 60px 0;
+            text-align: center;
+            margin: 0;
+        }
+    }
+
+    .leadership-wrapper {
+        padding-bottom: 60px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .card {
+        
+
+        img {
+            height: 380px;
+            width: 380px;
+            object-fit: cover;
+            object-position: 50% 30%;
+        }
+    }
+}
+
+
+#calendar-mobile {
+    display: none;
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 610px) {
+    #calendar-mobile {
+        display: block;
+    }
+
+    #calendar { 
+        display: none;
+    }
+
+}
+
+
