@@ -4,7 +4,6 @@ React based website for the Hispanic Association of Computer Scientists. Allowin
 # Pre-Setup Setup
 You will need:  
 - node.js
-- yarn
 - git
 - a text editor of your choice or IDE. Brackets, VSCode, and Webstorm are all great.
 
