@@ -1,6 +1,9 @@
 # HACS-OpenSource-WebSite  
 React based website for the Hispanic Association of Computer Scientists. Allowing our members to be able to contribute to the website and gain experience with industry tools.  
 
+# Important!
+This project is only intended for students at The University of Texas at Austin! We appreciate any offers of help, but please do not try to contribute if you are not a member of the Hispanic Association of Computer Scientists at UT Austin.
+
 # Pre-Setup Setup
 You will need:  
 - node.js
