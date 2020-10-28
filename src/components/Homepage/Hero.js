@@ -351,6 +351,9 @@ function Hero() {
           and Latinx students in computer science through academic,
           professional, and social events.
         </p>
+        <a href="https://t.co/KUhKphLx2d?amp=1">
+          <button className="mailing-list">Join Our Mailing List</button>
+        </a>
       </div>
     </div>
   );

@@ -11,6 +11,30 @@
     max-width: 1240px;
     padding: 0 20px;
 
+    button.mailing-list {
+        border: 2px solid $hacs-blue;
+        box-sizing: border-box;
+        border-radius: 5px;
+        height: 46px;
+        width: 200px;
+        background-color: transparent;
+        color: $hacs-blue;
+        font-family: $title-font;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 18px;
+        text-transform: uppercase;
+        cursor: pointer;
+        margin: 20px 0;
+        transition: 0.2s all;
+
+        &:hover, &:focus {
+            background-color: $hacs-blue;
+            color: white;
+        }
+    }
+
     .content {
         display: flex;
         flex-flow: column;
