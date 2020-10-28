@@ -11,6 +11,12 @@
     max-width: 1240px;
     padding: 0 20px;
 
+    a {
+        height: 46px;
+        width: 200px;
+        margin: 20px 0;
+    }
+
     button.mailing-list {
         border: 2px solid $hacs-blue;
         box-sizing: border-box;
@@ -26,7 +32,6 @@
         line-height: 18px;
         text-transform: uppercase;
         cursor: pointer;
-        margin: 20px 0;
         transition: 0.2s all;
 
         &:hover, &:focus {
