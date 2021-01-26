@@ -102,16 +102,17 @@ const placeholderLeadership = [
   },
 ];
 
-function Leadership() {
+function Leadership(props) {
+
     return (
         <section className="leadership">
             <div className="container">
                 <h1>Leadership</h1>
                 <div className="leadership-wrapper">
-                    {placeholderLeadership.map( (officer, i) => {
+                    {props.officers.map( (officer, i) => {
                         return (
-                          <Fade bottom>
-                            <OfficerCard {...officer} key={i} />
+                          <Fade bottom key={i}>
+                            <OfficerCard {...officer} />
                           </Fade>
                         );
                     })}
