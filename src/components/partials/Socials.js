@@ -44,7 +44,7 @@ function Socials(props) {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <i className="fab fa-discord"></i>
+      <i className="fab fa-discord"></i>
       </a>
     </div>
   );

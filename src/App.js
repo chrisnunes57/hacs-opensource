@@ -39,7 +39,6 @@ function App() {
       .then((data) => {
         data.officers.members.sort( (a, b) => b.order - a.order);
         updateSiteContent(data);
-        console.log(data)
       })
       .catch((error) => {
         console.error("Error:", error);

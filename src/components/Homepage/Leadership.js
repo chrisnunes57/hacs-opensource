@@ -103,7 +103,6 @@ const placeholderLeadership = [
 ];
 
 function Leadership(props) {
-
     return (
         <section className="leadership">
             <div className="container">
