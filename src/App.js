@@ -37,6 +37,7 @@ function App() {
     fetch("https://enigmatic-shore-29691.herokuapp.com/siteContent")
       .then((response) => response.json())
       .then((data) => {
+        data.officers.members.sort( (a, b) => b.order - a.order);
         updateSiteContent(data);
       })
       .catch((error) => {
@@ -56,6 +57,9 @@ function App() {
               <Route path="/meet">
                 <Redirect link={siteContent.meetingLink.link} />
               </Route>
+              <Route path="/develop">
+                <Redirect link={"https://forms.gle/c7vJN8uMALUwoGbH9"} />
+              </Route>
               <Route path="/admin">
                 <AdminPage
                   user={user}
@@ -64,7 +68,7 @@ function App() {
                 />
               </Route>
               <Route path="/">
-                <Homepage memberOfWeek={siteContent.memberOfTheWeek} />
+                <Homepage memberOfWeek={siteContent.memberOfTheWeek} officers={siteContent.officers ? siteContent.officers.members : []} />
               </Route>
             </Switch>
           </div>

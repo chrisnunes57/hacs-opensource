@@ -32,7 +32,7 @@ function Homepage(props) {
       <MemberHighlight member={props.memberOfWeek} />
       <UpcomingEvents events={placeholderEvents} />
       <TwitterFeed />
-      <Leadership />
+      <Leadership officers={props.officers} />
     </section>
   );
 }

@@ -65,5 +65,37 @@
         border-radius: .25rem;
         transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
     }
-    
+}
+
+.subtitle {
+    color: $subtitle;
+    font-weight: lighter;
+}
+
+.userEdit {
+    padding: 5px 0;
+}
+
+.userEdit p {
+
+    position: relative;
+    cursor: pointer;
+    display: inline;
+
+    &::after {
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        content: "\f303";
+        position: absolute;
+        top: 3px;
+        right: -24px;
+        opacity: 0;
+    }
+
+    &:hover {
+        
+        &::after {
+            opacity: 1;
+        }
+    }
 }

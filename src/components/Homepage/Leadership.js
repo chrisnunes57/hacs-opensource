@@ -37,9 +37,9 @@ const placeholderLeadership = [
     email: "",
   },
   {
-    name: "Max Patrick",
+    name: "Andrew Jaso",
     imageUrl:
-      "https://drive.google.com/uc?export=view&id=1y6WbV-J1YhUlAFepn8Fm9KnBfyPDDg46",
+      "https://drive.google.com/uc?export=view&id=109HLNFRN-gtvuat7CF2qtfM5CpLbFBH1",
     role: "Social",
     linkedin: "",
     email: "",
@@ -61,9 +61,9 @@ const placeholderLeadership = [
     email: "",
   },
   {
-    name: "Maria Maynard",
+    name: "Fina Sierra",
     imageUrl:
-      "https://drive.google.com/uc?export=view&id=1Tmda-GsHP6jLiWtLCxAq8FPfOw6yLEDm",
+      "https://drive.google.com/uc?export=view&id=1XuS85aMZMklyT9mpQDpo65Lo6Gwg5VyL",
     role: "Outreach",
     linkedin: "",
     email: "",
@@ -93,25 +93,25 @@ const placeholderLeadership = [
     email: "",
   },
   {
-    name: "Fina Sierra",
+    name: "Felipe Paz",
     imageUrl:
-      "https://drive.google.com/uc?export=view&id=1XuS85aMZMklyT9mpQDpo65Lo6Gwg5VyL",
+      "https://drive.google.com/uc?export=view&id=1iwAXvjON0vrKBRjC2ydfcAsfAuDYEtux",
     role: "Junior Officer",
     linkedin: "",
     email: "",
   },
 ];
 
-function Leadership() {
+function Leadership(props) {
     return (
         <section className="leadership">
             <div className="container">
                 <h1>Leadership</h1>
                 <div className="leadership-wrapper">
-                    {placeholderLeadership.map( (officer, i) => {
+                    {props.officers.map( (officer, i) => {
                         return (
-                          <Fade bottom>
-                            <OfficerCard {...officer} key={i} />
+                          <Fade bottom key={i}>
+                            <OfficerCard {...officer} />
                           </Fade>
                         );
                     })}

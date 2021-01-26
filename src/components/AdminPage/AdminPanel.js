@@ -1,5 +1,6 @@
 import React, {useRef} from "react";
 import "./AdminPage.scss";
+import UserEdit from "./UserEdit.js";
 
 const updateInDB = (data) => {
     fetch("https://enigmatic-shore-29691.herokuapp.com/siteContent", {
@@ -40,7 +41,7 @@ function AdminPanel(props) {
     return (
       <div className="admin-panel">
         <div className="form-group">
-          <label htmlFor="meetingLink">/meet Redirect Link</label>
+          <label htmlFor="meetingLink"><h2>/meet Redirect Link</h2></label>
           <input
             type="url"
             className="form-control"
@@ -54,6 +55,14 @@ function AdminPanel(props) {
             This is the link that people will be redirected to when they try to
             go to <code>texashacs.org/meet</code>
           </small>
+        </div>
+        <div className="form-group">
+          <h2>Officers</h2>
+          <div className="officer-group">
+            {props.officers && props.officers.members.map((member, i) => {
+              return <UserEdit member={member} key={i}/>
+            })}
+          </div>
         </div>
         <button className="btn btn-primary" onClick={updateInfo}>
           Update
