@@ -7,6 +7,7 @@ import Header from './components/Header';
 import Footer from "./components/Footer";
 import AdminPage from './components/AdminPage';
 import Redirect from './components/Redirect';
+import Opportunities from './components/Opportunities';
 
 function App() {
 
@@ -59,6 +60,9 @@ function App() {
               </Route>
               <Route path="/develop">
                 <Redirect link={"https://forms.gle/c7vJN8uMALUwoGbH9"} />
+              </Route>
+              <Route path="/opportunities">
+                <Opportunities />
               </Route>
               <Route path="/admin">
                 <AdminPage

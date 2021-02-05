@@ -57,7 +57,7 @@ function AdminPanel(props) {
           </small>
         </div>
         <div className="form-group">
-          <h2>Officers</h2>
+          <h2>Officers (WiP)</h2>
           <div className="officer-group">
             {props.officers && props.officers.members.map((member, i) => {
               return <UserEdit member={member} key={i}/>

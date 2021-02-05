@@ -6,6 +6,14 @@ body, html {
     padding: 0;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: $title-font;
+}
+
+p {
+    font-family: $content-font;
+}
+
 .main-content {
     min-height: 60vh;
 }
