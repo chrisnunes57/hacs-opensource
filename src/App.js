@@ -58,6 +58,9 @@ function App() {
               <Route path="/meet">
                 <Redirect link={siteContent.meetingLink.link} />
               </Route>
+              <Route path="/newsletter">
+                <Redirect link={"https://t.co/KUhKphLx2d?amp=1"} />
+              </Route>
               <Route path="/develop">
                 <Redirect link={"https://forms.gle/c7vJN8uMALUwoGbH9"} />
               </Route>
@@ -72,7 +75,9 @@ function App() {
                 />
               </Route>
               <Route path="/">
-                <Homepage memberOfWeek={siteContent.memberOfTheWeek} officers={siteContent.officers ? siteContent.officers.members : []} />
+                <Homepage 
+                  memberOfWeek={siteContent.memberOfTheWeek} 
+                  officers={siteContent.officers ? siteContent.officers.members : []} />
               </Route>
             </Switch>
           </div>
