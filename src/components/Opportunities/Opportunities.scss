@@ -1,5 +1,14 @@
 .opportunities {
-    margin: 60px auto;
-    max-width: 1240px;
-    padding: 0 20px;
+  margin: 60px auto;
+  max-width: 1240px;
+  padding: 0 20px;
+
+  .opportunity {
+    width: auto;
+    padding: 10px;
+    
+    .title {
+      text-align: center;
+    }
+  }
 }

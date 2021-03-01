@@ -1,73 +1,120 @@
 @import "variables";
 @import "~react-image-gallery/styles/scss/image-gallery.scss";
 
-body, html {
-    margin: 0;
-    padding: 0;
+body,
+html {
+  margin: 0;
+  padding: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: $title-font;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $title-font;
 }
 
 p {
-    font-family: $content-font;
+  font-family: $content-font;
 }
 
 .main-content {
-    min-height: 60vh;
+  min-height: 60vh;
 }
 
 a {
-    text-decoration: none;
-    &:visited {
-        color: currentColor;
-    }
+  text-decoration: none;
+  &:visited {
+    color: currentColor;
+  }
+}
+
+button {
+  border: 2px solid $hacs-blue;
+  box-sizing: border-box;
+  border-radius: 5px;
+  height: 40px;
+  width: 100px;
+  background-color: transparent;
+  color: $hacs-blue;
+  font-family: $title-font;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: 0.2s all;
+
+  &:hover,
+  &:focus {
+    background-color: $hacs-blue;
+    color: white;
+  }
+}
+
+.flex {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.flex-row {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .fancy {
-    text-decoration: none;
-    position: relative;
-    letter-spacing: 0.5px;
+  text-decoration: none;
+  position: relative;
+  letter-spacing: 0.5px;
 
+  &::after {
+    content: " ";
+    width: 0;
+    height: 2px;
+    background-color: currentColor;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transition: 0.2s all;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
     &::after {
-        content: ' ';
-        width: 0;
-        height: 2px;
-        background-color: currentColor;
-        position: absolute;
-        bottom: -2px;
-        left: 0;
-        right: 0;
-        margin: auto;
-        transition: 0.2s all;
+      width: 100%;
     }
-
-    &:hover, &:focus, &:active {
-        &::after {
-            width: 100%;
-        }
-    }
+  }
 }
 
 .section-title {
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 32px;
-    font-family: $title-font;
-    position: relative;
-    width: max-content; 
-    margin-bottom: 100px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  font-family: $title-font;
+  position: relative;
+  width: max-content;
+  margin-bottom: 100px;
 
-    &::after {
-        content: ' ';
-        width: calc(100% + 15px);
-        height: 3px;
-        background-color: $hacs-blue;
-        position: absolute;
-        bottom: -16px;
-        left: 0;
-        right: 0;
-        margin: auto;
-    }
+  &::after {
+    content: " ";
+    width: calc(100% + 15px);
+    height: 3px;
+    background-color: $hacs-blue;
+    position: absolute;
+    bottom: -16px;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
 }
