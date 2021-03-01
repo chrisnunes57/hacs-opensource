@@ -1,14 +1,27 @@
+section {
+  margin: 10vh 0;
+}
+
 .opportunities {
   margin: 60px auto;
   max-width: 1240px;
   padding: 0 20px;
+  text-align: center;
 
   .opportunity {
     width: auto;
     padding: 10px;
     
+    .details {
+      padding: 0 25px;
+    }
+
     .title {
       text-align: center;
     }
+  }
+
+  .card { 
+    padding: 0;
   }
 }
