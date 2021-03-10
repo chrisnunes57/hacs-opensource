@@ -28,6 +28,7 @@ const styles = `
         border: 1px solid #EDEDED;
         margin-right: 30px;
         border-radius: 5px;
+        margin-bottom: 10px;
     }
 
     .timeline-TweetList {
@@ -51,6 +52,7 @@ const styles = `
     .customisable-border {
         border: none !important;
     }
+
 </style>`;
 
 const injectCss = () => {

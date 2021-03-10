@@ -13,15 +13,15 @@ function App() {
 
   const [user, updateUser] = useState(null);
   const [siteContent, updateSiteContent] = useState({memberOfTheWeek: null, meetingLink: {link: null}});
+  const API_ENDPOINT = "https://enigmatic-shore-29691.herokuapp.com";
 
   const loginUser = (loginData) => {
-    fetch("https://enigmatic-shore-29691.herokuapp.com/login", {
+    fetch(API_ENDPOINT + "/login", {
         method: "POST", // or 'PUT'
         credentials: "same-origin",
         headers: {
           "Content-Type": "application/json",
-          Authorization:
-            "Basic " + btoa(`${loginData.username}:${loginData.password}`),
+          Authorization: "Basic " + btoa(`${loginData.username}:${loginData.password}`),
         },
       })
         .then((response) => response.json())
@@ -35,7 +35,7 @@ function App() {
 
   // an initial api call to get our member of the week
   useEffect( () => {
-    fetch("https://enigmatic-shore-29691.herokuapp.com/siteContent")
+    fetch(API_ENDPOINT + "/siteContent")
       .then((response) => response.json())
       .then((data) => {
         data.officers.members.sort( (a, b) => b.order - a.order);
