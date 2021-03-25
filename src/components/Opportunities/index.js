@@ -6,6 +6,7 @@ import {
   renderJobListings,
   renderScholarships,
 } from "./utils.js";
+import { getTimeStamp } from "../utils/utils";
 
 const placeholderEvents = [
   {
@@ -202,7 +203,7 @@ const placeholderSponsorListings = [
   {
     title: "Cisco Technical Consulting Engineer Co-op 4",
     timeline: {
-      openDate: null,
+      openDate: "10/10/10",
       closeDate: null,
     },
     img:
@@ -217,8 +218,8 @@ const placeholderSponsorListings = [
   {
     title: "Cisco Technical Consulting Engineer Co-op 5",
     timeline: {
-      openDate: null,
-      closeDate: null,
+      openDate: "10/11/11",
+      closeDate: "10/11/12",
     },
     img:
       "http://drive.google.com/uc?export=view&id=16DFXoFE6g_GNrYvBZYYa-hmBxVU53Z8C",
@@ -233,7 +234,7 @@ const placeholderSponsorListings = [
     title: "Cisco Technical Consulting Engineer Co-op 6",
     timeline: {
       openDate: null,
-      closeDate: null,
+      closeDate: "12/12/12",
     },
     img:
       "http://drive.google.com/uc?export=view&id=16DFXoFE6g_GNrYvBZYYa-hmBxVU53Z8C",
@@ -378,10 +379,34 @@ function Opportunities(props) {
   // };
 
   // an initial api call to get all opportunities data
+
+  const startTime = new Date("04 December 2020 19:00 CST").toISOString();
+  const endTime = new Date("03 March 2021 19:00 CST").toISOString();
+  const eventData = {
+    title: "HACS x Cisco 1",
+    startTime: startTime,
+    endTime: endTime,
+    img: null,
+    meetingLink:
+      "https://cisco.webex.com/cisco/j.php?MTID=m56c5cf702bc5043269cece567e3efe5b",
+    rsvpLink: "https://cisco.avature.net/su/c82e80f1ecff7432",
+    location:
+      "https://cisco.webex.com/cisco/j.php?MTID=m56c5cf702bc5043269cece567e3efe5b",
+    description:
+      "As the largest top-10 computer science program in the country, Texas Computer Science is uniquely positioned to tackle head-on the demand for bolstering diversity in tech. The Texas Computer Science Endowment for Change was established to support diversity efforts by funding opportunities for underserved students with a demonstrated passion for computer science. Scholarships through the Texas Computer Science Endowment for Change are available to incoming and current undergraduate computer science students who have participated in The Code Longhorn program or are members of or plan to join the Association of Black Computer Scientists (ABCS), or the Hispanic Association of Computer Scientists (HACS).",
+    otherLinks: {
+      flyerLink: "http://aldsjflas;fdd",
+      jobListing: "adsflk;jdsfk;dsajf;l",
+      adsflk: "jasd;lkfjdsaf",
+      asdf: {},
+    },
+  };
+
   useEffect(() => {
-    fetch("https://enigmatic-shore-29691.herokuapp.com/opportunities")
+    fetch("http://localhost:5000/opportunities")
       .then((response) => response.json())
       .then((data) => {
+        console.log(data);
         updateOpportunitiesContent(data);
       })
       .catch((error) => {
@@ -389,45 +414,50 @@ function Opportunities(props) {
       });
   }, []);
 
+  console.log(opportunitiesContent)
   var {
-    sponsorListings,
-    sponsorEvents,
-    sponsorScholarships,
+    jobListings,
+    events,
+    scholarships,
   } = opportunitiesContent;
 
-  sponsorEvents = placeholderEvents;
-  sponsorScholarships = placeholderSponsorScholarships;
-  sponsorListings = placeholderSponsorListings;
+  console.log(events)
 
-  const scholarships = (
-    <div className="scholarships">
-      <Fade bottom>
-        <h3 className="section-title">Scholarships</h3>
-      </Fade>
-      <Fade left>
-          {renderScholarships(sponsorScholarships)}
-      </Fade>
-    </div>
-  );
+  // sponsorEvents = placeholderEvents;
+  // sponsorScholarships = placeholderSponsorScholarships;
+  // sponsorListings = placeholderSponsorListings;
 
-  const events = (
-    <div className="corporate-events">
-      <Fade bottom>
-        <h3 className="section-title">Events</h3>
-      </Fade>
-      <Fade right>
-          {renderEvents(sponsorEvents)}
-      </Fade>
-    </div>
-  );
-
-  const jobListings = (
+  const jobListingsSection = jobListings?.sponsors ? (
     <div className="job-listings">
       <Fade bottom>
         <h3 className="section-title">Job Listings</h3>
       </Fade>
-      <Fade left>{renderJobListings(sponsorListings)}</Fade>
+      <Fade left>{renderJobListings(jobListings.sponsors)}</Fade>
     </div>
+  ) : (
+    <div />
+  );
+
+  const eventsSection = events?.sponsors ? (
+    <div className="corporate-events">
+      <Fade bottom>
+        <h3 className="section-title">Events</h3>
+      </Fade>
+      <Fade right>{renderEvents(events.sponsors)}</Fade>
+    </div>
+  ) : (
+    <div />
+  );
+
+  const scholarshipsSection = scholarships?.sponsors ? (
+    <div className="scholarships">
+      <Fade bottom>
+        <h3 className="section-title">Scholarships</h3>
+      </Fade>
+      <Fade left>{renderScholarships(scholarships.sponsors)}</Fade>
+    </div>
+  ) : (
+    <div />
   );
 
   return (
@@ -447,9 +477,9 @@ function Opportunities(props) {
           </p>
         </section>
       </Fade>
-      {scholarships}
-      {events}
-      {jobListings}
+      {jobListingsSection}
+      {eventsSection}
+      {scholarshipsSection}
     </div>
   );
 }
