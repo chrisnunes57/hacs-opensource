@@ -4,8 +4,8 @@ import Login from "./Login.js";
 import AdminPanel from "./AdminPanel";
 
 function AdminPage(props) {
-  if (props.user || window.location.href.includes("localhost")) {
-      return <AdminPanel {...props.siteContent}/>;
+  if (props.user /*|| window.location.href.includes("localhost")*/) {
+      return <AdminPanel {...props.siteContent} signoutUser = {props.signoutUser} user = {props.user}/>;
   } else {
       return <Login loginUser={props.loginUser} />;
   }

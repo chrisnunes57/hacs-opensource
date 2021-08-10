@@ -13,8 +13,7 @@ const placeholderEvents = [
     title: "HACS x Cisco 1",
     date: "3/3/2021",
     startTime: "7:00pm CST",
-    img:
-      "http://drive.google.com/uc?export=view&id=16DFXoFE6g_GNrYvBZYYa-hmBxVU53Z8C",
+    img: "http://drive.google.com/uc?export=view&id=16DFXoFE6g_GNrYvBZYYa-hmBxVU53Z8C",
     meetingLink:
       "https://cisco.webex.com/cisco/j.php?MTID=m56c5cf702bc5043269cece567e3efe5b",
     rsvpLink: "https://cisco.avature.net/su/c82e80f1ecff7432",
@@ -31,8 +30,7 @@ const placeholderEvents = [
     title: "HACS x Cisco 2",
     date: "3/3/2021",
     startTime: "7:00pm CST",
-    img:
-      "http://drive.google.com/uc?export=view&id=16DFXoFE6g_GNrYvBZYYa-hmBxVU53Z8C",
+    img: "http://drive.google.com/uc?export=view&id=16DFXoFE6g_GNrYvBZYYa-hmBxVU53Z8C",
     meetingLink:
       "https://cisco.webex.com/cisco/j.php?MTID=m56c5cf702bc5043269cece567e3efe5b",
     rsvpLink: "https://cisco.avature.net/su/c82e80f1ecff7432",
@@ -49,8 +47,7 @@ const placeholderEvents = [
     title: "HACS x Cisco 3",
     date: "3/3/2021",
     startTime: "7:00pm CST",
-    img:
-      "http://drive.google.com/uc?export=view&id=16DFXoFE6g_GNrYvBZYYa-hmBxVU53Z8C",
+    img: "http://drive.google.com/uc?export=view&id=16DFXoFE6g_GNrYvBZYYa-hmBxVU53Z8C",
     meetingLink:
       "https://cisco.webex.com/cisco/j.php?MTID=m56c5cf702bc5043269cece567e3efe5b",
     rsvpLink: "https://cisco.avature.net/su/c82e80f1ecff7432",
@@ -67,8 +64,7 @@ const placeholderEvents = [
     title: "HACS x Cisco 4",
     date: "3/3/2021",
     startTime: "7:00pm CST",
-    img:
-      "http://drive.google.com/uc?export=view&id=16DFXoFE6g_GNrYvBZYYa-hmBxVU53Z8C",
+    img: "http://drive.google.com/uc?export=view&id=16DFXoFE6g_GNrYvBZYYa-hmBxVU53Z8C",
     meetingLink:
       "https://cisco.webex.com/cisco/j.php?MTID=m56c5cf702bc5043269cece567e3efe5b",
     rsvpLink: "https://cisco.avature.net/su/c82e80f1ecff7432",
@@ -85,8 +81,7 @@ const placeholderEvents = [
     title: "HACS x Cisco 5",
     date: "3/3/2021",
     startTime: "7:00pm CST",
-    img:
-      "http://drive.google.com/uc?export=view&id=16DFXoFE6g_GNrYvBZYYa-hmBxVU53Z8C",
+    img: "http://drive.google.com/uc?export=view&id=16DFXoFE6g_GNrYvBZYYa-hmBxVU53Z8C",
     meetingLink:
       "https://cisco.webex.com/cisco/j.php?MTID=m56c5cf702bc5043269cece567e3efe5b",
     rsvpLink: "https://cisco.avature.net/su/c82e80f1ecff7432",
@@ -103,8 +98,7 @@ const placeholderEvents = [
     title: "HACS x Cisco 6",
     date: "3/3/2021",
     startTime: "7:00pm CST",
-    img:
-      "http://drive.google.com/uc?export=view&id=16DFXoFE6g_GNrYvBZYYa-hmBxVU53Z8C",
+    img: "http://drive.google.com/uc?export=view&id=16DFXoFE6g_GNrYvBZYYa-hmBxVU53Z8C",
     meetingLink:
       "https://cisco.webex.com/cisco/j.php?MTID=m56c5cf702bc5043269cece567e3efe5b",
     rsvpLink: "https://cisco.avature.net/su/c82e80f1ecff7432",
@@ -121,8 +115,7 @@ const placeholderEvents = [
     title: "HACS x Cisco 7",
     date: "3/3/2021",
     startTime: "7:00pm CST",
-    img:
-      "http://drive.google.com/uc?export=view&id=16DFXoFE6g_GNrYvBZYYa-hmBxVU53Z8C",
+    img: "http://drive.google.com/uc?export=view&id=16DFXoFE6g_GNrYvBZYYa-hmBxVU53Z8C",
     meetingLink:
       "https://cisco.webex.com/cisco/j.php?MTID=m56c5cf702bc5043269cece567e3efe5b",
     rsvpLink: "https://cisco.avature.net/su/c82e80f1ecff7432",
@@ -139,8 +132,7 @@ const placeholderEvents = [
     title: "HACS x Cisco 8",
     date: "3/3/2021",
     startTime: "7:00pm CST",
-    img:
-      "http://drive.google.com/uc?export=view&id=16DFXoFE6g_GNrYvBZYYa-hmBxVU53Z8C",
+    img: "http://drive.google.com/uc?export=view&id=16DFXoFE6g_GNrYvBZYYa-hmBxVU53Z8C",
     meetingLink:
       "https://cisco.webex.com/cisco/j.php?MTID=m56c5cf702bc5043269cece567e3efe5b",
     rsvpLink: "https://cisco.avature.net/su/c82e80f1ecff7432",
@@ -161,8 +153,7 @@ const placeholderSponsorListings = [
       openDate: null,
       closeDate: null,
     },
-    img:
-      "http://drive.google.com/uc?export=view&id=16DFXoFE6g_GNrYvBZYYa-hmBxVU53Z8C",
+    img: "http://drive.google.com/uc?export=view&id=16DFXoFE6g_GNrYvBZYYa-hmBxVU53Z8C",
     link: "http://bit.ly/tcecoop21",
     description:
       "Cisco doesn't have many roles open right now, however they are recruiting actively for their technical consulting engineer co-op.",
@@ -176,8 +167,7 @@ const placeholderSponsorListings = [
       openDate: null,
       closeDate: null,
     },
-    img:
-      "http://drive.google.com/uc?export=view&id=16DFXoFE6g_GNrYvBZYYa-hmBxVU53Z8C",
+    img: "http://drive.google.com/uc?export=view&id=16DFXoFE6g_GNrYvBZYYa-hmBxVU53Z8C",
     link: "http://bit.ly/tcecoop21",
     description:
       "Cisco doesn't have many roles open right now, however they are recruiting actively for their technical consulting engineer co-op.",
@@ -191,8 +181,7 @@ const placeholderSponsorListings = [
       openDate: null,
       closeDate: null,
     },
-    img:
-      "http://drive.google.com/uc?export=view&id=16DFXoFE6g_GNrYvBZYYa-hmBxVU53Z8C",
+    img: "http://drive.google.com/uc?export=view&id=16DFXoFE6g_GNrYvBZYYa-hmBxVU53Z8C",
     link: "http://bit.ly/tcecoop21",
     description:
       "Cisco doesn't have many roles open right now, however they are recruiting actively for their technical consulting engineer co-op.",
@@ -206,8 +195,7 @@ const placeholderSponsorListings = [
       openDate: "10/10/10",
       closeDate: null,
     },
-    img:
-      "http://drive.google.com/uc?export=view&id=16DFXoFE6g_GNrYvBZYYa-hmBxVU53Z8C",
+    img: "http://drive.google.com/uc?export=view&id=16DFXoFE6g_GNrYvBZYYa-hmBxVU53Z8C",
     link: "http://bit.ly/tcecoop21",
     description:
       "Cisco doesn't have many roles open right now, however they are recruiting actively for their technical consulting engineer co-op.",
@@ -221,8 +209,7 @@ const placeholderSponsorListings = [
       openDate: "10/11/11",
       closeDate: "10/11/12",
     },
-    img:
-      "http://drive.google.com/uc?export=view&id=16DFXoFE6g_GNrYvBZYYa-hmBxVU53Z8C",
+    img: "http://drive.google.com/uc?export=view&id=16DFXoFE6g_GNrYvBZYYa-hmBxVU53Z8C",
     link: "http://bit.ly/tcecoop21",
     description:
       "Cisco doesn't have many roles open right now, however they are recruiting actively for their technical consulting engineer co-op.",
@@ -236,8 +223,7 @@ const placeholderSponsorListings = [
       openDate: null,
       closeDate: "12/12/12",
     },
-    img:
-      "http://drive.google.com/uc?export=view&id=16DFXoFE6g_GNrYvBZYYa-hmBxVU53Z8C",
+    img: "http://drive.google.com/uc?export=view&id=16DFXoFE6g_GNrYvBZYYa-hmBxVU53Z8C",
     link: "http://bit.ly/tcecoop21",
     description:
       "Cisco doesn't have many roles open right now, however they are recruiting actively for their technical consulting engineer co-op.",
@@ -251,8 +237,7 @@ const placeholderSponsorListings = [
       openDate: null,
       closeDate: null,
     },
-    img:
-      "http://drive.google.com/uc?export=view&id=16DFXoFE6g_GNrYvBZYYa-hmBxVU53Z8C",
+    img: "http://drive.google.com/uc?export=view&id=16DFXoFE6g_GNrYvBZYYa-hmBxVU53Z8C",
     link: "http://bit.ly/tcecoop21",
     description:
       "Cisco doesn't have many roles open right now, however they are recruiting actively for their technical consulting engineer co-op.",
@@ -406,7 +391,6 @@ function Opportunities(props) {
     fetch("http://localhost:5000/opportunities")
       .then((response) => response.json())
       .then((data) => {
-        console.log(data);
         updateOpportunitiesContent(data);
       })
       .catch((error) => {
@@ -414,47 +398,40 @@ function Opportunities(props) {
       });
   }, []);
 
-  console.log(opportunitiesContent)
-  var {
-    jobListings,
-    events,
-    scholarships,
-  } = opportunitiesContent;
-
-  console.log(events)
+  var { jobs, events, scholarships } = opportunitiesContent;
 
   // sponsorEvents = placeholderEvents;
   // sponsorScholarships = placeholderSponsorScholarships;
   // sponsorListings = placeholderSponsorListings;
-
-  const jobListingsSection = jobListings?.sponsors ? (
+  console.log(opportunitiesContent);
+  const jobListingsSection = jobs ? (
     <div className="job-listings">
       <Fade bottom>
         <h3 className="section-title">Job Listings</h3>
       </Fade>
-      <Fade left>{renderJobListings(jobListings.sponsors)}</Fade>
+      <Fade left>{renderJobListings(jobs, props.editable)}</Fade>
     </div>
   ) : (
     <div />
   );
 
-  const eventsSection = events?.sponsors ? (
+  const eventsSection = events ? (
     <div className="corporate-events">
       <Fade bottom>
         <h3 className="section-title">Events</h3>
       </Fade>
-      <Fade right>{renderEvents(events.sponsors)}</Fade>
+      <Fade right>{renderEvents(events, props.editable)}</Fade>
     </div>
   ) : (
     <div />
   );
 
-  const scholarshipsSection = scholarships?.sponsors ? (
+  const scholarshipsSection = scholarships ? (
     <div className="scholarships">
       <Fade bottom>
         <h3 className="section-title">Scholarships</h3>
       </Fade>
-      <Fade left>{renderScholarships(scholarships.sponsors)}</Fade>
+      <Fade left>{renderScholarships(scholarships, props.editable)}</Fade>
     </div>
   ) : (
     <div />

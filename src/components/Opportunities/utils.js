@@ -1,8 +1,10 @@
 import React from "react";
-import {
-  isoDateToDateTimeString,
-  isoDateToDateString,
-} from "../utils/utils";
+import { isoDateToDateTimeString, isoDateToDateString } from "../utils/utils";
+
+// Return array from firestore object representation of array
+function objectToArray(obj) {
+  return Object.keys(obj).map((i) => obj[i]);
+}
 
 // Return JSX for a provided array of links
 function renderLinks(links) {
@@ -14,9 +16,9 @@ function renderTimeline(t) {
   return (
     <div className="timeline-container">
       <h4 className="event-start-time">
-        {t.openDate ? `Opens: ${isoDateToDateString(t.openDate)}` : "NOW OPEN"}
+        {t?.openDate ? `Opens: ${isoDateToDateString(t.openDate)}` : "NOW OPEN"}
       </h4>
-      {t.closeDate ? (
+      {t?.closeDate ? (
         <h4 className="event-end-time">
           Closes: {isoDateToDateString(t.closeDate)}
         </h4>
@@ -26,9 +28,9 @@ function renderTimeline(t) {
 }
 
 // Return JSX for an array of job-listings
-export function renderJobListings(listings) {
-  console.log(listings);
-
+export function renderJobListings(listings, editable) {
+  objectToArray(listings)
+  listings = Object.keys(listings).map((l) => listings[l]);
   return (
     <div className="sponsor-listings flex-row carousel">
       {listings.map((l) => (
@@ -62,8 +64,8 @@ export function renderJobListings(listings) {
 }
 
 // Return JSX for an array of events
-export function renderEvents(events) {
-  console.log(events[0]);
+export function renderEvents(events, editable) {
+  events = Object.keys(events).map((l) => events[l]);
   return (
     <div className="sponsor-events flex-row carousel">
       {events.map((e) => {
@@ -99,7 +101,8 @@ export function renderEvents(events) {
 }
 
 // Return JSX for an array of scholarships
-export function renderScholarships(scholarships) {
+export function renderScholarships(scholarships, editable) {
+  scholarships = Object.keys(scholarships).map((l) => scholarships[l]);
   return (
     <div className="sponsor-scholarships flex-row carousel">
       {scholarships.map((s) => (

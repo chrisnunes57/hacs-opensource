@@ -1,6 +1,6 @@
-import app from "firebase/app";
+import firebase from "firebase";
 
-const firebaseConfig = {
+const config = {
   apiKey: "AIzaSyBTq5SCPW2IGGmhz32ErX3Q8HRrdTBXJPA",
   authDomain: "hacs-opensource.firebaseapp.com",
   databaseURL: "https://hacs-opensource.firebaseio.com",
@@ -11,10 +11,7 @@ const firebaseConfig = {
   measurementId: "G-F1WKE4VRDS",
 };
 
-class Firebase {
-  constructor() {
-    app.initializeApp(firebaseConfig);
-  }
-}
+firebase.initializeApp(config);
 
-export default Firebase;
+export const auth = firebase.auth()
+export default firebase;
