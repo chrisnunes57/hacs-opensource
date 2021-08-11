@@ -5,15 +5,15 @@ function OfficerEdit(props) {
   const [editing, setEditing] = useState(false);
   const [data, setData] = useState(props.data);
 
-  const handleSave = (event) => {
+  const handleSave = (e) => {
     props.handleUpdate(data);
     setEditing(false);
-    event.preventDefault();
+    e.preventDefault();
   };
 
-  const handleChange = (event) => {
+  const handleChange = (e) => {
     let newData = { ...data };
-    newData[event.target.name] = event.target.value;
+    newData[e.target.name] = e.target.value;
     setData(newData);
   };
 
@@ -62,13 +62,13 @@ function OfficerEdit(props) {
                   placeholder="ex.: texashacs@gmail.com"
                   onChange={handleChange}
                 />
-                <label>Ordering Index</label>
+                <label>Ordering Value</label>
                 <input
                   id="officer-order-edit"
                   className="form-control-small"
-                  name="index"
+                  name="order"
                   type="number"
-                  defaultValue={data.index}
+                  defaultValue={data.order}
                   min="0"
                   required
                   onChange={handleChange}

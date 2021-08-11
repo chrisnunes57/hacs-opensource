@@ -4,7 +4,7 @@ import "./OfficerCard.scss";
 function OfficerCard(props) {
     return (
         <div className="card">
-            <img src={props.imageUrl || "https://immedilet-invest.com/wp-content/uploads/2016/01/user-placeholder.jpg"} alt={"An image of officer " + props.name} />
+            <img src={props.imageURL || "https://immedilet-invest.com/wp-content/uploads/2016/01/user-placeholder.jpg"} alt={"An image of officer " + props.name} />
             <p className="name">{props.name}</p>
             <p className="role">{props.role}</p>
             <div className="connect">

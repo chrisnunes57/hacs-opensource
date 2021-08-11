@@ -11,7 +11,7 @@ function AdminPage(props) {
         "https://drive.google.com/uc?export=view&id=1WsNS0zkdosk15RGIM8ZN7vDlO9-m4jUO",
       linkedin: "https://www.linkedin.com/in/jeffreymoulckers",
       name: "Chris Nunes",
-      index: 1,
+      order: 1,
       role: "Web Development",
       uid: "In5lUlNNRvmaWvzYZnJ3r",
     },
@@ -30,6 +30,8 @@ function AdminPage(props) {
     return (
       <AdminPanel
         data={data}
+        signoutUser={props.signoutUser}
+        user={props.user}
         // {...props.siteContent}
       />
     );

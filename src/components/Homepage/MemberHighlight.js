@@ -14,7 +14,7 @@ function MemberHighlight(props) {
           <Fade bottom>
             <div className="member-wrapper">
               <img
-                src={props.member.image}
+                src={props.member.imageURL}
                 alt={"HACS member of the week, " + props.member.name}
               />
               <div className="content">

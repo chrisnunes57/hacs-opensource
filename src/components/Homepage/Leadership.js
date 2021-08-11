@@ -108,9 +108,10 @@ function Leadership(props) {
             <div className="container">
                 <h1>Leadership</h1>
                 <div className="leadership-wrapper">
-                    {props.officers.map( (officer, i) => {
+                    {Object.keys(props.officers).map((uid) => {
+                      let officer = props.officers[uid];
                         return (
-                          <Fade bottom key={i}>
+                          <Fade bottom key={officer.uid}>
                             <OfficerCard {...officer} />
                           </Fade>
                         );
