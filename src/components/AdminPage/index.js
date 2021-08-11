@@ -5,7 +5,7 @@ import AdminPanel from "./AdminPanel";
 
 function AdminPage(props) {
   if (props.user || window.location.href.includes("localhost")) {
-      return <AdminPanel {...props.siteContent}/>;
+      return <AdminPanel {...props.siteContent} />;
   } else {
       return <Login loginUser={props.loginUser} />;
   }

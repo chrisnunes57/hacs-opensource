@@ -38,6 +38,7 @@ function App() {
     fetch(API_ENDPOINT + "/siteContent")
       .then((response) => response.json())
       .then((data) => {
+        console.log(data.officers.members)
         data.officers.members.sort( (a, b) => b.order - a.order);
         updateSiteContent(data);
       })
@@ -72,12 +73,16 @@ function App() {
                   user={user}
                   loginUser={loginUser}
                   siteContent={siteContent}
+                  key={siteContent}
                 />
               </Route>
               <Route path="/">
-                <Homepage 
-                  memberOfWeek={siteContent.memberOfTheWeek} 
-                  officers={siteContent.officers ? siteContent.officers.members : []} />
+                <Homepage
+                  memberOfWeek={siteContent.memberOfTheWeek}
+                  officers={
+                    siteContent.officers ? siteContent.officers.members : []
+                  }
+                />
               </Route>
             </Switch>
           </div>
