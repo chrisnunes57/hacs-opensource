@@ -3,7 +3,7 @@ import { nanoid } from "nanoid";
 import Editable from "../editables/Editable";
 import "./AdminPage.scss";
 
-function OfficerEdit(props) {
+function MemberOfTheWeekEdit(props) {
   const [editing, setEditing] = useState(false);
   const [data, setData] = useState(props.data);
 
@@ -24,7 +24,7 @@ function OfficerEdit(props) {
       <form onSubmit={handleSave}>
         <label>Name</label>
         <input
-          id="officer-name-edit"
+          id="motw-name-edit"
           className="form-control-small"
           name="name"
           defaultValue={data.name}
@@ -32,40 +32,19 @@ function OfficerEdit(props) {
           required
           onChange={handleChange}
         />
-        <label>Officer Role</label>
+        <label>Description</label>
         <input
-          id="officer-role-edit"
+          id="motw-role-edit"
           className="form-control-small"
           name="role"
-          defaultValue={data.role}
+          defaultValue={data.description}
           placeholder="ex.: President"
-          required
-          onChange={handleChange}
-        />
-        <label>Email</label>
-        <input
-          id="officer-email-edit"
-          className="form-control-small"
-          name="email"
-          type="email"
-          defaultValue={data.email}
-          placeholder="ex.: texashacs@gmail.com"
-          onChange={handleChange}
-        />
-        <label>Ordering Value</label>
-        <input
-          id="officer-order-edit"
-          className="form-control-small"
-          name="order"
-          type="number"
-          defaultValue={data.order}
-          min="0"
           required
           onChange={handleChange}
         />
         <label>LinkedIn URL</label>
         <input
-          id="officer-linkedin-edit"
+          id="motw-linkedin-edit"
           className="form-control-small"
           name="linkedin"
           type="url"
@@ -75,12 +54,12 @@ function OfficerEdit(props) {
         />
         <label>Image URL</label>
         <input
-          id="officer-image-url-edit"
+          id="motw-image-url-edit"
           className="form-control-small"
           name="imageURL"
           type="url"
           defaultValue={data.imageURL}
-          placeholder="Officer image URL"
+          placeholder={`${data.name} image URL`}
           required
           onChange={handleChange}
         />
@@ -93,18 +72,14 @@ function OfficerEdit(props) {
 
   const saveSection = (
     <div onClick={() => setEditing(editing ^ true)}>
-      <p>
-        <span>
-          {data.name} - <span className="subtitle">{data.role}</span>
-        </span>
-      </p>
+      <p><span>{data.name}</span></p>
       {/* TODO: Add X mark to close dropdown */}
     </div>
   );
 
   return (
     <div className="form-group">
-      <h2 className="form-group-title">Officers</h2>
+      <h2 className="form-group-title">Member of the Week</h2>
       <div className="editable-group">
         {saveSection}
         {!!editing && editSection}
@@ -113,4 +88,4 @@ function OfficerEdit(props) {
   );
 }
 
-export default OfficerEdit;
+export default MemberOfTheWeekEdit;

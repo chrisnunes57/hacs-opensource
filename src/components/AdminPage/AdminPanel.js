@@ -4,6 +4,7 @@ import "./AdminPage.scss";
 import OfficerEdit from "./OfficerEdit";
 import MeetingLinkEdit from "./MeetingLinkEdit";
 import config from "../../_config";
+import MemberOfTheWeekEdit from "./MemberOfTheWeekEdit";
 
 function AdminPanel(props) {
   const [data, setData] = useState(props.data);
@@ -12,7 +13,7 @@ function AdminPanel(props) {
     if (auth.currentUser == null) {
       return;
     }
-    
+
     auth.currentUser
       .getIdToken(true)
       .then((idToken) => {
@@ -43,25 +44,50 @@ function AdminPanel(props) {
     setData(updating);
   };
 
+  const updateMemberOfTheWeek = (linkData) => {
+    let updating = { ...data };
+    updating.memberOfTheWeek = linkData;
+    setData(updating);
+  };
+
   const submitSignout = (e) => {
     props.signoutUser();
   };
 
-  return (
-    <div className="admin-panel">
+  const meetingLinkEdit =
+    data.meetingLink !== undefined ? (
       <MeetingLinkEdit
         data={data.meetingLink}
         handleUpdate={updateMeetingLink}
       />
+    ) : null;
+
+  const officerOfTheWeekEdit =
+    data.officers !== undefined
+      ? Object.keys(data.officers).map((uid) => (
+          <OfficerEdit
+            id={uid}
+            key={uid}
+            data={data.officers[uid]}
+            handleUpdate={updateOfficer}
+          />
+        ))
+      : null;
+
+  const memberOfTheWeekEdit =
+    data.memberOfTheWeek !== undefined ? (
+      <MemberOfTheWeekEdit
+        data={data.memberOfTheWeek}
+        handleUpdate={updateMemberOfTheWeek}
+      />
+    ) : null;
+
+  return (
+    <div className="admin-panel">
+      {meetingLinkEdit}
       {/* TODO: Add ability to drag and drop ordering to enforce indices. */}
-      {Object.keys(data.officers).map((uid) => (
-        <OfficerEdit
-          id={uid}
-          key={uid}
-          data={data.officers[uid]}
-          handleUpdate={updateOfficer}
-        />
-      ))}
+      {officerOfTheWeekEdit}
+      {memberOfTheWeekEdit}
       <button
         className="btn btn-primary" /* onClick={ TODO: Implement db update } */
       >

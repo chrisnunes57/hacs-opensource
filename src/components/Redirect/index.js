@@ -4,14 +4,14 @@ import "./Redirect.scss";
 function Redirect(props) {
 
   useEffect( () => {
-    if (props.link) {
-        window.location = props.link;
+    if (props.meetingLink) {
+        window.location = props.meetingLink.link;
     }
   }, [props]);
 
   return (
     <div className="redirect">
-      <p>Redirecting to {props.link}</p>
+      <p>Redirecting to {props.meetingLink.link}</p>
     </div>
   );
 }

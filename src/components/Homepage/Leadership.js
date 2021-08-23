@@ -6,7 +6,7 @@ import Fade from "react-reveal/Fade";
 const placeholderLeadership = [
   {
     name: "América Quistiano",
-    imageUrl:
+    imageURL:
       "https://drive.google.com/uc?export=view&id=14T-iOQboTBx3QYo2Cd2tTa0p3NXvLygh",
     role: "President",
     linkedin: "",
@@ -14,7 +14,7 @@ const placeholderLeadership = [
   },
   {
     name: "Diana de la Torre",
-    imageUrl:
+    imageURL:
       "https://drive.google.com/uc?export=view&id=11Fg_ItALRS3GKPfYolAsKgr47o4wuRVZ",
     role: "Vice President",
     linkedin: "",
@@ -22,7 +22,7 @@ const placeholderLeadership = [
   },
   {
     name: "Jeffrey Moulckers",
-    imageUrl:
+    imageURL:
       "https://drive.google.com/uc?export=view&id=10mAaVpd7oNhA2jhPAtZ06vkRbP9eD6Iy",
     role: "Corporate",
     linkedin: "",
@@ -30,7 +30,7 @@ const placeholderLeadership = [
   },
   {
     name: "Chelsie M Barrientos",
-    imageUrl:
+    imageURL:
       "https://drive.google.com/uc?export=view&id=161WcEgIXfKBI5V-idLznI_i7zMm5kSgt",
     role: "Financial",
     linkedin: "",
@@ -38,7 +38,7 @@ const placeholderLeadership = [
   },
   {
     name: "Andrew Jaso",
-    imageUrl:
+    imageURL:
       "https://drive.google.com/uc?export=view&id=109HLNFRN-gtvuat7CF2qtfM5CpLbFBH1",
     role: "Social",
     linkedin: "",
@@ -46,7 +46,7 @@ const placeholderLeadership = [
   },
   {
     name: "Levi Villarreal",
-    imageUrl:
+    imageURL:
       "https://drive.google.com/uc?export=view&id=1eXIqjfrgMaHQFa9OkNSXelAHN0p9oYMZ",
     role: "Professional Development",
     linkedin: "",
@@ -54,7 +54,7 @@ const placeholderLeadership = [
   },
   {
     name: "Ivan Romero",
-    imageUrl:
+    imageURL:
       "https://drive.google.com/uc?export=view&id=1lbEV_yaqq_fPxsOlBvroUnFA3J5vIp4Y",
     role: "Academic",
     linkedin: "",
@@ -62,7 +62,7 @@ const placeholderLeadership = [
   },
   {
     name: "Fina Sierra",
-    imageUrl:
+    imageURL:
       "https://drive.google.com/uc?export=view&id=1XuS85aMZMklyT9mpQDpo65Lo6Gwg5VyL",
     role: "Outreach",
     linkedin: "",
@@ -70,7 +70,7 @@ const placeholderLeadership = [
   },
   {
     name: "Michelle Sanchez",
-    imageUrl:
+    imageURL:
       "https://drive.google.com/uc?export=view&id=1SFfUEke2--dz-x7HwIQs4aCv-nvsdE6i",
     role: "Marketing",
     linkedin: "",
@@ -78,7 +78,7 @@ const placeholderLeadership = [
   },
   {
     name: "Chris Nunes",
-    imageUrl:
+    imageURL:
       "https://drive.google.com/uc?export=view&id=1WsNS0zkdosk15RGIM8ZN7vDlO9-m4jUO",
     role: "Web Development",
     linkedin: "",
@@ -86,7 +86,7 @@ const placeholderLeadership = [
   },
   {
     name: "Fidel Tinajero Soriano",
-    imageUrl:
+    imageURL:
       "https://drive.google.com/uc?export=view&id=1tl2eVtgnFSrzdg5Ke9E3-tLYdGQJFrLY",
     role: "Junior Officer",
     linkedin: "",
@@ -94,7 +94,7 @@ const placeholderLeadership = [
   },
   {
     name: "Felipe Paz",
-    imageUrl:
+    imageURL:
       "https://drive.google.com/uc?export=view&id=1iwAXvjON0vrKBRjC2ydfcAsfAuDYEtux",
     role: "Junior Officer",
     linkedin: "",
@@ -103,15 +103,16 @@ const placeholderLeadership = [
 ];
 
 function Leadership(props) {
+    var officers = props.officers ?? placeholderLeadership;
     return (
         <section className="leadership">
             <div className="container">
                 <h1>Leadership</h1>
                 <div className="leadership-wrapper">
-                    {Object.keys(props.officers).map((uid) => {
-                      let officer = props.officers[uid];
+                    {Object.keys(officers).map((uid) => {
+                      let officer = officers[uid];
                         return (
-                          <Fade bottom key={officer.uid}>
+                          <Fade bottom key={uid}>
                             <OfficerCard {...officer} />
                           </Fade>
                         );

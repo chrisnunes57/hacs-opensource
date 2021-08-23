@@ -8,16 +8,12 @@ import Footer from "./components/Footer";
 import AdminPage from "./components/AdminPage";
 import Redirect from "./components/Redirect";
 import Opportunities from "./components/Opportunities";
-import firebase from "./_firebase";
+import firebase, { auth } from "./_firebase";
 import config from "./_config";
 
 function App() {
   const [user, updateUser] = useState(null);
-  const [siteContent, updateSiteContent] = useState({
-    memberOfTheWeek: null,
-    meetingLink: { link: null },
-    officers: {},
-  });
+  const [siteContent, updateSiteContent] = useState({});
 
   const [authorized, updateAuthorization] = useState("Initial State");
 
@@ -49,17 +45,17 @@ function App() {
       });
   };
 
-  // an initial api call to get our member of the week
+  // an initial api call to get the site content
   useEffect(() => {
     firebase.auth().onAuthStateChanged((authorizedUser) => {
       if (user) {
         updateUser(authorizedUser);
       }
     });
+  }, []);
 
-    fetch(config.url + "/siteContent", {
-      headers: { Authorization: user?.getToken() },
-    })
+  useEffect(() => {
+    fetch(config.url + "/siteContent")
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
@@ -69,8 +65,8 @@ function App() {
         console.error("Error:", error);
       });
   }, []);
-
-  return (
+  
+  return siteContent ? (
     <div className="App">
       <Router>
         <div>
@@ -79,7 +75,7 @@ function App() {
           <div className="main-content">
             <Switch>
               <Route path="/meet">
-                <Redirect link={siteContent.meetingLink.link} />
+                <Redirect link={siteContent.meetingLink} />
               </Route>
               <Route path="/newsletter">
                 <Redirect link={"https://t.co/KUhKphLx2d?amp=1"} />
@@ -110,6 +106,6 @@ function App() {
         </div>
       </Router>
     </div>
-  );
+  ): <div />;
 }
 export default App;
