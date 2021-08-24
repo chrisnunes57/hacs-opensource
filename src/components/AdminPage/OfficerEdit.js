@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { nanoid } from "nanoid";
 import Editable from "../editables/Editable";
 import "./AdminPage.scss";
 
@@ -81,6 +80,17 @@ function OfficerEdit(props) {
           type="url"
           defaultValue={data.imageURL}
           placeholder="Officer image URL"
+          required
+          onChange={handleChange}
+        />
+        <label>Officer UID</label>
+        <input
+          id="officer-uid-edit"
+          className="form-control-small"
+          name="uid"
+          type="password"
+          defaultValue={data.uid ?? new Date().getUTCMilliseconds()}
+          placeholder="Officer UID"
           required
           onChange={handleChange}
         />
