@@ -4,30 +4,34 @@ import "./AdminPage.scss";
 
 function OfficerEdit(props) {
   const [editing, setEditing] = useState(false);
-  const [data, setData] = useState(props.data);
+  const [data, setData] = useState({...props.data, uid: props.data?.uid ?? new Date().getTime()});
 
   const handleSave = (e) => {
     props.handleUpdate(data);
     setEditing(false);
+    if(props.data == null) {
+      setData({uid: new Date().getTime()})
+    }
     e.preventDefault();
   };
 
   const handleChange = (e) => {
     let newData = { ...data };
     newData[e.target.name] = e.target.value;
+    console.log(e.target.value)
     setData(newData);
   };
 
   const editSection = (
     <div className="admin-edit">
       <form onSubmit={handleSave}>
-        <label>Name</label>
+        <label>{"First & Last Name"}</label>
         <input
           id="officer-name-edit"
           className="form-control-small"
           name="name"
-          defaultValue={data.name}
-          placeholder={"First & last name"}
+          defaultValue={data?.name}
+          placeholder="ex.: Chris Nunes"
           required
           onChange={handleChange}
         />
@@ -36,8 +40,8 @@ function OfficerEdit(props) {
           id="officer-role-edit"
           className="form-control-small"
           name="role"
-          defaultValue={data.role}
-          placeholder="ex.: President"
+          defaultValue={data?.role}
+          placeholder="ex.: Web Developer"
           required
           onChange={handleChange}
         />
@@ -47,7 +51,7 @@ function OfficerEdit(props) {
           className="form-control-small"
           name="email"
           type="email"
-          defaultValue={data.email}
+          defaultValue={data?.email}
           placeholder="ex.: texashacs@gmail.com"
           onChange={handleChange}
         />
@@ -57,7 +61,7 @@ function OfficerEdit(props) {
           className="form-control-small"
           name="order"
           type="number"
-          defaultValue={data.order}
+          defaultValue={data?.order}
           min="0"
           required
           onChange={handleChange}
@@ -68,7 +72,7 @@ function OfficerEdit(props) {
           className="form-control-small"
           name="linkedin"
           type="url"
-          defaultValue={data.linkedin}
+          defaultValue={data?.linkedin}
           placeholder="ex.: linkedin.com/in/firstnamelastname"
           onChange={handleChange}
         />
@@ -78,8 +82,8 @@ function OfficerEdit(props) {
           className="form-control-small"
           name="imageURL"
           type="url"
-          defaultValue={data.imageURL}
-          placeholder="Officer image URL"
+          defaultValue={data?.imageURL}
+          placeholder={"ex.: https://drive.google.com/..."}
           required
           onChange={handleChange}
         />
@@ -88,9 +92,8 @@ function OfficerEdit(props) {
           id="officer-uid-edit"
           className="form-control-small"
           name="uid"
-          type="password"
-          defaultValue={data.uid ?? new Date().getUTCMilliseconds()}
-          placeholder="Officer UID"
+          type="text"
+          value={data?.uid ?? new Date().getTime()}
           required
           onChange={handleChange}
         />
@@ -103,23 +106,22 @@ function OfficerEdit(props) {
 
   const saveSection = (
     <div onClick={() => setEditing(editing ^ true)}>
-      <p>
+      <p className="editable">{
+        data.name == null ? "Add Officer" :
         <span>
-          {data.name} - <span className="subtitle">{data.role}</span>
+          {data?.name} - <span className="subtitle">{data?.role}</span>
         </span>
+      }
       </p>
       {/* TODO: Add X mark to close dropdown */}
     </div>
   );
 
   return (
-    <div className="form-group">
-      <h2 className="form-group-title">Officers</h2>
       <div className="editable-group">
         {saveSection}
         {!!editing && editSection}
       </div>
-    </div>
   );
 }
 

@@ -100,9 +100,16 @@
     border-left: 2px solid #495057;
   }
 
+  .editable {
+    cursor: pointer;
+
+    &:hover {
+      color: $hacs-blue;
+    }
+  }
+
   span {
     position: relative;
-    cursor: pointer;
     display: inline;
     margin: 1em 0;
 

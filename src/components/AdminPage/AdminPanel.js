@@ -62,17 +62,20 @@ function AdminPanel(props) {
       />
     ) : null;
 
-  const officerOfTheWeekEdit =
+  const officerOfTheWeekEdit =    <div className="form-group">
+      <h2 className="form-group-title">Officers</h2>{
     data.officers !== undefined
-      ? Object.keys(data.officers).map((uid) => (
+      ? [Object.keys(data.officers).map((uid) => (
           <OfficerEdit
             id={uid}
             key={uid}
             data={data.officers[uid]}
             handleUpdate={updateOfficer}
           />
-        ))
-      : null;
+        )), <OfficerEdit handleUpdate={updateOfficer} data={null}/>]
+      : null}
+
+      </div>
 
   const memberOfTheWeekEdit =
     data.memberOfTheWeek !== undefined ? (
